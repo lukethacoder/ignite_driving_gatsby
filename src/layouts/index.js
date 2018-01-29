@@ -14,9 +14,10 @@ const Header = () => (
       <Link to="/">0434 833 131</Link>
       <Link to="/">margaret@ignitedriving.com.au</Link>
     </ul>
+    <img src={logo} id="logo_img" alt="Logo"/>
     <section>
-      <img src={logo} alt="Logo"/>
-      <ul>
+      
+      <ul id="nav_menu">
         <li><Link to="/WhatWeOffer/">What We Offer</Link></li>
         <li><Link to="/">Pricing</Link></li>
         <li><Link to="/WhatWeOffer/">About</Link></li>

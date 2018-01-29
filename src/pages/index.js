@@ -3,9 +3,9 @@ import Link from 'gatsby-link'
 
 const IndexPage = () => (
   <header>
-    <h1>JANUARY SPECIAL</h1>
+    <h1>FEBRUARY SPECIAL</h1>
     <h2>$10 off your first lesson</h2>
-    <button>Book my first lesson</button>
+    <Link to="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book my first lesson</Link>
     <p>T&C's apply</p>
   </header>
 )
