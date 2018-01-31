@@ -4,27 +4,28 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import logo from "../assets/logo.svg";
 
-import './index.scss'
 import './style.scss'
+import './index.scss'
+
+
 
 /* stateless function */
 const Header = () => (
-  <nav>
+  <nav className="navbar">
     <ul>
       <Link to="/">0434 833 131</Link>
       <Link to="/">margaret@ignitedriving.com.au</Link>
     </ul>
-    <img src={logo} id="logo_img" alt="Logo"/>
+    <img src={logo} className="logo_img" alt="Logo"/>
     <section>
-      
-      <ul id="nav_menu">
+      <ul className="navMenu">
         <li><Link to="/WhatWeOffer/">What We Offer</Link></li>
         <li><Link to="/">Pricing</Link></li>
+        <li><Link to="/">Home button</Link></li>
         <li><Link to="/WhatWeOffer/">About</Link></li>
         <li><Link to="/">Contact</Link></li>
       </ul>
       <Link to="/">BOOK NOW</Link>
-      
     </section>
   </nav>
 )

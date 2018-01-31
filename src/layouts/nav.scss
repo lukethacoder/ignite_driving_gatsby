@@ -1,0 +1,18 @@
+.navbar {
+    width: 100%;
+    height: 250px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@mixin navbar--xs() {
+    .navbar {
+        height: 500px;
+    }
+}
+@mixin navbar--sm() {
+    .navbar {
+        height: 1000px;
+    }
+}
