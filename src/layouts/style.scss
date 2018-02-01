@@ -1,18 +1,17 @@
 
 @import "nav.scss";
+@import "content.scss";
 @import "_media-queries.scss";
-
-
-$darkpurple: #1b1432;
-$mediumpurple: #553B8C;
-$white: #ffffff;
-$darkgrey: #636566;
-$lightgrey: #f6f6f6;
 
 body {
     background-color: $darkpurple;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
 }
 a {
     text-decoration: none;
     color: $lightgrey;
 }
+

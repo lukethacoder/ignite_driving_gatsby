@@ -1,18 +1,3 @@
-body {background-color: green;}
-
-
-@media all and (max-width: 1199px) {
-
-} 
-@media all and (max-width: 991px) {
-
-} 
-@media all and (max-width: 768px) {
-    @include navbar--sm();
-} 
-@media all and (max-width: 575px) {
-    @include navbar--xs();
-}
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 @media (min-width:320px) {
     /* all content should be mobile first anyways so no real need for this size */

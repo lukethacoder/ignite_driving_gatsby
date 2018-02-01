@@ -12,13 +12,16 @@ import './index.scss'
 /* stateless function */
 const Header = () => (
   <nav className="navbar">
-    <ul>
-      <Link to="/">0434 833 131</Link>
-      <Link to="/">margaret@ignitedriving.com.au</Link>
-    </ul>
-    <img src={logo} className="logo_img" alt="Logo"/>
-    <section>
-      <ul className="navMenu">
+    <section className="topNav">
+      <ul className="navContact">
+        <li><Link to="/">0434 833 131</Link></li>
+        <li><Link to="/">margaret@ignitedriving.com.au</Link></li>
+      </ul>
+      <img src={logo} className="logo_img" alt="Logo"/>
+    </section>
+
+    <section className="bottomNav">
+      <ul className="navMenuList">
         <li><Link to="/WhatWeOffer/">What We Offer</Link></li>
         <li><Link to="/">Pricing</Link></li>
         <li><Link to="/">Home button</Link></li>
@@ -32,7 +35,7 @@ const Header = () => (
 
 const Footer = () => (
   <footer>
-    <h1>footer</h1>
+    <p>hello</p>
   </footer>
 )
 

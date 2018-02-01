@@ -1,18 +1,57 @@
+@import "_variables.scss";
+
 .navbar {
     width: 100%;
-    height: 250px;
-    background-color: green;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-@mixin navbar--xs() {
-    .navbar {
-        height: 500px;
+    height: 100%;
+    display: block;
+    .topNav {
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        .navContact {
+            width: 100%;
+            display: block;
+            margin: 0;
+            padding: 1% 2%;
+            display: flex;
+            li {
+                width: auto;
+                height: auto;
+                margin: 0 auto;
+                float: left;
+                text-align: center;
+                white-space: nowrap;
+                a {
+                    margin: auto 5%;
+                }
+            }
+           
+        }
+        img {
+            width: 50%;
+            height: auto;
+            margin: 5% 25%;
+            padding: 0;
+        }
+    }
+    .bottomNav {
+        width: 100%;
+        height: 250px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
 }
 @mixin navbar--sm() {
     .navbar {
-        height: 1000px;
+        
+    }
+}
+@mixin navbar--md() {
+    .navbar {
+        
     }
 }
