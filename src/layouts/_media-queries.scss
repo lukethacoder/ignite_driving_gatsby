@@ -12,11 +12,11 @@
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:801px) {
-
+    
 }
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) {
-
+    @include navbar--md();
 }
 /* hi-res laptops and desktops */
 @media (min-width:1281px) {

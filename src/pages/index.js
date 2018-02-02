@@ -26,4 +26,6 @@ const IndexPage = () => (
   </section>
 )
 
+
+
 export default IndexPage

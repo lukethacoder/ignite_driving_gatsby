@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.svg"
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/fontawesome-free-solid'
 
 import './style.scss'
 import './index.scss'
@@ -17,18 +19,18 @@ const Header = () => (
         <li><Link to="/">0434 833 131</Link></li>
         <li><Link to="/">margaret@ignitedriving.com.au</Link></li>
       </ul>
-      <img src={logo} className="logo_img" alt="Logo"/>
+      <Link to="/"><img src={logo} className="logo_img" alt="Logo"/></Link>
     </section>
 
     <section className="bottomNav">
       <ul className="navMenuList">
-        <li><Link to="/WhatWeOffer/">What We Offer</Link></li>
-        <li><Link to="/">Pricing</Link></li>
-        <li><Link to="/">Home button</Link></li>
+        <li><FontAwesomeIcon icon={faCoffee}/><Link to="/WhatWeOffer/">What We Offer</Link></li>
+        <li><Link to="/"><i class="fas fa-spinner fa-spin"></i>Pricing</Link></li>
+        <li><Link to="/">Home</Link></li>
         <li><Link to="/WhatWeOffer/">About</Link></li>
         <li><Link to="/">Contact</Link></li>
       </ul>
-      <Link to="/">BOOK NOW</Link>
+      <Link className="bookNowNav" to="/">BOOK NOW</Link>
     </section>
   </nav>
 )
@@ -47,16 +49,12 @@ const TemplateWrapper = ({ children }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
+      script={[
+        {"src": "https://use.fontawesome.com/releases/v5.0.6/js/all.js", "type": "text/javascript"}
+      ]}
     />
     <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+    <div>
       {children()}
     </div>
   </div>

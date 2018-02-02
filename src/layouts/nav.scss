@@ -6,7 +6,7 @@
     display: block;
     .topNav {
         width: 100%;
-        height: 250px;
+        height: 20vh;
         position: absolute;
         top: 0;
         left: 0;
@@ -17,22 +17,26 @@
             margin: 0;
             padding: 1% 2%;
             display: flex;
+            list-style-type: none;
             li {
                 width: auto;
                 height: auto;
                 margin: 0 auto;
+                padding: 0;
                 float: left;
                 text-align: center;
                 white-space: nowrap;
                 a {
                     margin: auto 5%;
+                    text-decoration: none;
                 }
             }
            
         }
         img {
             width: 50%;
-            height: auto;
+            max-height: 100%;
+            display: block;
             margin: 5% 25%;
             padding: 0;
         }
@@ -43,15 +47,95 @@
         position: fixed;
         bottom: 0;
         left: 0;
-    }
-}
-@mixin navbar--sm() {
-    .navbar {
-        
+        background-color: $lightgrey;
+        .navMenuList {
+            width: 100%;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-rows: 5% 50px 5%;
+            li {
+                justify-self: center;
+                align-self: center;
+                text-align: center;
+                i {
+                    width: 100%;
+                    height: 20px;
+                    font-size: 16px;
+                    color: $darkgrey;
+                }
+                a {
+                    font-size: 10x;
+                    color: $darkgrey;
+                }
+            }
+        }
+        .bookNowNav {
+            width: 100%;
+            background-color: $mediumpurple;
+        }
     }
 }
 @mixin navbar--md() {
     .navbar {
-        
+        width: 100%;
+        .topNav {
+        width: 100%;
+        height: 25vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        padding: 2% 10%;
+        background-color: green;
+            .navContact {
+                padding: 1% 10%;
+                margin: 0 auto;
+
+                width: 50%;
+                display: block;
+                margin: 0;
+                padding: 1% 2%;
+                display: block;
+                list-style-type: none;
+                float: right;
+                li {
+                    width: auto;
+                    height: auto;
+                    margin: 0 auto;
+                    padding: 0;
+                    float: left;
+                    text-align: center;
+                    white-space: nowrap;
+                    i {
+                        display: none;
+                    }
+                    a {
+                        margin: auto 10%;
+                        text-decoration: none;
+                    }
+                }
+            
+            }
+            a {
+                width: 50%;
+                max-height: 100%;
+                float: left;
+                display: block;
+                img {
+                    width: 50%;
+                    max-height: 100%;
+                    float: left;
+                    margin: 0;
+                    padding: 0 5%;
+                }
+            }
+            
+        }
+        .bottomNav {
+
+        }
     }
 }
