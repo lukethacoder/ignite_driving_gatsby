@@ -1,3 +1,5 @@
+
+
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 @media (min-width:320px) {
     /* all content should be mobile first anyways so no real need for this size */
@@ -12,11 +14,11 @@
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:801px) {
-    
+    @include navbar--md();
 }
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) {
-    @include navbar--md();
+    
 }
 /* hi-res laptops and desktops */
 @media (min-width:1281px) {

@@ -5,7 +5,8 @@ const IndexPage = () => (
   <section className="pageContent">
     <header className="headerContainer">
       <section className="headerSection">
-        <h1>FEBRUARY SPECIAL</h1>
+        <TypographyStyle typography={typography}>FEBRUARY SPECIAL</TypographyStyle>
+        {/* <h1>FEBRUARY SPECIAL</h1> */}
         <h2>$10 off your first lesson</h2>
         <Link to="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book my first lesson</Link>
         <p>T&C's apply</p>

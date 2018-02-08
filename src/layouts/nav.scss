@@ -4,6 +4,30 @@
     width: 100%;
     height: 100%;
     display: block;
+    .navContact {
+        width: 80%;
+        height: 50px;
+        padding: 1%;
+        margin: 0 auto;
+        display: flex;
+        margin: 0 auto;
+        padding: 1% 2%;
+        list-style-type: none;
+        li {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            padding: 0;
+            float: left;
+            text-align: center;
+            white-space: nowrap;
+            a {
+                margin: auto 10%;
+                text-decoration: none;
+            }
+        }
+    
+    }
     .topNav {
         width: 100%;
         height: 20vh;
@@ -43,11 +67,13 @@
     }
     .bottomNav {
         width: 100%;
-        height: 250px;
+        height: auto;
         position: fixed;
         bottom: 0;
         left: 0;
         background-color: $lightgrey;
+        display: flex;
+        flex-direction: column;
         .navMenuList {
             width: 100%;
             list-style-type: none;
@@ -55,87 +81,155 @@
             margin: 0;
             display: grid;
             grid-template-columns: 20% 20% 20% 20% 20%;
-            grid-template-rows: 5% 50px 5%;
+            // grid-template-rows: 5% 50px 5%;
+            order: 2;
             li {
                 justify-self: center;
                 align-self: center;
                 text-align: center;
-                i {
+                padding: 3% 0;
+                margin: 0;
+                display: block;
+                a {
                     width: 100%;
-                    height: 20px;
-                    font-size: 16px;
+                    height: auto;
+                    display: block;
+                    font-size: 12px;
                     color: $darkgrey;
+                    margin: 0 auto;
+                    padding: 0;
+                    svg {
+                        width: 100%;
+                        height: 24px;
+                        color: $darkgrey;
+                        margin: 0;
+                        margin-top: 5%;
+                        padding: 0;
+                    }
+                }
+            }
+            .navActive {
+                background-color: $mediumpurple;
+                svg {
+                    color: $white;
                 }
                 a {
-                    font-size: 10x;
-                    color: $darkgrey;
+                    color: $white;
                 }
             }
         }
         .bookNowNav {
             width: 100%;
+            height: auto;
+            text-align: center;
+            margin: auto;
+            padding: 2% 0;
+            order: 1;
             background-color: $mediumpurple;
         }
     }
 }
 @mixin navbar--md() {
     .navbar {
-        width: 100%;
-        .topNav {
-        width: 100%;
+        width: 80%;
         height: 25vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        padding: 2% 10%;
-        background-color: green;
-            .navContact {
-                padding: 1% 10%;
+        margin: 0 auto;
+        .navContact {
+            width: 80%;
+            height: 50px;
+            padding: 1%;
+            margin: 0 auto;
+            display: flex;
+            margin: 0 auto;
+            padding: 1% 2%;
+            list-style-type: none;
+            li {
+                width: auto;
+                height: auto;
                 margin: 0 auto;
-
-                width: 50%;
-                display: block;
-                margin: 0;
-                padding: 1% 2%;
-                display: block;
-                list-style-type: none;
-                float: right;
-                li {
-                    width: auto;
-                    height: auto;
-                    margin: 0 auto;
-                    padding: 0;
-                    float: left;
-                    text-align: center;
-                    white-space: nowrap;
-                    i {
-                        display: none;
-                    }
-                    a {
-                        margin: auto 10%;
-                        text-decoration: none;
-                    }
-                }
-            
-            }
-            a {
-                width: 50%;
-                max-height: 100%;
+                padding: 0;
                 float: left;
-                display: block;
+                text-align: center;
+                white-space: nowrap;
+                a {
+                    margin: auto 10%;
+                    text-decoration: none;
+                }
+            }
+        
+        }
+        .topNav {
+        width: 30%;
+        height: 100%;
+        position: relative;
+        float: left;
+        display: block;
+        padding: 0;
+        background-color: transparent;
+            a {
+                width: auto;
+                height: 100%;
+                float: left;
+                position: relative;
                 img {
-                    width: 50%;
+                    width: 100%;
                     max-height: 100%;
                     float: left;
                     margin: 0;
-                    padding: 0 5%;
+                    padding: 0;
                 }
             }
             
         }
         .bottomNav {
-
+            width: 70%;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-self: right;
+            background-color: transparent;
+            .navMenuList {
+                width: 75%;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                float: right;
+                order: 1;
+                li {
+                    
+                    padding: 3% 0;
+                    margin: 0 2%;
+                    display: block;
+                    a {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        font-size: 18px;
+                        color: $white;
+                        margin: 0;
+                        padding: 0;
+                        svg {
+                            display: none;
+                        }
+                    }
+                }
+                .navActive {
+                    background-color: transparent;
+                }
+            }
+            .bookNowNav {
+                width: 15%;
+                height: auto;
+                align-self: center;
+                text-align: center;
+                float: right;
+                margin: 0;
+                padding: 1% 1%;
+                order: 2;
+                background-color: $mediumpurple;
+            }
         }
     }
 }

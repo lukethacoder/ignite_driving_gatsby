@@ -12,9 +12,10 @@
     "gatsby-plugin-google-fonts": "0.0.3",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.15",
-    "gatsby-plugin-typography": "^1.7.12",
+    "gatsby-plugin-typography": "^1.7.13",
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-remark": "^1.7.26",
+    "react-typography": "^0.16.13",
     "typography": "^0.16.6"
   },
   "keywords": [
