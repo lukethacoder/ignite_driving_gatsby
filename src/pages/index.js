@@ -6,8 +6,12 @@ const IndexPage = () => (
     <header className="headerContainer">
       <section className="headerSection">
 <<<<<<< HEAD
+<<<<<<< HEAD
         {/* <TypographyStyle typography={typography}>FEBRUARY SPECIAL</TypographyStyle> */}
         {/* <h1>FEBRUARY SPECIAL</h1> */}
+=======
+        <h1>FEBRUARY SPECIAL</h1>
+>>>>>>> parent of 6f57c89... nav bar responsiveness - icons
 =======
         <h1>FEBRUARY SPECIAL</h1>
 >>>>>>> parent of 6f57c89... nav bar responsiveness - icons
