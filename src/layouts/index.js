@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import logo from "../assets/logo.svg"
+
+// import { TypographyStyle, GoogleFont } from 'react-typography'
+// import typography from 'utils/typography'
+
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/fontawesome-free-solid'
 import { faCar } from '@fortawesome/fontawesome-free-solid'
