@@ -4,16 +4,11 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import logo from "../assets/logo.svg"
 
-// import { TypographyStyle, GoogleFont } from 'react-typography'
-// import typography from 'utils/typography'
-
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/fontawesome-free-solid'
 
 import './style.scss'
 import './index.scss'
-
-
 
 /* stateless function */
 const Header = () => (
