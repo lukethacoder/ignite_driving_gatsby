@@ -1,5 +1,12 @@
 @import "_variables.scss";
 
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 80px;
+}
+
 .pageContent {
     width: 100%;
     padding: 0;
@@ -14,6 +21,25 @@
             width: 75%;
             height: 50%;
             margin: auto;
+            h1 {
+                @include h1_white();
+            }
+            h2 {
+                @include h2_white();
+            }
+            a {
+                @include button_style_inverted();
+                font-size: 24px;
+                padding: 8px 18px;
+                margin: 5%;
+                width: auto;
+            }
+            p {
+                @include p_white();
+                padding: 0;
+                margin: 2%;
+                width: auto;
+            }
         }
     }
     .indexAbout {
@@ -27,6 +53,42 @@
             color: $lightgrey;
             margin: 0;
             padding: 20% 5%;
+        }
+    }
+}
+
+@mixin header_coontent--md() {
+    .pageContent {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 0;
+            .headerContainer {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            position: relative;
+            section {
+                width: 80%;
+                height: auto;
+                padding: 10% 0;
+                margin: auto;
+            }
+        }
+        .indexAbout {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0;
+            background-color: $darkpurple;
+            h3 {
+                text-align: center;
+                color: $lightgrey;
+                margin: 0;
+                padding: 20% 5%;
+            }
         }
     }
 }

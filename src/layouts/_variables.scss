@@ -5,3 +5,71 @@ $rgb_mediumpurple: rgba(85, 59, 140, .6);
 $white: #ffffff;
 $darkgrey: #636566;
 $lightgrey: #f6f6f6;
+
+$main_font: 'Raleway', sans-serif;
+
+@mixin main_font($size, $weight, $color:"") {
+    color: $color;
+    font: $weight $size $main_font;
+}
+
+@mixin font_white() {
+    font-family: $main_font;
+    color: $white;
+}
+
+@mixin h1_white() {
+    @include main_font(74px, 600, $white);
+}
+
+@mixin h2_white() {
+    @include main_font(46px, 600, $white);
+}
+
+@mixin p_white() {
+    @include main_font(16px, 600, $white);
+}
+
+@mixin hover_trans($sec: 0.25s) {
+    -webkit-transition: all $sec ease-in-out;
+       -moz-transition: all $sec ease-in-out;
+        -ms-transition: all $sec ease-in-out;
+         -o-transition: all $sec ease-in-out;
+            transition: all $sec ease-in-out;
+  }
+
+@mixin button_style_inverted() {
+    background-color: transparent;
+    color: $white;
+    border: 2px $white solid;
+    border-radius: 25px;
+    font-family: $main_font;
+    white-space: nowrap;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    &:hover {
+        @include hover_trans();
+        color: $white;
+        border: 2px $white solid;
+        background-color: $mediumpurple !important;
+    }
+}
+
+@mixin button_style() {
+    background-color: $mediumpurple;
+    color: $white;
+    border: 2px transparent solid;
+    border-radius: 25px;
+    font-family: $main_font;
+    white-space: nowrap;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    &:hover {
+        @include hover_trans();
+        color: $white;
+        border: 2px $white solid;
+        background-color: transparent;
+    }
+}

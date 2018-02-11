@@ -80,7 +80,8 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
       script={[
-        {"src": "https://use.fontawesome.com/releases/v5.0.6/js/all.js", "type": "text/javascript"}
+        {"src": "https://use.fontawesome.com/releases/v5.0.6/js/all.js", "type": "text/javascript"},
+        {"src": "https://fonts.googleapis.com/css?family=Raleway:500,600", "type": "text/stylesheet"}
       ]}
     />
     <Header />
