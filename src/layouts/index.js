@@ -8,11 +8,7 @@ import logo from "../assets/logo.svg"
 // import typography from 'utils/typography'
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/fontawesome-free-solid'
-import { faCar } from '@fortawesome/fontawesome-free-solid'
-import { faDollarSign } from '@fortawesome/fontawesome-free-solid'
-import { faInfo } from '@fortawesome/fontawesome-free-solid'
-import { faPhone } from '@fortawesome/fontawesome-free-solid'
+import { faCoffee } from '@fortawesome/fontawesome-free-solid'
 
 import './style.scss'
 import './index.scss'
@@ -22,33 +18,21 @@ import './index.scss'
 /* stateless function */
 const Header = () => (
   <nav className="navbar">
-    <ul className="navContact">
+    <section className="topNav">
+      <ul className="navContact">
         <li><Link to="/">0434 833 131</Link></li>
         <li><Link to="/">margaret@ignitedriving.com.au</Link></li>
       </ul>
-    <section className="topNav">
-      
       <Link to="/"><img src={logo} className="logo_img" alt="Logo"/></Link>
     </section>
 
     <section className="bottomNav">
       <ul className="navMenuList">
-        <li>
-          
-          <Link to="/WhatWeOffer/"><FontAwesomeIcon icon={faCar}/>What We Offer</Link>
-        </li>
-        <li>
-            <Link to="/"><FontAwesomeIcon icon={faDollarSign}/>Pricing</Link>
-        </li>
-        <li className="navActive">
-          <Link to="/"><FontAwesomeIcon icon={faHome}/>Home</Link>
-        </li>
-        <li>
-          <Link to="/WhatWeOffer/"><FontAwesomeIcon icon={faInfo}/>About</Link>
-        </li>
-        <li>
-          <Link to="/"><FontAwesomeIcon icon={faPhone}/>Contact</Link>
-        </li>
+        <li><FontAwesomeIcon icon={faCoffee}/><Link to="/WhatWeOffer/">What We Offer</Link></li>
+        <li><Link to="/"><i class="fas fa-spinner fa-spin"></i>Pricing</Link></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/WhatWeOffer/">About</Link></li>
+        <li><Link to="/">Contact</Link></li>
       </ul>
       <Link className="bookNowNav" to="/">BOOK NOW</Link>
     </section>
@@ -57,17 +41,7 @@ const Header = () => (
 
 const Footer = () => (
   <footer>
-    <section>
-    </section>
-    <section>
-      <ul>
-        <li><Link to="/">Privacy</Link></li>
-        <li><Link to="/">Terms & Conditions</Link></li>
-        <li><Link to="/">Sitemap</Link></li>
-      </ul>
-      <Link to="/">@ 2018 All Rights Reserved</Link>
-      <Link to="/">Created by Luke Secomb Digital</Link>
-    </section>
+    <p>hello</p>
   </footer>
 )
 

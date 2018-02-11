@@ -1,3 +1,4 @@
+
 @import "nav.scss";
 @import "content.scss";
 @import "_media-queries.scss";
@@ -10,7 +11,7 @@ body {
     width: auto;
     height: auto;
     > div{
-        background-image: radial-gradient(rgba(85, 59, 140, .8), rgba(27, 20, 50, .8));
+        background-image: radial-gradient(rgba(85, 59, 140, .9), rgba(27, 20, 50, .9));
         .headerContainer {
             background-image: linear-gradient(180deg, rgba(85, 59, 140, 0), rgba(27, 20, 50, 1));
         }

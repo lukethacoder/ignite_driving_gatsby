@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import Typography from "typography";
 
 // import { TypographyStyle, GoogleFont } from 'react-typography'
@@ -74,3 +75,10 @@
 // }
 
 // export default theme
+=======
+import Typography from "typography";
+
+const typography = new Typography({ baseFontSize: "18px" });
+
+export default typography;
+>>>>>>> parent of 6f57c89... nav bar responsiveness - icons
