@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // import Typography from "typography";
 
 // import { TypographyStyle, GoogleFont } from 'react-typography'
@@ -75,22 +74,8 @@
 // }
 
 // export default theme
-=======
-import Typography from "typography";
+// import Typography from "typography";
 
-const typography = new Typography({ baseFontSize: "18px" });
+// const typography = new Typography({ baseFontSize: "18px" });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-export default typography;
->>>>>>> parent of 6f57c89... nav bar responsiveness - icons
-=======
-export default typography;
->>>>>>> parent of 6f57c89... nav bar responsiveness - icons
-=======
-export default typography;
->>>>>>> parent of 6f57c89... nav bar responsiveness - icons
-=======
-export default typography;
->>>>>>> parent of 6f57c89... nav bar responsiveness - icons
+// export default typography;
