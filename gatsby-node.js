@@ -1,43 +1,43 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+// /**
+//  * Implement Gatsby's Node APIs in this file.
+//  *
+//  * See: https://www.gatsbyjs.org/docs/node-apis/
+//  */
 
- // You can delete this file if you're not using it
+//  // You can delete this file if you're not using it
 
- const path = require('path');
+//  const path = require('path');
 
- exports.createPages = ({boundActionCreators, graphql}) => {
-     const {createPage} = boundActionCreators;
+//  exports.createPages = ({boundActionCreators, graphql}) => {
+//      const {createPage} = boundActionCreators;
 
-     const postTemplate = path.resolve('src/pages/whatweoffer.js');
+//      const postTemplate = path.resolve('src/pages/whatweoffer.js');
     
-     /* put sorting inside brackets (after allMarkdownRemark)*/
-    return graphql(`{
-        allMarkdownRemark {
-            edges {
-                node {
-                    html
-                    id
-                    frontmatter {
-                        path
-                        title
-                    }
-                }
-            }
-        }
-    }`)
-    .then(res => {
-        if(res.errors) {
-            return Promise.reject(res.errors);
-        }
-        /* */
-        res.data.allMarkdownRemark.edges.forEach( ({node}) => {
-            createpage({
-                path: node.frontmatter.path,
-                component: postTemplate
-            })
-        })
-    })
- }
+//      /* put sorting inside brackets (after allMarkdownRemark)*/
+//     return graphql(`{
+//         allMarkdownRemark {
+//             edges {
+//                 node {
+//                     html
+//                     id
+//                     frontmatter {
+//                         path
+//                         title
+//                     }
+//                 }
+//             }
+//         }
+//     }`)
+//     .then(res => {
+//         if(res.errors) {
+//             return Promise.reject(res.errors);
+//         }
+//         /* */
+//         res.data.allMarkdownRemark.edges.forEach( ({node}) => {
+//             createpage({
+//                 path: node.frontmatter.path,
+//                 component: postTemplate
+//             })
+//         })
+//     })
+//  }
