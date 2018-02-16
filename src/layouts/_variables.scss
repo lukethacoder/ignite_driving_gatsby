@@ -4,6 +4,7 @@ $rgb_darkpurple: rgba(27, 20, 50, .6);
 $rgb_mediumpurple: rgba(85, 59, 140, .6);
 $white: #ffffff;
 $darkgrey: #636566;
+$midgrey: #95989A;
 $lightgrey: #f6f6f6;
 
 $main_font: 'Raleway', sans-serif;
@@ -11,6 +12,7 @@ $main_font: 'Raleway', sans-serif;
 @mixin main_font($size, $weight, $color:"") {
     color: $color;
     font: $weight $size $main_font;
+    // font weights: 500, 600;
 }
 
 @mixin font_white() {
@@ -30,13 +32,25 @@ $main_font: 'Raleway', sans-serif;
     @include main_font(16px, 600, $white);
 }
 
-@mixin hover_trans($sec: 0.25s) {
+@mixin hover_trans($sec) {
     -webkit-transition: all $sec ease-in-out;
        -moz-transition: all $sec ease-in-out;
         -ms-transition: all $sec ease-in-out;
          -o-transition: all $sec ease-in-out;
             transition: all $sec ease-in-out;
   }
+
+@mixin border-radius($size) {
+    border-radius: $size; /* the magic */
+    -moz-border-radius: $size;
+    -webkit-border-radius: $size;
+}
+
+@mixin box-shadow($color, $radius, $spread) {
+    -webkit-box-shadow: 0px 0px $radius $spread $color;
+    -moz-box-shadow: 0px 0px $radius $spread $color;
+    box-shadow: 0px 0px $radius $spread $color;
+}
 
 @mixin button_style_inverted() {
     background-color: transparent;
@@ -49,7 +63,7 @@ $main_font: 'Raleway', sans-serif;
     align-self: center;
     font-weight: 600;
     &:hover {
-        @include hover_trans();
+        @include hover_trans(0.25s);
         color: $white;
         border: 2px $white solid;
         background-color: $mediumpurple !important;
@@ -67,9 +81,28 @@ $main_font: 'Raleway', sans-serif;
     align-self: center;
     font-weight: 600;
     &:hover {
-        @include hover_trans();
+        @include hover_trans(0.25s);
         color: $white;
         border: 2px $white solid;
+        background-color: transparent;
+    }
+}
+
+@mixin button_style_wwo() {
+    background-color: transparent;
+    color: $midgrey;
+    border: 2px $midgrey solid;
+    border-radius: 25px;
+    font-family: $main_font;
+    white-space: nowrap;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    &:hover {
+        @include hover_trans(0.25s);
+        background-color: $white;
+        color: $darkpurple;
+        border: 2px $darkpurple solid;
         background-color: transparent;
     }
 }

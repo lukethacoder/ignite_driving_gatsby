@@ -17,8 +17,6 @@ import { faPhone } from '@fortawesome/fontawesome-free-solid'
 import './style.scss'
 import './index.scss'
 
-
-
 /* stateless function */
 const Header = () => (
   <nav className="navbar">

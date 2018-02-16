@@ -7,6 +7,8 @@ h2 {
     font-size: 80px;
 }
 
+//index.js
+
 .pageContent {
     width: 100%;
     padding: 0;
@@ -49,15 +51,145 @@ h2 {
         margin: 0;
         background-color: $darkpurple;
         h3 {
+            width: 75%;
             text-align: center;
             color: $lightgrey;
-            margin: 0;
+            margin: 0 auto;
             padding: 20% 5%;
+        }
+    }
+    .whatWeOffer {
+        width: 100%;
+        height: auto;
+        padding: 10%;
+        margin: 0 auto;
+        background-color: $darkpurple;
+        section {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            div {
+                display: grid;
+                justify-self: center;
+                align-self: stretch;
+                justify-content: center;
+                align-content: center;
+                background-color: $lightgrey;
+                height: auto;
+                width: auto;
+                margin: 1%;
+                padding: 1%;
+                h2 {
+                    @include main_font(24px, 600, $midgrey);
+                    text-align: center;
+                    height: 75px;
+                    margin: 10% 10% 0% 10%;
+                    padding: 1%;
+                }
+                svg {
+                    width: 80%;
+                    height: auto;
+                    margin: 0% 10%;
+                    text-align: center;
+                    padding: 20%;
+                    color: $midgrey;
+                    background-color: $white;
+                    @include border-radius(50%);
+                }
+                p {
+                    @include main_font(16px, 500, $midgrey);
+                    width: 80%;
+                    margin: 10%;
+                    padding: 7% 0%;
+                    text-align: center;
+                    border-top: 2px solid $midgrey;
+                    border-bottom: 2px solid $midgrey;
+                }
+                a {
+                    width: 80%;
+                    margin: 5% 10% 10% 10%;
+                    padding: 5% 0;
+                    text-align: center;
+                    @include main_font(16px, 500, $midgrey);
+                    @include button_style_wwo();
+                }
+            }
         }
     }
 }
 
-@mixin header_coontent--md() {
+@mixin content--sm() {
+    .pageContent {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 0;
+        .whatWeOffer {
+        width: 100%;
+        height: auto;
+        padding: 10%;
+        margin: 0 auto;
+            section {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto;
+                div {
+                    display: grid;
+                    justify-self: center;
+                    align-self: stretch;
+                    justify-content: center;
+                    align-content: center;
+                    background-color: $lightgrey;
+                    height: auto;
+                    width: auto;
+                    margin: 2%;
+                    padding: 2%;
+                    &:hover {
+                        @include box-shadow($rgb_mediumpurple, 35px, 5px);
+                        @include hover_trans($sec: 0.25s);
+                    }
+                    
+                    h2 {
+                        @include main_font(24px, 600, $midgrey);
+                        text-align: center;
+                        height: 75px;
+                        margin: 10% 10% 0% 10%;
+                        padding: 1%;
+                    }
+                    svg {
+                        width: 80%;
+                        height: auto;
+                        margin: 0% 10%;
+                        text-align: center;
+                        padding: 20%;
+                        color: $midgrey;
+                        background-color: $white;
+                        @include border-radius(50%);
+                    }
+                    p {
+                        @include main_font(16px, 500, $midgrey);
+                        width: 80%;
+                        margin: 10%;
+                        padding: 7% 0%;
+                        text-align: center;
+                        border-top: 2px solid $midgrey;
+                        border-bottom: 2px solid $midgrey;
+                    }
+                    a {
+                        width: 80%;
+                        margin: 5% 10% 10% 10%;
+                        padding: 5% 0;
+                        text-align: center;
+                        @include main_font(16px, 500, $midgrey);
+                        @include button_style_wwo();
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin content--md() {
     .pageContent {
         width: 100%;
         padding: 0;
@@ -79,15 +211,177 @@ h2 {
         }
         .indexAbout {
             width: 100%;
-            height: auto;
-            padding: 0;
-            margin: 0;
-            background-color: $darkpurple;
+            height: 450px;
             h3 {
+                width: 50%;
+                height: auto;
                 text-align: center;
                 color: $lightgrey;
-                margin: 0;
+                margin: 0 auto;
                 padding: 20% 5%;
+            }
+        }
+
+        .whatWeOffer {
+            width: 100%;
+            height: auto;
+            padding: 10%;
+            margin: 0 auto;
+            background-color: $darkpurple;
+            section {
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+                grid-template-rows: auto;
+                div {
+                    display: grid;
+                    justify-self: center;
+                    align-self: stretch;
+                    justify-content: center;
+                    align-content: center;
+                    background-color: $lightgrey;
+                    height: auto;
+                    width: auto;
+                    margin: 2%;
+                    padding: 2%;
+                    &:hover {
+                        @include box-shadow($rgb_mediumpurple, 35px, 5px);
+                        @include hover_trans($sec: 0.25s);
+                    }
+                    
+                    h2 {
+                        @include main_font(24px, 600, $midgrey);
+                        text-align: center;
+                        height: 75px;
+                        margin: 10% 10% 0% 10%;
+                        padding: 1%;
+                    }
+                    svg {
+                        width: 80%;
+                        height: auto;
+                        margin: 0% 10%;
+                        text-align: center;
+                        padding: 20%;
+                        color: $midgrey;
+                        background-color: $white;
+                        @include border-radius(50%);
+                    }
+                    p {
+                        @include main_font(16px, 500, $midgrey);
+                        width: 80%;
+                        margin: 10%;
+                        padding: 7% 0%;
+                        text-align: center;
+                        border-top: 2px solid $midgrey;
+                        border-bottom: 2px solid $midgrey;
+                    }
+                    a {
+                        width: 80%;
+                        margin: 5% 10% 10% 10%;
+                        padding: 5% 0;
+                        text-align: center;
+                        @include main_font(16px, 500, $midgrey);
+                        @include button_style_wwo();
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin content--lg(){
+    .pageContent {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 0;
+            .headerContainer {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            position: relative;
+            section {
+                width: 80%;
+                height: auto;
+                padding: 10% 0;
+                margin: auto;
+            }
+        }
+        .indexAbout {
+            width: 100%;
+            height: 450px;
+            h3 {
+                width: 50%;
+                height: auto;
+                text-align: center;
+                color: $lightgrey;
+                margin: 0 auto;
+                padding: 20% 5%;
+            }
+        }
+
+        .whatWeOffer {
+            width: 100%;
+            height: auto;
+            padding: 10%;
+            margin: 0 auto;
+            background-color: $darkpurple;
+            section {
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+                grid-template-rows: auto;
+                div {
+                    display: grid;
+                    justify-self: center;
+                    align-self: stretch;
+                    justify-content: center;
+                    align-content: center;
+                    background-color: $lightgrey;
+                    height: auto;
+                    width: auto;
+                    margin: 2%;
+                    padding: 2%;
+                    &:hover {
+                        @include box-shadow($rgb_mediumpurple, 35px, 5px);
+                        @include hover_trans($sec: 0.25s);
+                    }
+                    
+                    h2 {
+                        @include main_font(24px, 600, $midgrey);
+                        text-align: center;
+                        height: 75px;
+                        margin: 10% 10% 0% 10%;
+                        padding: 1%;
+                    }
+                    svg {
+                        width: 80%;
+                        height: auto;
+                        margin: 0% 10%;
+                        text-align: center;
+                        padding: 20%;
+                        color: $midgrey;
+                        background-color: $white;
+                        @include border-radius(50%);
+                    }
+                    p {
+                        @include main_font(16px, 500, $midgrey);
+                        width: 80%;
+                        margin: 10%;
+                        padding: 7% 0%;
+                        text-align: center;
+                        border-top: 2px solid $midgrey;
+                        border-bottom: 2px solid $midgrey;
+                    }
+                    a {
+                        width: 80%;
+                        margin: 5% 10% 10% 10%;
+                        padding: 5% 0;
+                        text-align: center;
+                        @include main_font(16px, 500, $midgrey);
+                        @include button_style_wwo();
+                    }
+                }
             }
         }
     }

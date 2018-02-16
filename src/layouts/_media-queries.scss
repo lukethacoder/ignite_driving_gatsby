@@ -8,16 +8,16 @@
 }
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (min-width:600px) {
-    
+    @include content--sm();
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:801px) {
     @include navbar--md();
-    @include header_coontent--md();
+    @include content--md();
 }
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) {
-    
+    @include content--lg();
 }
 /* hi-res laptops and desktops */
 @media (min-width:1281px) {
