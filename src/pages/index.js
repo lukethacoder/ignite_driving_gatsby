@@ -3,6 +3,10 @@ import Link from 'gatsby-link'
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faPencilAlt } from '@fortawesome/fontawesome-free-solid'
+import { faBook } from '@fortawesome/fontawesome-free-solid'
+import { faSyncAlt } from '@fortawesome/fontawesome-free-solid'
+import { faKey } from '@fortawesome/fontawesome-free-solid'
+import { faCar } from '@fortawesome/fontawesome-free-solid'
 
 const IndexPage = () => (
   <section className="pageContent">
@@ -19,7 +23,7 @@ const IndexPage = () => (
     </header>
 
     <section className="indexAbout">
-      <h3>Based in Canberra ignite driving aims to help safely transition L plater drivers to confident and safe P plater drivers using thourrough and informative teaching technique</h3>
+      <h3>Based in Canberra Ignite Driving aims to help safely transition L plater drivers to confident and safe P plater drivers using thourrough and informative teaching technique</h3>
     </section> 
 
     <section className="whatWeOffer">
@@ -33,28 +37,28 @@ const IndexPage = () => (
 
         <div>
           <h2>Log Book</h2>
-          <FontAwesomeIcon icon={faPencilAlt}/>
+          <FontAwesomeIcon icon={faBook}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
           <Link to="/whatweoffer.js">More Info</Link>
         </div>
 
         <div>
           <h2>Refresher Lesson</h2>
-          <FontAwesomeIcon icon={faPencilAlt}/>
+          <FontAwesomeIcon icon={faSyncAlt}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
           <Link to="/whatweoffer.js">Book Lesson</Link>
         </div>
 
         <div>
           <h2>Keys 2 Drive</h2>
-          <FontAwesomeIcon icon={faPencilAlt}/>
+          <FontAwesomeIcon icon={faKey}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
           <Link to="/whatweoffer.js">Free Lesson</Link>
         </div>
 
         <div>
           <h2>Car Hire</h2>
-          <FontAwesomeIcon icon={faPencilAlt}/>
+          <FontAwesomeIcon icon={faCar}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
           <Link to="/whatweoffer.js">Book a Car</Link>
         </div>
@@ -62,7 +66,7 @@ const IndexPage = () => (
     </section>
 
     <section className="googleReviews">
-      
+
     </section>
   </section>
 )

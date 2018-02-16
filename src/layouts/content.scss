@@ -78,18 +78,19 @@ h2 {
                 height: auto;
                 width: auto;
                 margin: 1%;
+                margin-bottom: 5%;
                 padding: 1%;
                 h2 {
-                    @include main_font(24px, 600, $midgrey);
+                    @include main_font(42px, 600, $midgrey);
                     text-align: center;
                     height: 75px;
                     margin: 10% 10% 0% 10%;
                     padding: 1%;
                 }
                 svg {
-                    width: 80%;
+                    width: 70%;
                     height: auto;
-                    margin: 0% 10%;
+                    margin: 0% 15%;
                     text-align: center;
                     padding: 20%;
                     color: $midgrey;
@@ -97,7 +98,7 @@ h2 {
                     @include border-radius(50%);
                 }
                 p {
-                    @include main_font(16px, 500, $midgrey);
+                    @include main_font(24px, 500, $midgrey);
                     width: 80%;
                     margin: 10%;
                     padding: 7% 0%;
@@ -110,7 +111,7 @@ h2 {
                     margin: 5% 10% 10% 10%;
                     padding: 5% 0;
                     text-align: center;
-                    @include main_font(16px, 500, $midgrey);
+                    @include main_font(32px, 500, $midgrey);
                     @include button_style_wwo();
                 }
             }
@@ -148,7 +149,6 @@ h2 {
                         @include box-shadow($rgb_mediumpurple, 35px, 5px);
                         @include hover_trans($sec: 0.25s);
                     }
-                    
                     h2 {
                         @include main_font(24px, 600, $midgrey);
                         text-align: center;
@@ -165,6 +165,10 @@ h2 {
                         color: $midgrey;
                         background-color: $white;
                         @include border-radius(50%);
+                    }
+                    svg:nth-of-type(2){
+                        height: 70%;
+                        background-color: green;
                     }
                     p {
                         @include main_font(16px, 500, $midgrey);
