@@ -6,22 +6,21 @@
     display: block;
     font-family: $main_font;
     .navContact {
-        width: 80%;
-        height: 50px;
-        padding: 1%;
+        width: 100%;
+        height: auto;
         margin: 0 auto;
-        display: flex;
+        display: block;
         margin: 0 auto;
-        padding: 1% 2%;
+        padding: 3% 2%;
         list-style-type: none;
         li {
-            width: auto;
+            width: 100%;
             height: auto;
             margin: 0 auto;
             padding: 0;
             float: left;
             text-align: center;
-            white-space: nowrap;
+            // white-space: nowrap;
             a {
                 margin: auto 10%;
                 text-decoration: none;
@@ -33,7 +32,7 @@
         width: 100%;
         height: 20vh;
         position: absolute;
-        top: 0;
+        top: 30px;
         left: 0;
         display: block;
         .navContact {
@@ -91,20 +90,19 @@
                 padding: 3% 0;
                 margin: 0;
                 display: block;
+                height: 75px;
                 a {
                     width: 100%;
-                    height: auto;
+                    height: 100%;
                     display: block;
-                    font-size: 12px;
-                    color: $darkgrey;
+                    @include main_font(13px, 500, $darkgrey);
                     margin: 0 auto;
                     padding: 0;
                     svg {
                         width: 100%;
-                        height: 24px;
+                        height: 25px;
                         color: $darkgrey;
-                        margin: 0;
-                        margin-top: 5%;
+                        margin: 5% 0 5% 0;
                         padding: 0;
                     }
                 }
@@ -120,14 +118,46 @@
             }
         }
         .bookNowNav {
-            font-family: $main_font;
+            @include main_font(16px, 600, $white);
             background-color: $mediumpurple;
             width: 100%;
             height: auto;
             text-align: center;
             margin: auto;
-            padding: 2% 0;
+            padding: 3% 0;
             order: 1;
+        }
+    }
+}
+@mixin navbar--sm() {
+    .navbar {
+        .bottomNav {
+            .navMenuList {
+                li {    
+                    padding: 3% 0;
+                    margin: 0;
+                    display: block;
+                    height: 75px;
+                    a {
+                        @include main_font(13px, 500, $darkgrey);
+                        height: 100%;
+                        svg {
+                            width: 100%;
+                            height: 28px;
+                        }
+                    }
+                }
+            }
+            .bookNowNav {
+                font-family: $main_font;
+                background-color: $mediumpurple;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin: auto;
+                padding: 2% 0;
+                order: 1;
+            }
         }
     }
 }
@@ -164,7 +194,7 @@
         }
         .topNav {
         width: 30%;
-        height: 100%;
+        height: 150px;
         position: relative;
         float: left;
         display: block;
@@ -176,8 +206,8 @@
                 float: left;
                 position: relative;
                 img {
-                    width: 100%;
-                    max-height: 100%;
+                    max-width: 100%;
+                    height: 100%;
                     float: left;
                     margin: 0;
                     padding: 0;
@@ -187,8 +217,7 @@
         }
         .bottomNav {
             width: 70%;
-            height: auto;
-            // margin: 0 auto;
+            height: 150px;
             position: relative;
             display: flex;
             flex-direction: row;
@@ -203,16 +232,120 @@
                 display: flex;
                 justify-content: flex-end;
                 order: 1;
+                height: auto;
                 li {
                     padding: 3% 0;
                     margin: 0 2%;
+                    height: auto;
                     display: block;
                     a {
+                        @include main_font(14px, 500, $white);
                         width: 100%;
                         height: auto;
                         display: block;
-                        font-size: 18px;
-                        color: $white;
+                        margin: 0;
+                        padding: 0;
+                        svg {
+                            display: none;
+                        }
+                    }
+                }
+                .navActive {
+                    background-color: transparent;
+                }
+            }
+            .bookNowNav {
+                @include button_style();
+                font-size: 16px;
+                padding: 8px 18px;
+                margin-left: 25px;
+                width: auto;
+            }
+        }
+    }
+}
+@mixin navbar-lg() {
+    .navbar {
+        width: 80%;
+        height: auto;
+        margin: 0 10%;
+        display: block;
+        position: relative;
+        .navContact {
+            width: 80%;
+            height: 50px;
+            padding: 1%;
+            margin: 0 auto;
+            display: flex;
+            margin: 0 auto;
+            padding: 1% 2%;
+            list-style-type: none;
+            li {
+                width: auto;
+                height: auto;
+                margin: 0 auto;
+                padding: 0;
+                float: left;
+                text-align: center;
+                white-space: nowrap;
+                a {
+                    margin: auto 10%;
+                    text-decoration: none;
+                }
+            }
+        
+        }
+        .topNav {
+        width: 30%;
+        height: 150px;
+        position: relative;
+        float: left;
+        display: block;
+        padding: 0;
+        background-color: transparent;
+            a {
+                width: auto;
+                height: 100%;
+                float: left;
+                position: relative;
+                img {
+                    max-width: 100%;
+                    height: 100%;
+                    float: left;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            
+        }
+        .bottomNav {
+            width: 70%;
+            height: 150px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            background-color: transparent;
+            .navMenuList {
+                width: 75%;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                float: right;
+                display: flex;
+                justify-content: flex-end;
+                order: 1;
+                height: auto;
+                li {
+                    padding: 3% 0;
+                    margin: 0 2%;
+                    height: auto;
+                    display: block;
+                    a {
+                        @include main_font(18px, 500, $white);
+                        width: 100%;
+                        height: auto;
+                        display: block;
                         margin: 0;
                         padding: 0;
                         svg {

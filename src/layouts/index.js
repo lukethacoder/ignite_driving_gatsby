@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import logo from "../assets/logo.svg"
+import bgimg from "../assets/bgimg.jpg";
 
 // import { TypographyStyle, GoogleFont } from 'react-typography'
 // import typography from 'utils/typography'

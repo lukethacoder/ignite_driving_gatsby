@@ -32,6 +32,30 @@ $main_font: 'Raleway', sans-serif;
     @include main_font(16px, 600, $white);
 }
 
+@mixin background($url, $size, $position, $repeat, $color) {
+    background: $url;
+    -webkit-background: $url;
+    -moz-background: $url;
+    -o-background: $url;
+
+    background-size: $size;
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+
+    background-position: $position;
+    -webkit-background-position: $position;
+    -moz-background-position: $position;
+    -o-background-position: $position;
+
+    background-repeat: $repeat;
+    -webkit-background-position: $position;
+    -moz-background-position: $position;
+    -o-background-position: $position;
+
+    background-color: $color;
+}
+
 @mixin hover_trans($sec) {
     -webkit-transition: all $sec ease-in-out;
        -moz-transition: all $sec ease-in-out;
@@ -92,12 +116,10 @@ $main_font: 'Raleway', sans-serif;
     background-color: transparent;
     color: $midgrey;
     border: 2px $midgrey solid;
-    border-radius: 25px;
-    font-family: $main_font;
+    border-radius: 50px;
     white-space: nowrap;
     text-align: center;
     align-self: center;
-    font-weight: 600;
     &:hover {
         @include hover_trans(0.25s);
         background-color: $white;
