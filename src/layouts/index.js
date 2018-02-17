@@ -55,7 +55,7 @@ const Header = () => (
 )
 
 const Footer = () => (
-  <footer>
+  <footer className="mainFooter">
     <section>
     </section>
     <section>

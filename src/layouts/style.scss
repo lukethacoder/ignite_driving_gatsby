@@ -1,5 +1,6 @@
 @import "nav.scss";
 @import "content.scss";
+@import "footer.scss";
 @import "_media-queries.scss";
 
 html {
@@ -16,7 +17,7 @@ body {
     width: auto;
     height: auto;
     > div{
-        background-image: radial-gradient(rgba(85, 59, 140, .75), rgba(27, 20, 50, .75));
+        background-image: radial-gradient(rgba(85, 59, 140, .8), rgba(27, 20, 50, .8));
         .headerContainer {
             background-image: linear-gradient(180deg, rgba(85, 59, 140, 0), rgba(27, 20, 50, 1));
         }
@@ -29,12 +30,17 @@ body {
 }
 @media (min-width:600px) {
     body {
-        @include background(url('../assets/bgimg.jpg'), 150% auto, top, no-repeat, rgba(27, 20, 50, 1)); //background($url, $size, $position, $repeat, $color
+        @include background(url('../assets/bgimg.jpg'), 175% auto, top, no-repeat, rgba(27, 20, 50, 1)); //background($url, $size, $position, $repeat, $color
     }
 }
 @media (min-width:801px) {
     body {
-        @include background(url('../assets/bgimg.jpg'), 150% auto, top, no-repeat, rgba(27, 20, 50, 1)); //background($url, $size, $position, $repeat, $color
+        @include background(url('../assets/bgimg.jpg'), 155% auto, top, no-repeat, rgba(27, 20, 50, 1)); //background($url, $size, $position, $repeat, $color
+    }
+}
+@media (min-width:1025px) {
+    body {
+        @include background(url('../assets/bgimg.jpg'), 145% auto, top, no-repeat, rgba(27, 20, 50, 1)); //background($url, $size, $position, $repeat, $color
     }
 }
 a {

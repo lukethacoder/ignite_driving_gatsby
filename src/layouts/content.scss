@@ -335,18 +335,26 @@ h2 {
         padding: 0;
         margin: 0;
         z-index: 0;
-            .headerContainer {
+        .headerContainer {
             width: 100%;
-            height: auto;
-            padding: 0;
+            height: 80vh;
+            padding-top: 0;
             text-align: center;
             display: flex;
-            position: relative;
             section {
-                width: 80%;
-                height: auto;
-                padding: 10% 0;
-                margin: auto;
+                h1 {
+                    @include main_font(48px, 600, $white);
+                }
+                h2 {
+                    @include main_font(32px, 600, $white);
+                }
+                a {
+                    @include button_style_inverted();
+                    @include main_font(24px, 600, $white);
+                }
+                p {
+                    @include main_font(18px, 500, $white);
+                }
             }
         }
         .indexAbout {

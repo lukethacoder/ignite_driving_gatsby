@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/ignite_driving_gatsby`,
   siteMetadata: {
     title: `Ignite Driving`,
   },
@@ -14,5 +15,5 @@ module.exports = {
       }
     },
     `gatsby-transformer-remark`
-  ],
+  ], 
 }
