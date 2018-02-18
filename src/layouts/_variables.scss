@@ -7,7 +7,12 @@ $darkgrey: #636566;
 $midgrey: #95989A;
 $lightgrey: #f6f6f6;
 
-$main_font: 'Raleway', sans-serif;
+$main_font: 'Raleway', sans-serif; 
+
+@mixin page_container($width, $margin_vertical){
+    width: $width;
+    margin: $margin_vertical (100 - $width) / 2;
+}
 
 @mixin main_font($size, $weight, $color:"") {
     color: $color;
@@ -15,21 +20,10 @@ $main_font: 'Raleway', sans-serif;
     // font weights: 500, 600;
 }
 
-@mixin font_white() {
-    font-family: $main_font;
-    color: $white;
-}
-
-@mixin h1_white() {
-    @include main_font(74px, 600, $white);
-}
-
-@mixin h2_white() {
-    @include main_font(46px, 600, $white);
-}
-
-@mixin p_white() {
-    @include main_font(16px, 600, $white);
+@mixin list_reset() {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 @mixin background($url, $size, $position, $repeat, $color) {
@@ -62,7 +56,7 @@ $main_font: 'Raleway', sans-serif;
         -ms-transition: all $sec ease-in-out;
          -o-transition: all $sec ease-in-out;
             transition: all $sec ease-in-out;
-  }
+}
 
 @mixin border-radius($size) {
     border-radius: $size; /* the magic */
