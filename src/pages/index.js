@@ -7,17 +7,16 @@ import { faBook } from '@fortawesome/fontawesome-free-solid'
 import { faSyncAlt } from '@fortawesome/fontawesome-free-solid'
 import { faKey } from '@fortawesome/fontawesome-free-solid'
 import { faCar } from '@fortawesome/fontawesome-free-solid'
+import { faStar } from '@fortawesome/fontawesome-free-solid'
 
 const IndexPage = () => (
   <section className="pageContent">
 
     <header className="headerContainer">
       <section className="headerSection">
-        {/* <TypographyStyle typography={typography}>FEBRUARY SPECIAL</TypographyStyle> */}
-        {/* <h1>FEBRUARY SPECIAL</h1> */}
         <h1>FEBRUARY SPECIAL</h1>
         <h2>$10 off your first lesson</h2>
-        <Link to="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book my first lesson</Link>
+        <a className="bookNowNav" href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">Book my first lesson</a>
         <p>T&C's apply</p>
       </section>
     </header>
@@ -66,9 +65,13 @@ const IndexPage = () => (
     </section>
 
     <section className="googleReviews">
-
+      <div className="wrap">
+        
+    
+      </div>
     </section>
   </section>
+  
 )
 
 export default IndexPage

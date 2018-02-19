@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const WhatWeOffer = () => (
+const About = () => (
   <div>
-    <h1>what we offer </h1>
+    <h1>ABout</h1>
     <div>
       <Link to="/">page trans eh</Link>
     </div>
@@ -14,4 +14,4 @@ const WhatWeOffer = () => (
   </div>
 )
 
-export default WhatWeOffer
+export default About

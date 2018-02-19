@@ -30,22 +30,22 @@ const Header = () => (
     <section className="bottomNav">
       <ul className="navMenuList">
         <li>
-          <Link to="/WhatWeOffer/"><FontAwesomeIcon icon={faCar}/>What We Offer</Link>
+          <Link to="/whatweoffer/"><FontAwesomeIcon icon={faCar}/>What We Offer</Link>
         </li>
         <li>
-            <Link to="/"><FontAwesomeIcon icon={faDollarSign}/>Pricing</Link>
+          <Link to="/"><FontAwesomeIcon icon={faDollarSign}/>Pricing</Link>
         </li>
-        <li className="navActive">
+        <li className="activeClassName">
           <Link to="/"><FontAwesomeIcon icon={faHome}/>Home</Link>
         </li>
         <li>
-          <Link to="/WhatWeOffer/"><FontAwesomeIcon icon={faInfo}/>About</Link>
+          <Link to="/about/"><FontAwesomeIcon icon={faInfo}/>About</Link>
         </li>
         <li>
           <Link to="/"><FontAwesomeIcon icon={faPhone}/>Contact</Link>
         </li>
       </ul>
-      <Link className="bookNowNav" to="/">BOOK NOW</Link>
+      <a className="bookNowNav" href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">BOOK NOW</a>
     </section>
   </nav>
 )
@@ -58,9 +58,9 @@ const Footer = () => (
           <ul>
             <li>Ignite Driving</li>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/">What We Offer</Link></li>
+            <li><Link to="/whatweoffer/">What We Offer</Link></li>
             <li><Link to="/">Pricing</Link></li>
-            <li><Link to="/">About</Link></li>
+            <li><Link to="/about/">About</Link></li>
             <li><Link to="/">Contact</Link></li>
           </ul>
         </div>

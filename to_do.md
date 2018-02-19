@@ -2,6 +2,10 @@
 
 - google reviews section (dont bother with api/auto grabbing functionality atm)
 - instagram api integration - somehow get latest images from instagram feed
+- possible use `gatsby-transformer-javascript-frontmatter` to get REST API data
+- site map using `gatbsy-plugin-sitemap`
+- googleanalytics using `gatsby-plugin-google-analytics`
+- properly implement activeClassName using `gatsby-link`
 
 
 

@@ -108,7 +108,7 @@
                     }
                 }
             }
-            .navActive {
+            .activeClassName {
                 background-color: $mediumpurple;
                 svg {
                     color: $white;
@@ -251,7 +251,7 @@
                         }
                     }
                 }
-                .navActive {
+                .activeClassName {
                     background-color: transparent;
                 }
             }
@@ -352,9 +352,6 @@
                             display: none;
                         }
                     }
-                }
-                .navActive {
-                    background-color: transparent;
                 }
             }
             .bookNowNav {
