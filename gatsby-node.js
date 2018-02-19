@@ -10,9 +10,7 @@
 
 //  exports.createPages = ({boundActionCreators, graphql}) => {
 //      const {createPage} = boundActionCreators;
-
 //      const postTemplate = path.resolve('src/pages/whatweoffer.js');
-    
 //      /* put sorting inside brackets (after allMarkdownRemark)*/
 //     return graphql(`{
 //         allMarkdownRemark {
@@ -41,3 +39,13 @@
 //         })
 //     })
 //  }
+
+// exports.sourceNodes = async ({ boundActionCreators }) => {
+//     const { createNode } = boundActionCreators;
+
+//     const data = await fetch("https://www.instagram.com/ignitedriving/?__a=1");
+
+//     dat.forEach(datum => createNode(processDatum(datum)));
+
+//     return;
+// }

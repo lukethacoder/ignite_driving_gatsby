@@ -4,18 +4,18 @@
     width: 100%;
     height: auto;
     padding: 0;
+    margin-bottom: 200px;
     background-color: $darkpurple;
     position: relative;
     .footerMain {
-        @include page_container(80%, 0); 
-        
+        @include page_container(80%, 0);
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         z-index: 50;
         > div { //not include instagram plug in
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 1fr;
             grid-template-rows: auto;
             z-index: 50;
             background-color: $white;
@@ -31,12 +31,6 @@
                         border-bottom: 2px solid $mediumpurple;
                     }
                     li {
-                        &:hover {
-                            a {
-                                @include hover_trans(0.25s);
-                                color: $mediumpurple;
-                            }
-                        }
                         a {
                             @include main_font(20px, 500, $midgrey);
                         }
@@ -60,12 +54,6 @@
                     li {
                         height: auto;
                         border: 0;
-                        &:hover {
-                            a {
-                                @include hover_trans(0.25s);
-                                color: $mediumpurple;
-                            }
-                        }
                         a {
                             @include main_font(20px, 500, $midgrey);
                             @include hover_trans(0.25s);
@@ -88,19 +76,10 @@
                         padding: 0 3% 0 0;
                         float: left;
                         display: block;
-                        &:hover {
-                            a {
-                                svg {
-                                    @include hover_trans(0.25s);
-                                    color: $mediumpurple;
-                                }
-                            }
-                        }
                         a {
                             height: 100%;
                             width: auto;
                             svg {
-                                @include hover_trans(0.25s);
                                 height: 100%;
                                 width: auto;
                                 color: $midgrey;
@@ -120,65 +99,837 @@
         .footerInstagram {
             width: 100%;
             height: 100%;   
-            background-color: pink;
+            background-color: $white;
             padding: 5%;
-            p {
-                
+            margin: 0;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 2;
+            div {
+                width: 100%;
+                max-height: 85%;
+                margin: 0;
+                padding: 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                a {
+                    margin: 0;
+                    padding: 0;
+                    display: inline-block;
+                    align-self: stretch;
+                    padding: 0;
+                    img {
+                        width: 96%;
+                        height: auto;
+                        padding: 0%;
+                        margin: 2%;
+                        border: 1px solid $mediumpurple;
+                    }
+                }
+            }
+            > a {
+                @include main_font(16px, 500, $darkpurple);
+                width: 70%;
+                padding: 2% 1%;
+                margin: 0 15%;
+                text-align: center;
+                align-self: end;
+                border: 2px $mediumpurple solid;
+                border-radius: 50px;
+                white-space: nowrap;
             }
         }
     }
     .footerBottom {
-        height: 275px;
+        height: 420px;
         position: absolute;
-        bottom: -50px;
+        bottom: -80px;
         left: 0;    
         width: 100%;
         background-color: $lightgrey;
         z-index: 0;
         div {
-            height: 50px;
+            height: 75px;
             position: absolute;
             bottom: 0;
             left: 0;
             padding: 1% 1%;
             display: grid;
-            grid-template-columns: 30% auto 30%;
+            grid-template-columns: 1fr;
             grid-template-rows: auto;
-            @include page_container(80%, 0); 
+            @include page_container(80%, 0);
             ul {
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
+                width: 100%;
+                display: inline-flex;
                 li {
+                    width: auto;
                     @include main_font(14px, 500, $darkgrey);
                     text-decoration: none;
-                    float: left;
-                    margin: 0 5% 0 0;
+                    text-align: center;
+                    margin: 1% auto;
                 }
             }
             a:nth-of-type(1) {
+                width: 100%;
                 text-align: center;
                 @include main_font(14px, 500, $darkgrey);
             }
             a:nth-of-type(2) {
-                text-align: right;
+                width: 100%;
+                text-align: center;
                 @include main_font(14px, 500, $darkgrey);
             }
         }
     }
 }
 @mixin footer-xs(){
-    
+    .footer {
+        .footerMain {
+            > div { //not include instagram plug in
+                .footerNav {
+                    ul {
+                        @include list_reset();
+                        li:nth-of-type(1){
+                            @include main_font(22px, 500, $mediumpurple);
+                            padding-bottom: 5px;
+                        }
+                        li {
+                            a {
+                                @include main_font(20px, 500, $midgrey);
+                            }
+                        }
+                    }
+                }
+                .footerContact {
+                    .footerContactChild {
+                        > li:nth-of-type(1){
+                            @include main_font(22px, 500, $mediumpurple);
+                        }
+                        li {
+                            a {
+                                @include main_font(20px, 500, $midgrey);
+                                @include hover_trans(0.25s);
+                            }
+                        }
+                    }
+                    .footerSocials {
+                        width: 100%;
+                        height: 45px;
+                        bottom: 5%;
+                        left: 5%;
+                        li {
+                            width: auto;
+                            height: 100%;
+                            margin: 0;
+                            padding: 0 3% 0 0;
+                            a {
+                                height: 100%;
+                                width: auto;
+                                svg {
+                                    height: 100%;
+                                    width: auto;
+                                    color: $midgrey;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .img_adta {
+                    padding: 5% 25% 1% 10%;
+                }
+                .img_k2d{
+                    padding: 5% 25% 1% 10%;
+                }
+            }
+            .footerInstagram {
+                width: 100%;
+                height: 100%;   
+                padding: 5%;
+                margin: 0;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 2;
+                div {
+                    width: 100%;
+                    max-height: 85%;
+                    margin: 0;
+                    padding: 0;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    a {
+                        img {
+                        }
+                    }
+                }
+                > a {
+                    @include main_font(16px, 500, $darkpurple);
+                    width: 70%;
+                    padding: 2% 1%;
+                    margin: 0 15%;
+                    border-radius: 50px;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .footerBottom {
+            height: 275px;
+            position: absolute;
+            bottom: -50px;
+            left: 0;    
+            width: 100%;
+            background-color: $lightgrey;
+            z-index: 0;
+            div {
+                height: 50px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 1% 1%;
+                display: grid;
+                grid-template-columns: 30% auto 30%;
+                grid-template-rows: auto;
+                @include page_container(80%, 0); 
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        @include main_font(14px, 500, $darkgrey);
+                        text-decoration: none;
+                        float: left;
+                        margin: 0 5% 0 0;
+                    }
+                }
+                a:nth-of-type(1) {
+                    text-align: center;
+                    @include main_font(14px, 500, $darkgrey);
+                }
+                a:nth-of-type(2) {
+                    text-align: right;
+                    @include main_font(14px, 500, $darkgrey);
+                }
+            }
+        }
+    }
 }
 @mixin footer-sm(){
-    
+    .footer {
+        .footerMain {
+            > div {
+                .footerNav {
+                    ul {
+                        @include list_reset();
+                        li:nth-of-type(1){
+                            @include main_font(22px, 500, $mediumpurple);
+                            padding-bottom: 5px;
+                        }
+                        li {
+                            a {
+                                @include main_font(20px, 500, $midgrey);
+                            }
+                        }
+                    }
+                }
+                .footerContact {
+                    .footerContactChild {
+                        > li:nth-of-type(1){
+                            @include main_font(22px, 500, $mediumpurple);
+                        }
+                        li {
+                            a {
+                                @include main_font(20px, 500, $midgrey);
+                                @include hover_trans(0.25s);
+                            }
+                        }
+                    }
+                    .footerSocials {
+                        width: 100%;
+                        height: 45px;
+                        bottom: 5%;
+                        left: 5%;
+                        li {
+                            width: auto;
+                            height: 100%;
+                            margin: 0;
+                            padding: 0 3% 0 0;
+                            a {
+                                height: 100%;
+                                width: auto;
+                                svg {
+                                    height: 100%;
+                                    width: auto;
+                                    color: $midgrey;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .img_adta {
+                    padding: 5% 25% 1% 10%;
+                }
+                .img_k2d{
+                    padding: 5% 25% 1% 10%;
+                }
+            }
+            .footerInstagram {
+                width: 100%;
+                height: 100%;   
+                padding: 5%;
+                margin: 0;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 2;
+                div {
+                    width: 100%;
+                    max-height: 85%;
+                    margin: 0;
+                    padding: 0;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    a {
+                        img {
+                        }
+                    }
+                }
+                > a {
+                    @include main_font(16px, 500, $darkpurple);
+                    width: 70%;
+                    padding: 2% 1%;
+                    margin: 0 15%;
+                    border-radius: 50px;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .footerBottom {
+            height: 275px;
+            position: absolute;
+            bottom: -50px;
+            left: 0;    
+            width: 100%;
+            background-color: $lightgrey;
+            z-index: 0;
+            div {
+                height: 50px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 1% 1%;
+                display: grid;
+                grid-template-columns: 30% auto 30%;
+                grid-template-rows: auto;
+                @include page_container(80%, 0); 
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        @include main_font(14px, 500, $darkgrey);
+                        text-decoration: none;
+                        float: left;
+                        margin: 0 5% 0 0;
+                    }
+                }
+                a:nth-of-type(1) {
+                    text-align: center;
+                    @include main_font(14px, 500, $darkgrey);
+                }
+                a:nth-of-type(2) {
+                    text-align: right;
+                    @include main_font(14px, 500, $darkgrey);
+                }
+            }
+        }
+    }
 }
 @mixin footer-md(){
-
+    .footer {
+        .footerMain {
+            > div { //not include instagram plug in
+                .footerNav {
+                    ul {
+                        @include list_reset();
+                        li:nth-of-type(1){
+                            @include main_font(22px, 500, $mediumpurple);
+                            padding-bottom: 5px;
+                        }
+                        li {
+                            &:hover {
+                                a {
+                                    @include hover_trans(0.25s);
+                                    color: $mediumpurple;
+                                }
+                            }
+                            a {
+                                @include main_font(20px, 500, $midgrey);
+                            }
+                        }
+                    }
+                }
+                .footerContact {
+                    .footerContactChild {
+                        > li:nth-of-type(1){
+                            @include main_font(22px, 500, $mediumpurple);
+                        }
+                        li {
+                            &:hover {
+                                a {
+                                    @include hover_trans(0.25s);
+                                    color: $mediumpurple;
+                                }
+                            }
+                            a {
+                                @include main_font(20px, 500, $midgrey);
+                                @include hover_trans(0.25s);
+                            }
+                        }
+                    }
+                    .footerSocials {
+                        width: 100%;
+                        height: 45px;
+                        bottom: 5%;
+                        left: 5%;
+                        li {
+                            width: auto;
+                            height: 100%;
+                            margin: 0;
+                            padding: 0 3% 0 0;
+                            &:hover {
+                                a {
+                                    svg {
+                                        @include hover_trans(0.25s);
+                                        color: $mediumpurple;
+                                    }
+                                }
+                            }
+                            a {
+                                height: 100%;
+                                width: auto;
+                                svg {
+                                    @include hover_trans(0.25s);
+                                    height: 100%;
+                                    width: auto;
+                                    color: $midgrey;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .img_adta {
+                    padding: 5% 25% 1% 10%;
+                }
+                .img_k2d{
+                    padding: 5% 25% 1% 10%;
+                }
+            }
+            .footerInstagram {
+                width: 100%;
+                height: 100%;   
+                padding: 5%;
+                margin: 0;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 2;
+                div {
+                    width: 100%;
+                    max-height: 85%;
+                    margin: 0;
+                    padding: 0;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    a {
+                        img {
+                        }
+                    }
+                }
+                > a {
+                    @include main_font(16px, 500, $darkpurple);
+                    width: 70%;
+                    padding: 2% 1%;
+                    margin: 0 15%;
+                    border-radius: 50px;
+                    white-space: nowrap;
+                    @include hover_trans(0.25s);
+                    &:hover {
+                        background-color: $darkpurple;
+                        // background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                        @include hover_trans(0.25s);
+                        color: $white;
+                        border: 2px $white solid;
+                    }
+                }
+            }
+        }
+        .footerBottom {
+            height: 275px;
+            position: absolute;
+            bottom: -50px;
+            left: 0;    
+            width: 100%;
+            background-color: $lightgrey;
+            z-index: 0;
+            div {
+                height: 50px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 1% 1%;
+                display: grid;
+                grid-template-columns: 30% auto 30%;
+                grid-template-rows: auto;
+                @include page_container(80%, 0); 
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        @include main_font(14px, 500, $darkgrey);
+                        text-decoration: none;
+                        float: left;
+                        margin: 0 5% 0 0;
+                    }
+                }
+                a:nth-of-type(1) {
+                    text-align: center;
+                    @include main_font(14px, 500, $darkgrey);
+                }
+                a:nth-of-type(2) {
+                    text-align: right;
+                    @include main_font(14px, 500, $darkgrey);
+                }
+            }
+        }
+    }  
 }
 @mixin footer-lg(){
-
+    .footer {
+        .footerMain {
+            > div { //not include instagram plug in
+                .footerNav {
+                    ul {
+                        @include list_reset();
+                        li:nth-of-type(1){
+                            @include main_font(22px, 500, $mediumpurple);
+                            padding-bottom: 5px;
+                        }
+                        li {
+                            &:hover {
+                                a {
+                                    @include hover_trans(0.25s);
+                                    color: $mediumpurple;
+                                }
+                            }
+                            a {
+                                @include main_font(20px, 500, $midgrey);
+                            }
+                        }
+                    }
+                }
+                .footerContact {
+                    .footerContactChild {
+                        > li:nth-of-type(1){
+                            @include main_font(22px, 500, $mediumpurple);
+                        }
+                        li {
+                            &:hover {
+                                a {
+                                    @include hover_trans(0.25s);
+                                    color: $mediumpurple;
+                                }
+                            }
+                            a {
+                                @include main_font(20px, 500, $midgrey);
+                                @include hover_trans(0.25s);
+                            }
+                        }
+                    }
+                    .footerSocials {
+                        width: 100%;
+                        height: 45px;
+                        bottom: 5%;
+                        left: 5%;
+                        li {
+                            width: auto;
+                            height: 100%;
+                            margin: 0;
+                            padding: 0 3% 0 0;
+                            &:hover {
+                                a {
+                                    svg {
+                                        @include hover_trans(0.25s);
+                                        color: $mediumpurple;
+                                    }
+                                }
+                            }
+                            a {
+                                height: 100%;
+                                width: auto;
+                                svg {
+                                    @include hover_trans(0.25s);
+                                    height: 100%;
+                                    width: auto;
+                                    color: $midgrey;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .img_adta {
+                    padding: 5% 25% 1% 10%;
+                }
+                .img_k2d{
+                    padding: 5% 25% 1% 10%;
+                }
+            }
+            .footerInstagram {
+                width: 100%;
+                height: 100%;   
+                padding: 5%;
+                margin: 0;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 2;
+                div {
+                    width: 100%;
+                    max-height: 85%;
+                    margin: 0;
+                    padding: 0;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    a {
+                        img {
+                        }
+                    }
+                }
+                > a {
+                    @include main_font(16px, 500, $darkpurple);
+                    width: 70%;
+                    padding: 2% 1%;
+                    margin: 0 15%;
+                    border-radius: 50px;
+                    white-space: nowrap;
+                    @include hover_trans(0.25s);
+                    &:hover {
+                        background-color: $darkpurple;
+                        // background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                        @include hover_trans(0.25s);
+                        color: $white;
+                        border: 2px $white solid;
+                    }
+                }
+            }
+        }
+        .footerBottom {
+            height: 275px;
+            position: absolute;
+            bottom: -50px;
+            left: 0;    
+            width: 100%;
+            background-color: $lightgrey;
+            z-index: 0;
+            div {
+                height: 50px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 1% 1%;
+                display: grid;
+                grid-template-columns: 30% auto 30%;
+                grid-template-rows: auto;
+                @include page_container(80%, 0); 
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        @include main_font(14px, 500, $darkgrey);
+                        text-decoration: none;
+                        float: left;
+                        margin: 0 5% 0 0;
+                    }
+                }
+                a:nth-of-type(1) {
+                    text-align: center;
+                    @include main_font(14px, 500, $darkgrey);
+                }
+                a:nth-of-type(2) {
+                    text-align: right;
+                    @include main_font(14px, 500, $darkgrey);
+                }
+            }
+        }
+    }  
 }
 @mixin footer-xl(){
-
+    .footer {
+        .footerMain {
+            > div { //not include instagram plug in
+                .footerNav {
+                    ul {
+                        @include list_reset();
+                        li:nth-of-type(1){
+                            @include main_font(22px, 500, $mediumpurple);
+                            padding-bottom: 5px;
+                        }
+                        li {
+                            &:hover {
+                                a {
+                                    @include hover_trans(0.25s);
+                                    color: $mediumpurple;
+                                }
+                            }
+                            a {
+                                @include main_font(20px, 500, $midgrey);
+                            }
+                        }
+                    }
+                }
+                .footerContact {
+                    .footerContactChild {
+                        > li:nth-of-type(1){
+                            @include main_font(22px, 500, $mediumpurple);
+                        }
+                        li {
+                            &:hover {
+                                a {
+                                    @include hover_trans(0.25s);
+                                    color: $mediumpurple;
+                                }
+                            }
+                            a {
+                                @include main_font(20px, 500, $midgrey);
+                                @include hover_trans(0.25s);
+                            }
+                        }
+                    }
+                    .footerSocials {
+                        width: 100%;
+                        height: 45px;
+                        bottom: 5%;
+                        left: 5%;
+                        li {
+                            width: auto;
+                            height: 100%;
+                            margin: 0;
+                            padding: 0 3% 0 0;
+                            &:hover {
+                                a {
+                                    svg {
+                                        @include hover_trans(0.25s);
+                                        color: $mediumpurple;
+                                    }
+                                }
+                            }
+                            a {
+                                height: 100%;
+                                width: auto;
+                                svg {
+                                    @include hover_trans(0.25s);
+                                    height: 100%;
+                                    width: auto;
+                                    color: $midgrey;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .img_adta {
+                    padding: 5% 25% 1% 10%;
+                }
+                .img_k2d{
+                    padding: 5% 25% 1% 10%;
+                }
+            }
+            .footerInstagram {
+                width: 100%;
+                height: 100%;   
+                padding: 5%;
+                margin: 0;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 2;
+                div {
+                    width: 100%;
+                    max-height: 85%;
+                    margin: 0;
+                    padding: 0;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    a {
+                        img {
+                        }
+                    }
+                }
+                > a {
+                    @include main_font(16px, 500, $darkpurple);
+                    width: 70%;
+                    padding: 2% 1%;
+                    margin: 0 15%;
+                    border-radius: 50px;
+                    white-space: nowrap;
+                    @include hover_trans(0.25s);
+                    &:hover {
+                        background-color: $darkpurple;
+                        // background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                        @include hover_trans(0.25s);
+                        color: $white;
+                        border: 2px $white solid;
+                    }
+                }
+            }
+        }
+        .footerBottom {
+            height: 275px;
+            position: absolute;
+            bottom: -50px;
+            left: 0;    
+            width: 100%;
+            background-color: $lightgrey;
+            z-index: 0;
+            div {
+                height: 50px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 1% 1%;
+                display: grid;
+                grid-template-columns: 30% auto 30%;
+                grid-template-rows: auto;
+                @include page_container(80%, 0); 
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        @include main_font(14px, 500, $darkgrey);
+                        text-decoration: none;
+                        float: left;
+                        margin: 0 5% 0 0;
+                    }
+                }
+                a:nth-of-type(1) {
+                    text-align: center;
+                    @include main_font(14px, 500, $darkgrey);
+                }
+                a:nth-of-type(2) {
+                    text-align: right;
+                    @include main_font(14px, 500, $darkgrey);
+                }
+            }
+        }
+    }  
 }

@@ -11,9 +11,8 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
-        fonts: ['Raleway', 'sans-serif'],
       }
     },
     `gatsby-transformer-remark`
-  ], 
+  ],
 }

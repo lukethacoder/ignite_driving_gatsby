@@ -7,9 +7,6 @@ import bgimg from "../assets/bgimg.jpg"
 import adta from "../assets/adta.png"
 import k2d from "../assets/k2d.png"
 
-// import { TypographyStyle, GoogleFont } from 'react-typography'
-// import typography from 'utils/typography'
-
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faHome, faCar, faDollarSign, faInfo, faPhone } from '@fortawesome/fontawesome-free-solid'
 import { faInstagram } from '@fortawesome/fontawesome-free-solid'
@@ -82,7 +79,20 @@ const Footer = () => (
         <Link to="/" className="img_k2d"><img src={k2d} alt="K2D Logo - coloured to match the ignite driving branding"/></Link>
       </div>
       <div className="footerInstagram">
-        <p>Instagram</p>
+        <div>
+          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/03ce0f49cdeefe1dfd646f6bb0e1cb84/5B0E289D/t51.2885-15/e35/26068700_1976868225862136_7210256067047981056_n.jpg" alt="January all booked out but luckily the $10 off your first lesson offer has been extended through February "/></Link>
+          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/d2b83ab921a16bf0637cec595b1ef997/5B03317F/t51.2885-15/e35/25038260_157651714858146_6247807750609305600_n.jpg" alt="Merry Christmas.  A bit of fun. Ignite Driving will help explain some of these gauges properly during your lessons."/></Link>
+          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/ebe8d73a9bf455f8f43c635cd324afe9/5B13FE40/t51.2885-15/e35/25012892_2064962146959578_2431920923784249344_n.jpg" alt="Picked up the new business cards today.  Looking good thanks to @luke_secomb_digital .  He's the man for design!"/></Link>
+
+          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
+          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
+          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
+
+          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
+          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
+          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
+        </div>
+        <Link to="/">See more on Instagram</Link>
       </div>
     </section>
     <section className="footerBottom">
