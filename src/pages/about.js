@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const About = () => (
   <div>
-    <h1>ABout</h1>
+    <h1>About</h1>
     <div>
       <Link to="/">page trans eh</Link>
     </div>

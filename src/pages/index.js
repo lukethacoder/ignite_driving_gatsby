@@ -9,6 +9,8 @@ import { faKey } from '@fortawesome/fontawesome-free-solid'
 import { faCar } from '@fortawesome/fontawesome-free-solid'
 import { faStar } from '@fortawesome/fontawesome-free-solid'
 
+import bgimg from "../assets/bgimg.jpg"
+
 const IndexPage = () => (
   <section className="pageContent">
 
@@ -17,7 +19,7 @@ const IndexPage = () => (
         <h1>FEBRUARY SPECIAL</h1>
         <h2>$10 off your first lesson</h2>
         <a className="bookNowNav" href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">Book my first lesson</a>
-        <p>T&C's apply</p>
+        <p>TandC's apply</p>
       </section>
     </header>
 
@@ -66,8 +68,7 @@ const IndexPage = () => (
 
     <section className="googleReviews">
       <div className="wrap">
-        
-    
+      
       </div>
     </section>
   </section>

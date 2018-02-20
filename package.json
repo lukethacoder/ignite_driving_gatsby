@@ -15,8 +15,7 @@
     "gatsby-source-filesystem": "^1.5.20",
     "gatsby-transformer-javascript-frontmatter": "^1.0.1",
     "gatsby-transformer-remark": "^1.7.26",
-    "jquery": "^3.3.1",
-    "react-transition-group": "^2.2.1"
+    "jquery": "^3.3.1"
   },
   "keywords": [
     "gatsby"

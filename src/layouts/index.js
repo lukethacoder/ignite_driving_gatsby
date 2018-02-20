@@ -99,7 +99,7 @@ const Footer = () => (
       <div>
         <ul>
           <li><Link to="/">Privacy</Link></li>
-          <li><Link to="/">Terms & Conditions</Link></li>
+          <li><Link to="/">T&C</Link></li>
           <li><Link to="/">Sitemap</Link></li>
         </ul>
         <Link to="/">@ 2018 All Rights Reserved</Link>

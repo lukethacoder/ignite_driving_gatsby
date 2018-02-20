@@ -14,10 +14,10 @@ module.exports = class HTML extends React.Component {
     let css
     if (process.env.NODE_ENV === `production`) {
       css = (
-        <style>
+        <style
           id="gatsby-inlined-css"
           dangerouslySetInnerHTML={{ __html: stylesStr }}
-        </style>
+        />
       )
     }
     return (
@@ -40,6 +40,13 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <script
+            dangerouslySetInnerHTML={{__html: `
+
+              alert("worked?");
+
+            `}}
+          />
         </body>
       </html>
     )

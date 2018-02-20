@@ -452,9 +452,27 @@
 }
 @mixin footer-md(){
     .footer {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-bottom: 0;
+        background-color: $darkpurple;
+        position: relative;
         .footerMain {
+            @include page_container(80%, 0);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            z-index: 50;
             > div { //not include instagram plug in
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                z-index: 50;
+                background-color: $white;
                 .footerNav {
+                    padding: 5%;
+                    align-self: stretch;
                     ul {
                         @include list_reset();
                         li:nth-of-type(1){
@@ -561,8 +579,6 @@
                     white-space: nowrap;
                     @include hover_trans(0.25s);
                     &:hover {
-                        background-color: $darkpurple;
-                        // background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
                         @include hover_trans(0.25s);
                         color: $white;
                         border: 2px $white solid;
@@ -613,8 +629,24 @@
 }
 @mixin footer-lg(){
     .footer {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-bottom: 0;
+        background-color: $darkpurple;
+        position: relative;
         .footerMain {
+            @include page_container(80%, 0);
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
+            z-index: 50;
             > div { //not include instagram plug in
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                z-index: 50;
+                background-color: $white;
                 .footerNav {
                     ul {
                         @include list_reset();
@@ -723,7 +755,6 @@
                     @include hover_trans(0.25s);
                     &:hover {
                         background-color: $darkpurple;
-                        // background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
                         @include hover_trans(0.25s);
                         color: $white;
                         border: 2px $white solid;
@@ -884,7 +915,6 @@
                     @include hover_trans(0.25s);
                     &:hover {
                         background-color: $darkpurple;
-                        // background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
                         @include hover_trans(0.25s);
                         color: $white;
                         border: 2px $white solid;

@@ -1,7 +1,7 @@
 module.exports = {
-  pathPrefix: `/ignite_driving_gatsby`,
+  pathPrefix: 'ignite_driving_gatsby',
   siteMetadata: {
-    title: `Ignite Driving`,
+    title: 'Ignite Driving',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,7 +13,6 @@ module.exports = {
         name: 'pages',
       }
     },
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-javascript-frontmatter`
+    `gatsby-transformer-remark`
   ],
 }
