@@ -7,6 +7,7 @@ import bgimg from "../assets/bgimg.jpg"
 import adta from "../assets/adta.png"
 import k2d from "../assets/k2d.png"
 
+
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faHome, faCar, faDollarSign, faInfo, faPhone } from '@fortawesome/fontawesome-free-solid'
 import { faInstagram } from '@fortawesome/fontawesome-free-solid'
@@ -111,6 +112,7 @@ const Footer = () => (
   </footer>
 )
 
+
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
@@ -130,6 +132,7 @@ const TemplateWrapper = ({ children }) => (
     <div>
       {children()}
     </div>
+    
     <Footer />
   </div>
 )

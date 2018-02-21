@@ -130,11 +130,87 @@ h2 {
         }
     }
     .googleReviews {
-        
-        .sliderWrapper {
-            width: 100%;
-            height: 500px;
-            background-color: green;
+        background-color: $darkpurple;
+        width: 100%;
+        height: auto;
+        padding: 8% 0;
+        display: block;
+        .sliderContainer {
+            @include page_container(80%, 0);
+            padding: 0;
+            div {
+                .slick-arrow .slick-next{
+                    color: $white;
+                    background-color: transparent;
+                    background: transparent;
+                    &:before {
+                        color: transparent;
+                        background-color: transparent;
+                        background: transparent;
+                    }
+                }
+                .slick-list {
+                    .slick-track {
+                        .slick-slide {
+                            h2 {
+                                @include main_font(32px, 500, $white);
+                                text-align: center;
+                                margin-bottom: 5px;
+                            }
+                            h3 {
+                                @include main_font(18px, 500, $white);
+                                text-align: center;
+                                margin-bottom: 5px;
+                            }
+                            div {
+                                text-align: center;
+                                margin-bottom: 10px;
+                                svg {
+                                    color: $white;
+                                }
+                            }
+                            p {
+                                @include main_font(20px, 500, $white);
+                                text-align: center;
+                                width: 80%;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+                .slick-dots {
+                    li {
+                        
+                        button {
+                            width: 15px;
+                            height: 15px;
+                            border: 2px $white solid;
+                            border-radius: 50px;
+                            background-color: transparent;
+                            &:before {
+                                display: none;
+                            }
+                        }
+                    }
+                    .slick-active {
+                        button {
+                            background-color: $white;
+                        }
+                    }
+                    color: $white;
+                }
+            }
+        }
+        a {
+            @include main_font(18px, 500, $white);
+            @include button_style_custom(transparent, $white, $white, $darkpurple, 2px $white solid, 2px $white solid); //$bgColorBefore, $bgColorAfter, $colorBefore, $colorAfter, $borderBefore, $borderAfter
+            display: block;
+            max-width: 50%;
+            height: auto;
+            margin: 50px auto auto auto;
+            padding: 5px;
+            text-align: center;
+            border-radius: 50px;
         }
     }
 }

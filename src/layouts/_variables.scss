@@ -122,3 +122,20 @@ $main_font: 'Raleway', sans-serif;
         background-color: transparent;
     }
 }
+
+@mixin button_style_custom($bgColorBefore, $bgColorAfter, $colorBefore, $colorAfter, $borderBefore, $borderAfter) {
+    background-color: $bgColorBefore;
+    color: $colorBefore;
+    border: $borderBefore; //2px $white solid
+    border-radius: 50px;
+    white-space: nowrap;
+    text-align: center;
+    align-self: center;
+    @include hover_trans(0.25s);
+    &:hover {
+        @include hover_trans(0.25s);
+        background-color: $bgColorAfter;
+        color: $colorAfter;
+        border: $borderAfter;
+    }
+}
