@@ -67,8 +67,10 @@ const IndexPage = () => (
     </section>
 
     <section className="googleReviews">
-      <div className="wrap">
-      
+      <div className="sliderWrapper">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
       </div>
     </section>
   </section>

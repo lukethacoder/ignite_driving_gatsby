@@ -129,6 +129,14 @@ h2 {
             }
         }
     }
+    .googleReviews {
+        
+        .sliderWrapper {
+            width: 100%;
+            height: 500px;
+            background-color: green;
+        }
+    }
 }
 
 @mixin content--xs() {
@@ -393,7 +401,9 @@ h2 {
         }
         .indexAbout {
             width: 100%;
-            height: 450px;
+            height: 550px;
+            padding-bottom: 175px;
+            background-color: $darkpurple;
             h3 {
                 width: 50%;
                 height: auto;
@@ -408,7 +418,7 @@ h2 {
             width: 100%;
             height: auto;
             padding: 10%;
-            margin: 10% auto;
+            margin: 0 auto;
             position: relative;
             @include background(url('../assets/bgwwo.png'), 150% auto, top, no-repeat, rgb(156, 156, 156));
             &:before {

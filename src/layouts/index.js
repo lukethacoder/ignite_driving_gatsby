@@ -12,6 +12,8 @@ import { faHome, faCar, faDollarSign, faInfo, faPhone } from '@fortawesome/fonta
 import { faInstagram } from '@fortawesome/fontawesome-free-solid'
 import { faFacebookSquare } from '@fortawesome/fontawesome-free-solid'
 
+import "../assets/slick/slick.css";
+import "../assets/slick/slick-theme.css";
 import './style.scss'
 import './index.scss'
 
@@ -119,7 +121,9 @@ const TemplateWrapper = ({ children }) => (
       ]}
       script={[
         {"src": "https://use.fontawesome.com/releases/v5.0.6/js/all.js", "type": "text/javascript"},
-        {"src": "https://fonts.googleapis.com/css?family=Raleway:500,600", "type": "text/stylesheet"}
+        {"src": "https://fonts.googleapis.com/css?family=Raleway:500,600", "type": "text/stylesheet"},
+        {"src": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css", "type": "text/stylesheet"},
+        {"src": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css", "type": "text/stylesheet"}
       ]}
     />
     <Header />
