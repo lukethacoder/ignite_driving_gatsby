@@ -6,7 +6,7 @@ import logo from "../assets/logo.svg"
 import bgimg from "../assets/bgimg.jpg"
 import adta from "../assets/adta.png"
 import k2d from "../assets/k2d.png"
-
+import { NavLink } from 'react-router-dom'
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faHome, faCar, faDollarSign, faInfo, faPhone } from '@fortawesome/fontawesome-free-solid'
@@ -17,6 +17,13 @@ import "../assets/slick/slick.css";
 import "../assets/slick/slick-theme.css";
 import './style.scss'
 import './index.scss'
+
+
+// export default React.createClass({
+//   render() {
+//     return <Link {...this.props} activeClassName="active"/>
+//   }
+// })
 
 /* stateless function */
 const Header = () => (
@@ -33,19 +40,19 @@ const Header = () => (
     <section className="bottomNav">
       <ul className="navMenuList">
         <li>
-          <Link to="/whatweoffer/"><FontAwesomeIcon icon={faCar}/>What We Offer</Link>
+          <NavLink to="/whatweoffer/" activeClassName="activeClassName"><FontAwesomeIcon icon={faCar}/>What We Offer</NavLink>
         </li>
         <li>
-          <Link to="/"><FontAwesomeIcon icon={faDollarSign}/>Pricing</Link>
+          <NavLink to="/pricing/" activeClassName="activeClassName"><FontAwesomeIcon icon={faDollarSign}/>Pricing</NavLink>
         </li>
-        <li className="activeClassName">
-          <Link to="/"><FontAwesomeIcon icon={faHome}/>Home</Link>
-        </li>
-        <li>
-          <Link to="/about/"><FontAwesomeIcon icon={faInfo}/>About</Link>
+        <li class="homeNavButton">
+          <NavLink to="/"><FontAwesomeIcon icon={faHome}/>Home</NavLink>
         </li>
         <li>
-          <Link to="/"><FontAwesomeIcon icon={faPhone}/>Contact</Link>
+          <NavLink to="/about/" activeClassName="activeClassName"><FontAwesomeIcon icon={faInfo}/>About</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact/" activeClassName="activeClassName"><FontAwesomeIcon icon={faPhone}/>Contact</NavLink>
         </li>
       </ul>
       <a className="bookNowNav" href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">BOOK NOW</a>
@@ -60,11 +67,11 @@ const Footer = () => (
         <div className="footerNav">
           <ul>
             <li>Ignite Driving</li>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/whatweoffer/">What We Offer</Link></li>
-            <li><Link to="/">Pricing</Link></li>
-            <li><Link to="/about/">About</Link></li>
-            <li><Link to="/">Contact</Link></li>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/whatweoffer/">What We Offer</NavLink></li>
+            <li><NavLink to="/">Pricing</NavLink></li>
+            <li><NavLink to="/about/">About</NavLink></li>
+            <li><NavLink to="/">Contact</NavLink></li>
           </ul>
         </div>
         <div className="footerContact">

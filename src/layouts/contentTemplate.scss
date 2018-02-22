@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 .pageContentTemplate {
     width: 100%;
     padding: 0;
@@ -47,6 +49,7 @@
             padding: 20% 5%;
         }
     }
+    // What We Offer page
     .whatWeOffer {
         width: 100%;
         height: auto;
@@ -118,12 +121,96 @@
             }
         }
     }
-    .googleReviews {
-        
-        .sliderWrapper {
-            width: 100%;
-            height: 500px;
+    // Pricing page
+    .priceGuide {
+        background-color: $darkpurple;
+        padding: 5% 0 10% 0;
+        .priceGuideContainer {
             background-color: green;
+            @include page_container(80%, 0);
+        }
+        .priceGuideRow {
+            display: grid;
+            grid-template-columns: 1.75fr 1fr 1fr 1fr;
+            grid-auto-rows: 1fr;
+            justify-content: center;
+            align-content: stretch;
+            $priceGuideMargin: 10%;
+            div {
+                align-self: center;
+                border-right: 2px solid $darkgrey;
+                margin: 4% 0;
+                padding: 2% 0 2% 0;
+                min-height: 75px;
+            }
+            div:nth-child(1) {
+                margin: 4% 0 4% 10%;
+                h2 {
+                    @include main_font(24px, 500, $darkgrey);
+                    margin-right: 10%;
+                    margin-bottom: 0;
+                    text-align: left;
+                    width: auto;
+                }
+                p {
+                    @include main_font(14px, 500, $darkgrey);
+                    margin-bottom: 10%;
+                    margin-right: 10%;
+                    a {
+                        color: $mediumpurple;
+                    }
+                }
+            }
+            div:nth-child(2) {
+                h3 {
+                    @include main_font(24px, 500, $mediumpurple);
+                    height: auto;
+                    width: auto;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+            div:nth-child(3) {
+                h4 {
+                    @include main_font(24px, 500, $darkgrey);
+                    height: auto;
+                    width: auto;
+                    margin: 0 auto;
+                    text-align: center;text-align: center;
+                }
+            }
+            div:nth-child(4) {
+                border: none;
+                display: flex;
+                justify-content: center;
+                vertical-align: center;
+                a {
+                    @include main_font(16px, 600, $darkpurple);
+                    @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 2px $darkpurple solid, 2px $darkpurple solid);
+                    padding: 2% 6%;
+                    margin-right: 5%;
+                    text-align: center;
+                }
+                
+            }
+        }
+        .priceGuideRow:nth-of-type(1) {
+            div {
+                align-self: center;
+                padding: 7% 0;
+            }
+        }
+        .priceGuideRow:nth-of-type(2) {
+            div {
+                align-self: center;
+                padding: 7% 0;
+            }
+        }
+        .priceGuideRow:nth-of-type(odd){
+            background-color: $white;
+        }
+        .priceGuideRow:nth-of-type(even){
+            background-color: $lightgrey;
         }
     }
 }

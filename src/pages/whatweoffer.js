@@ -9,6 +9,9 @@ import { faKey } from '@fortawesome/fontawesome-free-solid'
 import { faCar } from '@fortawesome/fontawesome-free-solid'
 import { faStar } from '@fortawesome/fontawesome-free-solid'
 
+// class WwoToggle extends React.Component {
+//   <div>
+// }
 
 const WhatWeOffer = () => (
   <section className="pageContentTemplate">
@@ -21,7 +24,7 @@ const WhatWeOffer = () => (
 
     <section className="whatWeOfferTemplate">
       <section className="whatWeOfferOptions">
-        <div>
+        <div data>
           <h2>Initial Lesson</h2>
           <FontAwesomeIcon icon={faPencilAlt}/>
         </div>

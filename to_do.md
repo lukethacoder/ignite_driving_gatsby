@@ -12,3 +12,4 @@
 1. double check all href links before going live
 2. make sure all images are properly rendered in the final build
 3. double check website on actual different devices (not just chrome dev tools) - send to AJ, Tim, Ruby, Tilly, Mum, Noah (for iPad).
+4. contribute to GatsbyJS docs/tutorials with react-slick plugin
