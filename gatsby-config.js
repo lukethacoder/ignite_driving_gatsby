@@ -13,6 +13,20 @@ module.exports = {
         name: 'pages',
       }
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              destinationDir:`${__dirname}/public/static`,
+              ignoreFileExtensions: [`pdf`]
+            }
+          }
+        ]
+      }
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify`
   ],
