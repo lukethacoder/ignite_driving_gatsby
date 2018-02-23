@@ -32,7 +32,8 @@ const Contact = () => (
                             </ul>
                         </div>
                     </div>
-                    <form name="contactForm">
+                    <form name="igniteDrivingContactForm" netlify-honeypot="bot-field" action="thank-you" netlify>
+                        <input name="bot-field"/>
                         <div className="contactFormName">
                             <div>
                                 <label>Name</label>
