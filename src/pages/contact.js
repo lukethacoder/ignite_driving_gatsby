@@ -32,17 +32,17 @@ const Contact = () => (
                             </ul>
                         </div>
                     </div>
-                    <form action="https://formspree.io/llama.bro20@gmail.com" method="POST">
-                        <div>
+                    <form name="contactForm">
+                        <div className="contactFormName">
                             <div>
                                 <label>Name</label>
-                                <input className="contactFormName" type="text" name="name" placeholder="Name"/>
+                                <input type="text" name="name" placeholder="Name"/>
                             </div>
                         </div>
-                        <div>
+                        <div className="contactFormEmail">
                             <div>
                                 <label>Email</label>
-                                <input className="contactFormEmail" type="email" name="_replyto" placeholder="Email"/>
+                                <input type="email" name="_replyto" placeholder="Email"/>
                             </div>
                         </div>
                         <div>
@@ -51,7 +51,11 @@ const Contact = () => (
                                 <textarea className="contactFormTextArea" name="message" placeholder="Your message"></textarea>
                             </div>
                         </div>
-                        <input className="contactFormSubmit" type="submit" value="Send"/>
+                        <div>
+                            <div>
+                                <input className="contactFormSubmit" type="submit" value="Send"/>
+                            </div>
+                        </div>
                         <input type="hidden" name="_next" value="/" />
                     </form>
                 </div>

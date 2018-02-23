@@ -9,8 +9,6 @@ $lightgrey: #f6f6f6;
 
 $main_font: 'Raleway', sans-serif; 
 
-
-
 @mixin page_container($width, $margin_vertical){
     width: $width;
     margin: $margin_vertical (100 - $width) / 2;

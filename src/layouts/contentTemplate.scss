@@ -346,7 +346,6 @@
             @include page-cont-xs();
             background-color: $white;
             div {
-                
                 padding: 3% 5%;
                 margin: 0;
                 overflow: hidden;
@@ -393,32 +392,50 @@
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: auto auto auto;
                     margin: 0;
-                    grid-template-areas:
-                        "a b"
-                        "c c"
-                        "d d";
                     align-content: center;
+                    div {
+                        width: 100%;
+                        div {
+                            background-color: $white;
+                            display: block;
+                            border-bottom: 1px solid $darkgrey;
+                            label {
+                                @include main_font(20px, 500, $mediumpurple);
+                                float: left;
+                                width: 100%;
+                            }
+                            input {
+                                @include main_font(20px, 500, $darkgrey);
+                                background-color: transparent;
+                                border: none;
+                                float: left;
+                                width: 100%;
+                            }
+                            input::placeholder {
+                                @include main_font(20px, 500, $darkgrey);
+                                background-color: transparent;
+                            }
+                            input:focus {
+                                outline: 0px;
+                                color: $darkpurple;
+                                &::placeholder {
+                                    color: $white;
+                                }
+                            }
+                            input:focus .contactFormName {
+                                background-color: green;
+                            }
+                        }
+                    }
                     .contactFormName {
-                        grid-area: a;
-                        padding: 5px 25px;
-                        margin: 10px;
-                        height: 50px;
                     }
                     .contactFormEmail {
-                        grid-area: b;
-                        padding: 5px 25px;
-                        margin: 10px;
-                        height: 50px;
                     }
                     .contactFormTextArea {
-                        grid-area: c;
-                        padding: 25px;
-                        margin: 10px;
                     }
                     .contactFormSubmit {
-                        grid-area: d;
-                        margin: 10px;
                     }
+                    
                 }
             }
         }
