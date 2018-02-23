@@ -19,7 +19,6 @@ import "../assets/slick/slick-theme.css";
 import './style.scss'
 import './index.scss'
 
-
 // export default React.createClass({
 //   render() {
 //     return <Link {...this.props} activeClassName="active"/>
