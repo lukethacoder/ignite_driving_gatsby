@@ -54,7 +54,7 @@ const Contact = () => (
                         </div>
                         <div>
                             <div>
-                                <input className="contactFormSubmit" type="submit" value="Send"/>
+                                <button className="contactFormSubmit" type="submit" value="Send"/>
                             </div>
                         </div>
                     </form>
