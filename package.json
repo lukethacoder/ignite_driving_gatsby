@@ -17,6 +17,7 @@
     "gatsby-source-filesystem": "^1.5.21",
     "gatsby-transformer-javascript-frontmatter": "^1.0.2",
     "gatsby-transformer-remark": "^1.7.33",
+    "gulp": "^3.9.1",
     "jquery": "^3.3.1",
     "react-slick": "^0.18.1",
     "slick-carousel": "^1.8.1"
@@ -29,6 +30,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "luke": "gatsby build && gulp",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
