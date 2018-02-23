@@ -13,14 +13,7 @@ const tfys = () => (
         <section className="contactPage">
             <section>
                 <div>
-                    <form action="https://formspree.io/llama.bro20@gmail.com"
-                        method="POST">
-                        <input type="text" name="name"/>
-                        <input type="email" name="_replyto"/>
-                        <input type="hidden" name="_subject" value="New submission!"/>
-                        <input type="submit" value="Send"/>
-                    </form>
-                    <input type="hidden" name="_next" value="//site.io/thanks.html" />
+                    {/* give suggestions to the user */}
                 </div>
             </section>
         </section>

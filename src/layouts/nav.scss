@@ -244,7 +244,7 @@
                         background-color: transparent;
                         @at-root #{&} {
                             @include main_font(18px, 600, $white);
-                        } 
+                        }
                     }
                 }
                 li:nth-last-of-type(3) {
