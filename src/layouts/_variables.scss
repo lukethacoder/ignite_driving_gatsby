@@ -9,6 +9,8 @@ $lightgrey: #f6f6f6;
 
 $main_font: 'Raleway', sans-serif; 
 
+
+
 @mixin page_container($width, $margin_vertical){
     width: $width;
     margin: $margin_vertical (100 - $width) / 2;
@@ -138,4 +140,22 @@ $main_font: 'Raleway', sans-serif;
         color: $colorAfter;
         border: $borderAfter;
     }
+}
+
+//media query variables
+
+@mixin page-cont-xs() {
+    @include page_container(80%, 0);
+}
+
+@mixin page-cont-sm() {
+    @include page_container(75%, 0);
+}
+
+@mixin page-cont-md() {
+    @include page_container(80%, 0);
+}
+
+@mixin page-cont-lg() {
+    @include page_container(75%, 0);
 }

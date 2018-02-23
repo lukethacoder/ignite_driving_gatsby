@@ -12,6 +12,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faHome, faCar, faDollarSign, faInfo, faPhone } from '@fortawesome/fontawesome-free-solid'
 import { faInstagram } from '@fortawesome/fontawesome-free-solid'
 import { faFacebookSquare } from '@fortawesome/fontawesome-free-solid'
+import { faGoogle } from '@fortawesome/fontawesome-free-solid'
 
 import "../assets/slick/slick.css";
 import "../assets/slick/slick-theme.css";

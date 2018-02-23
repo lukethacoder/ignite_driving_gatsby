@@ -133,6 +133,7 @@
 }
 @mixin navbar--sm() {
     .navbar {
+        @include page-cont-sm();
         .bottomNav {
             .bookNowNav {
                 font-family: $main_font;
@@ -149,9 +150,9 @@
 }
 @mixin navbar--md() {
     .navbar {
-        width: 80%;
+        @include page-cont-md();
         height: auto;
-        margin: 0 10%;
+        // margin: 0 10%;
         display: block;
         position: relative;
         .navContact {
@@ -254,7 +255,7 @@
 }
 @mixin navbar-lg() {
     .navbar {
-        @include page_container(75%, 0);
+        @include page-cont-lg();
         height: auto;
         display: block;
         position: relative;
