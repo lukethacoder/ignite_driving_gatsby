@@ -39,7 +39,14 @@ module.exports = class HTML extends React.Component {
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
-          {this.props.postBodyComponents}    
+          {this.props.postBodyComponents}
+          <form name="igniteDrivingContactForm" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks-for-your-submission/" hidden>
+            <input name="bot-field" className="olHoneyPot"/>
+            <input type="text" name="name" placeholder="Name"/>
+            <input type="email" name="_replyto" placeholder="Email"/>
+            <textarea className="contactFormTextArea" name="message" placeholder="Your message"></textarea>
+            <input className="contactFormSubmit" type="submit" value="Send"/>
+          </form>
           {/* <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
           <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
           <script type="text/javascript" src="assets/slick/slick.min.js"></script> */}
