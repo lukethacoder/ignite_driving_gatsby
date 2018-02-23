@@ -224,6 +224,7 @@
                     margin: 0 2%;
                     height: auto;
                     display: block;
+                    @include hover_trans(.25s);
                     a {
                         @include main_font(14px, 500, $white);
                         width: 100%;
@@ -234,6 +235,16 @@
                         svg {
                             display: none;
                         }
+                    }
+                    &:hover {
+                        @include hover_trans(.15s);
+                        border-bottom: 1px solid $white;
+                    }
+                    .activeClassName {
+                        background-color: transparent;
+                        @at-root #{&} {
+                            @include main_font(18px, 600, $white);
+                        } 
                     }
                 }
                 li:nth-last-of-type(3) {

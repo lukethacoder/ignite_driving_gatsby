@@ -33,13 +33,27 @@ const Contact = () => (
                         </div>
                     </div>
                     <form action="https://formspree.io/llama.bro20@gmail.com" method="POST">
-                        <input className="contactFormName" type="text" name="name" placeholder="Name"/>
-                        <input className="contactFormEmail" type="email" name="_replyto" placeholder="Email"/>
-                        <textarea className="contactFormTextArea" name="message" placeholder="Your message"></textarea>
-                        <input type="hidden" name="_subject" value="New submission!"/>
+                        <div>
+                            <div>
+                                <label>Name</label>
+                                <input className="contactFormName" type="text" name="name" placeholder="Name"/>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Email</label>
+                                <input className="contactFormEmail" type="email" name="_replyto" placeholder="Email"/>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Message</label>
+                                <textarea className="contactFormTextArea" name="message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
                         <input className="contactFormSubmit" type="submit" value="Send"/>
+                        <input type="hidden" name="_next" value="/" />
                     </form>
-                    <input type="hidden" name="_next" value="//site.io/thanks.html" />
                 </div>
             </section>
         </section>
