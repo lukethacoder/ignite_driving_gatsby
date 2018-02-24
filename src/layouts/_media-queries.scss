@@ -19,7 +19,6 @@
     @include contentTemplate--lg();
     @include content--md();
     @include footer-md();
-    
 }
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) {
@@ -27,7 +26,6 @@
     @include contentTemplate--lg();
     @include content--lg();
     @include footer-lg();
-    
 }
 /* hi-res laptops and desktops */
 @media (min-width:1281px) {

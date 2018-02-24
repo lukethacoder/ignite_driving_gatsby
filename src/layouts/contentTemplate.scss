@@ -349,7 +349,7 @@
                 padding: 3% 5%;
                 margin: 0;
                 overflow: hidden;
-                .contactIntro {
+                .contactIntro { //contact intro
                     display: grid;
                     grid-template-columns: 1fr;
                     grid-template-rows: auto;
@@ -358,10 +358,13 @@
                         margin: 0 auto;
                     }
                     div {
+                        margin: 0;
+                        padding: 0;
                         a {
                             @include main_font(14px, 500, $mediumpurple);
                             width: 100%;
                             float: left;
+                            margin: 0;
                         }
                         ul {
                             @include list_reset();
@@ -380,6 +383,8 @@
                                     height: 100%;
                                     color: $mediumpurple;
                                     svg {
+                                        height: 100%;
+                                        width: 100%;
                                         color: $mediumpurple;
                                     }
                                 }
@@ -387,7 +392,7 @@
                         }
                     }
                 }
-                form {
+                form { //form here
                     display: grid;
                     grid-template-columns: 100%;
                     grid-template-rows: auto;

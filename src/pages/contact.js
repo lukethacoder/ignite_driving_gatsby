@@ -2,10 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faHome, faCar, faDollarSign, faInfo, faPhone } from '@fortawesome/fontawesome-free-solid'
-import { faInstagram } from '@fortawesome/fontawesome-free-solid'
-import { faFacebookSquare } from '@fortawesome/fontawesome-free-solid'
-import { faGoogle } from '@fortawesome/fontawesome-free-solid'
+// import { faInstagram } from '@fortawesome/fontawesome-free-solid'
+// import { faFacebookSquare } from '@fortawesome/fontawesome-free-solid'
+import brands from '@fortawesome/fontawesome-free-solid'
 
 const Contact = () => (
     <section className="pageContentTemplate">
@@ -23,12 +22,21 @@ const Contact = () => (
                         <p>Questions, enquiries, or comments are always welcome – we would love to hear from you!
                         </p>
                         <div>
-                            <a href="#">0434 833 131</a>
-                            <a href="#">margaret@ignitedriving.com.au</a>
+                            <a href="tel:+61434833131">0434 833 131</a>
+                            <a href="mailto:margaret@ignitedriving.com.au?subject=Direct Email Enquiry">margaret@ignitedriving.com.au</a>
                             <ul>
-                                <li><Link to="/"><FontAwesomeIcon icon={faInstagram}/></Link></li>
-                                <li><Link to="/"><FontAwesomeIcon icon={faFacebookSquare}/></Link></li>
-                                <li><Link to="/"><FontAwesomeIcon icon={faGoogle}/></Link></li>
+                                <li><a href={`${process.env.INSTA_URL}`} target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={["fab", "instagram"]} listitem/>
+                                    </a>
+                                </li>
+                                <li><a href={`${process.env.FB_URL}`} target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={["fab", "facebook"]} listitem/>
+                                    </a>
+                                </li>
+                                <li><a href={`${process.env.GOOGLE_URL}`} target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={["fab", "google"]} listitem/>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
