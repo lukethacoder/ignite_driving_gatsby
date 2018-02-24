@@ -151,9 +151,9 @@ $main_font: 'Raleway', sans-serif;
 }
 
 @mixin page-cont-md() {
-    @include page_container(80%, 0);
+    @include page_container(75%, 0);
 }
 
 @mixin page-cont-lg() {
-    @include page_container(75%, 0);
+    @include page_container(70%, 0);
 }

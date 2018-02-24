@@ -16,7 +16,7 @@
 /* tablet, landscape iPad, lo-res laptops ands desktops |-> clicks over to desktop nav at 801px <-| */ 
 @media (min-width:801px) {
     @include navbar--md();
-    @include contentTemplate--lg();
+    @include contentTemplate--md();
     @include content--md();
     @include footer-md();
 }

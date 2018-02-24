@@ -355,13 +355,13 @@
                     grid-template-rows: auto;
                     p {
                         @include main_font(26px, 500, $darkgrey);
-                        margin: 0 auto;
+                        margin: 0 0 5% 0;
                     }
                     div {
                         margin: 0;
                         padding: 0;
                         a {
-                            @include main_font(14px, 500, $mediumpurple);
+                            @include main_font(20px, 500, $mediumpurple);
                             width: 100%;
                             float: left;
                             margin: 0;
@@ -375,17 +375,20 @@
                             grid-template-columns: 1fr 1fr 1fr;
                             grid-template-rows: 1fr;
                             li {
-                                height: 50px;
-                                width: 50px;
+                                height: 45px;
+                                width: 45px;
                                 margin: 0;
                                 a {
                                     width: 100%;
                                     height: 100%;
+                                    padding: 15% 15% 15% 0;
                                     color: $mediumpurple;
+                                    float: left;
                                     svg {
-                                        height: 100%;
-                                        width: 100%;
+                                        height: 90%;
+                                        width: 90%;
                                         color: $mediumpurple;
+                                        float: left;
                                     }
                                 }
                             }
@@ -516,117 +519,245 @@
 
 }
 @mixin contentTemplate--md() {
-    
-}
-@mixin contentTemplate--lg() {
-    .contactContainer {
-        padding: 5% 0;
-        section {
-            @include page-cont-lg();
-            div {    
-                .contactIntro {
-                    display: grid;
-                    grid-template-columns: 50% 50%;
-                    grid-template-rows: auto;
-                    p {
-                        @include main_font(26px, 500, $darkgrey);
-                    }
-                    div {
-                        a {
-                            @include main_font(14px, 500, $mediumpurple);
-                            width: 100%;
-                            float: left;
+    .pageContentTemplate {
+        .contactContainer {
+            padding: 5% 0;
+            section {
+                @include page-cont-md();
+                div {    
+                    .contactIntro {
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        grid-template-rows: auto;
+                        p {
+                            @include main_font(26px, 500, $darkgrey);
+                            padding-right: 10%;
+                            margin: 0;
                         }
-                        ul {
-                            @include list_reset();
-                            height: 50px;
-                            float: left;
-                            display: grid;
-                            grid-template-columns: 1fr 1fr 1fr;
-                            grid-template-rows: 1fr;
-                            li {
+                        div {
+                            position: relative;
+                            a {
+                                @include main_font(18px, 500, $mediumpurple);
+                                width: 100%;
+                                float: left;
+                            }
+                            ul {
+                                @include list_reset();
                                 height: 50px;
-                                width: 50px;
-                                margin: 0;
-                                a {
-                                    width: 100%;
-                                    height: 100%;
-                                    color: $mediumpurple;
-                                    svg {
+                                float: left;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                grid-template-rows: 1fr;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                li {
+                                    height: 50px;
+                                    width: 50px;
+                                    margin: 0;
+                                    a {
+                                        width: 100%;
+                                        height: 100%;
                                         color: $mediumpurple;
+                                        svg {
+                                            color: $mediumpurple;
+                                        }
                                     }
                                 }
                             }
                         }
                     }
-                }
-                form {
-                    grid-template-columns: 50% 50%;
-                    grid-template-rows: 40% 40% 20%;
-                    grid-template-areas:
-                    "a b"
-                    "c c"
-                    "d d";
-                    margin: 0;
-                    padding: 5% 5%;
-                    align-content: center;
-                    background-color: green;
-                    div {
+                    form {
+                        grid-template-columns: 50% 50%;
+                        grid-template-rows: 40% 40% 20%;
+                        grid-template-areas:
+                        "a b"
+                        "c c"
+                        "d d";
+                        margin: 0;
+                        padding: 5% 5% 0 5%;
+                        align-content: center;
                         div {
-                            background-color: $white;
-                            display: block;
-                            input{
-                                @include main_font(20px, 500, $darkgrey);
+                            div {
+                                background-color: $white;
+                                display: block;
+                                input{
+                                    @include main_font(20px, 500, $darkgrey);
+                                }
+                                input::placeholder {
+                                    @include main_font(20px, 500, $darkgrey);
+                                }
+                                textarea{
+                                    @include main_font(20px, 500, $darkgrey);
+                                    min-height: 175px;
+                                }
+                                textarea::placeholder {
+                                    @include main_font(20px, 500, $darkgrey);
+                                }
+                                textarea:focus {
+                                    outline: 0px;
+                                    color: $darkpurple;
+                                    &::placeholder {
+                                        color: $white;
+                                    }
+                                }
                             }
-                            input::placeholder {
-                                @include main_font(20px, 500, $darkgrey);
+                        }
+                        .contactFormName {
+                            grid-area: a;
+                            div {
+                                padding: 3% 15px;
+                                margin-right: 25px;
                             }
-                            textarea{
-                                @include main_font(20px, 500, $darkgrey);
-                                min-height: 175px;
+                        }
+                        .contactFormEmail {
+                            grid-area: b;
+                            padding: 0;
+                            div {
+                                padding: 3% 15px;
                             }
-                            textarea::placeholder {
-                                @include main_font(20px, 500, $darkgrey);
+                        }
+                        .contactFormTextArea {
+                            grid-area: c;
+                            padding: 0;
+                            div {
+                                border-bottom: 1px solid $darkgrey;
                             }
-                            textarea:focus {
-                                outline: 0px;
-                                color: $darkpurple;
-                                &::placeholder {
-                                    color: $white;
+                        }
+                        .contactFormSubmit {
+                            grid-area: d;
+                            div {
+                                button {
+                                    margin: 0 auto;
+                                    @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 1px $darkpurple solid, 1px $white solid);
+                                    padding: 1% 3%;
+                                    min-width: 25%;
+                                    @include main_font(20px, 500, $darkpurple);
                                 }
                             }
                         }
                     }
-                    .contactFormName {
-                        grid-area: a;
+                }
+            }
+        }
+    } 
+}
+@mixin contentTemplate--lg() {
+    .pageContentTemplate {
+        .contactContainer {
+            padding: 5% 0;
+            section {
+                @include page-cont-lg();
+                div {    
+                    .contactIntro {
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        grid-template-rows: auto;
+                        p {
+                            @include main_font(26px, 500, $darkgrey);
+                            padding-right: 10%;
+                            margin: 0;
+                        }
                         div {
-                            padding: 3% 15px;
-                            margin-right: 25px;
+                            position: relative;
+                            a {
+                                @include main_font(18px, 500, $mediumpurple);
+                                width: 100%;
+                                float: left;
+                            }
+                            ul {
+                                @include list_reset();
+                                height: 50px;
+                                float: left;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                grid-template-rows: 1fr;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                li {
+                                    height: 50px;
+                                    width: 50px;
+                                    margin: 0;
+                                    a {
+                                        width: 100%;
+                                        height: 100%;
+                                        color: $mediumpurple;
+                                        svg {
+                                            color: $mediumpurple;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
-                    .contactFormEmail {
-                        grid-area: b;
-                        padding: 0;
+                    form {
+                        grid-template-columns: 50% 50%;
+                        grid-template-rows: 40% 40% 20%;
+                        grid-template-areas:
+                        "a b"
+                        "c c"
+                        "d d";
+                        margin: 0;
+                        padding: 5% 5% 0 5%;
+                        align-content: center;
                         div {
-                            padding: 3% 15px;
+                            div {
+                                background-color: $white;
+                                display: block;
+                                input{
+                                    @include main_font(20px, 500, $darkgrey);
+                                }
+                                input::placeholder {
+                                    @include main_font(20px, 500, $darkgrey);
+                                }
+                                textarea{
+                                    @include main_font(20px, 500, $darkgrey);
+                                    min-height: 175px;
+                                }
+                                textarea::placeholder {
+                                    @include main_font(20px, 500, $darkgrey);
+                                }
+                                textarea:focus {
+                                    outline: 0px;
+                                    color: $darkpurple;
+                                    &::placeholder {
+                                        color: $white;
+                                    }
+                                }
+                            }
                         }
-                    }
-                    .contactFormTextArea {
-                        grid-area: c;
-                        padding: 0;
-                        div {
-                            border-bottom: 1px solid $darkgrey;
+                        .contactFormName {
+                            grid-area: a;
+                            div {
+                                padding: 3% 15px;
+                                margin-right: 25px;
+                            }
                         }
-                    }
-                    .contactFormSubmit {
-                        grid-area: d;
-                        div {
-                            button {
-                                margin: 0 auto;
-                                @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 1px $darkpurple solid, 1px $white solid);
-                                padding: 1% 3%;
-                                min-width: 25%;
-                                @include main_font(20px, 500, $darkpurple);
+                        .contactFormEmail {
+                            grid-area: b;
+                            padding: 0;
+                            div {
+                                padding: 3% 15px;
+                            }
+                        }
+                        .contactFormTextArea {
+                            grid-area: c;
+                            padding: 0;
+                            div {
+                                border-bottom: 1px solid $darkgrey;
+                            }
+                        }
+                        .contactFormSubmit {
+                            grid-area: d;
+                            div {
+                                button {
+                                    margin: 0 auto;
+                                    @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 1px $darkpurple solid, 1px $white solid);
+                                    padding: 1% 3%;
+                                    min-width: 25%;
+                                    @include main_font(20px, 500, $darkpurple);
+                                }
                             }
                         }
                     }

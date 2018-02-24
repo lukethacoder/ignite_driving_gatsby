@@ -26,15 +26,15 @@ const Contact = () => (
                             <a href="mailto:margaret@ignitedriving.com.au?subject=Direct Email Enquiry">margaret@ignitedriving.com.au</a>
                             <ul>
                                 <li><a href={`${process.env.INSTA_URL}`} target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={["fab", "instagram"]} listitem/>
+                                    <FontAwesomeIcon icon={["fab", "instagram"]}/>
                                     </a>
                                 </li>
                                 <li><a href={`${process.env.FB_URL}`} target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={["fab", "facebook"]} listitem/>
+                                    <FontAwesomeIcon icon={["fab", "facebook"]}/>
                                     </a>
                                 </li>
                                 <li><a href={`${process.env.GOOGLE_URL}`} target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={["fab", "google"]} listitem/>
+                                    <FontAwesomeIcon icon={["fab", "google"]}/>
                                     </a>
                                 </li>
                             </ul>
