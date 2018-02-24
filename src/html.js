@@ -28,7 +28,7 @@ module.exports = class HTML extends React.Component {
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />  
+          />
           {this.props.headComponents}
           {css}
         </head>
@@ -40,9 +40,6 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          {/* <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-          <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-          <script type="text/javascript" src="assets/slick/slick.min.js"></script> */}
           <script
             dangerouslySetInnerHTML={{__html: `
 

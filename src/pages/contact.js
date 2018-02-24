@@ -36,25 +36,25 @@ const Contact = () => (
                         <input name="bot-field" className="olHoneyPot"/>
                         <div className="contactFormName">
                             <div>
-                                <label>Name</label>
-                                <input type="text" name="name" placeholder="Name"/>
+                                <label className="formLabel">Name</label>
+                                <input type="text" name="name" placeholder="Name" required/>
                             </div>
                         </div>
                         <div className="contactFormEmail">
                             <div>
                                 <label>Email</label>
-                                <input type="email" name="_replyto" placeholder="Email"/>
+                                <input type="email" name="_replyto" placeholder="Email" required/>
                             </div>
                         </div>
-                        <div>
+                        <div className="contactFormTextArea">
                             <div>
                                 <label>Message</label>
-                                <textarea className="contactFormTextArea" name="message" placeholder="Your message"></textarea>
+                                <textarea name="message" placeholder="Your message" required></textarea>
                             </div>
                         </div>
-                        <div>
+                        <div className="contactFormSubmit">
                             <div>
-                                <button className="contactFormSubmit" type="submit" value="Send">Submit</button>
+                                <button type="submit" value="Send">Submit</button>
                             </div>
                         </div>
                     </form>

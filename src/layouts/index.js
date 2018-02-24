@@ -19,12 +19,6 @@ import "../assets/slick/slick-theme.css";
 import './style.scss'
 import './index.scss'
 
-// export default React.createClass({
-//   render() {
-//     return <Link {...this.props} activeClassName="active"/>
-//   }
-// })
-
 /* stateless function */
 const Header = () => (
   <nav className="navbar">
@@ -46,7 +40,7 @@ const Header = () => (
           <NavLink to="/pricing/" activeClassName="activeClassName"><FontAwesomeIcon icon={faDollarSign}/>Pricing</NavLink>
         </li>
         <li class="homeNavButton">
-          <NavLink to="/"><FontAwesomeIcon icon={faHome}/>Home</NavLink>
+          <NavLink exact={true} to="/" activeClassName="activeClassName"><FontAwesomeIcon icon={faHome}/>Home</NavLink>
         </li>
         <li>
           <NavLink to="/about/" activeClassName="activeClassName"><FontAwesomeIcon icon={faInfo}/>About</NavLink>

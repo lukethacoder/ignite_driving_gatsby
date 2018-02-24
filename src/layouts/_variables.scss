@@ -143,7 +143,7 @@ $main_font: 'Raleway', sans-serif;
 //media query variables
 
 @mixin page-cont-xs() {
-    @include page_container(80%, 0);
+    @include page_container(85%, 0);
 }
 
 @mixin page-cont-sm() {

@@ -11,21 +11,27 @@
 @media (min-width:600px) {
     @include navbar--sm();
     @include footer-sm();
+    @include contentTemplate--sm();
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops |-> clicks over to desktop nav at 801px <-| */ 
 @media (min-width:801px) {
     @include navbar--md();
+    @include contentTemplate--lg();
     @include content--md();
     @include footer-md();
+    
 }
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) {
     @include navbar-lg();
+    @include contentTemplate--lg();
     @include content--lg();
     @include footer-lg();
+    
 }
 /* hi-res laptops and desktops */
 @media (min-width:1281px) {
     @include navbar-xl();
     @include footer-xl();
+    @include contentTemplate--xl();
 }
