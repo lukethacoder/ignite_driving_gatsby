@@ -77,8 +77,8 @@ const IndexPage = () => (
       <section className="headerSection">
         <h1>FEBRUARY SPECIAL</h1>
         <h2>$10 off your first lesson</h2>
-        <a className="bookNowNav" href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">Book my first lesson</a>
-        <p>TandC's apply</p>
+        <a className="bookNowNav" href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book my first lesson</a>
+        <p>T&C's apply</p>
       </section>
     </header>
 

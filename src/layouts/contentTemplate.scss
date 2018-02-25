@@ -50,12 +50,91 @@
         }
     }
     // What We Offer page
-    .whatWeOffer {
+    .whatWeOfferTemplate {
         width: 100%;
         height: auto;
-        padding: 10%;
-        margin: 10% auto;
-        position: relative;
+        padding: 0;
+        margin: 0;
+        background-color: $darkpurple;
+        .whatWeOfferOptions {
+            @include page-cont-xs();
+            padding-bottom: 2%;
+            div {
+                background-color: $lightgrey;
+                ul {
+                    display: grid;
+                    grid-template-columns: 20% 20% 20% 20% 20%;
+                    grid-template-rows: 1fr;
+                    width: 100%;
+                    @include list_reset();
+                    cursor: pointer;
+                    li {
+                        background-color: $white;
+                        color: $darkgrey;
+                        text-align: center;
+                        padding: 20% 0;
+                        @include hover_trans(.5s);
+                        div {
+                            width: 175px;
+                            height: 175px;
+                            margin: 0 auto;
+                            padding: 45px;
+                            border-radius: 50%;
+                            display: grid;
+                            align-content: center;
+                            justify-content: center;
+                            svg {
+                                width: 65%;
+                                height: auto;
+                                margin: 0 auto;
+                                padding: 0;
+                                color: $darkgrey;
+                            }
+                        }
+                        h2 {
+                            @include main_font(24px, 500, $darkgrey);
+                            padding-top: 10%;
+                        }
+                        &:hover {
+                            @include hover_trans(.15s);
+                            background-color: $lightgrey;
+                            color: $darkpurple;
+                        }
+                    }
+                }
+                .content {
+                    width: 100%;
+                    display: block;
+                    padding-bottom: 5%;
+                    div {
+                        width: 100%;
+                        height: 550px;
+                        overflow: hidden;
+                        margin: 0;
+                        img {
+                            width: 100%;
+                            margin: 0;
+                        }
+                    }
+                    p {
+                        @include main_font(18px, 500, $darkgrey);
+                        padding: 3% 5%;
+                        width: 100%;
+                    }
+                    .wwoBtnDiv {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        a {
+                            @include button_style_custom($mediumpurple, $white, $white, $darkpurple, 2px solid $mediumpurple, 2px solid $mediumpurple);
+                            @include main_font(18px, 500, $white);
+                            padding: 1% 3%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
     }
     // Pricing page
     .priceGuide {
@@ -456,6 +535,18 @@
 }
 @mixin contentTemplate--md() {
     .pageContentTemplate {
+        // What We Offer
+        .whatWeOfferTemplate {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0;
+            background-color: $darkpurple;
+            .whatWeOfferOptions {
+                @include page-cont-md();
+                padding-bottom: 2%;
+            }
+        }
         // Pricing Page
         .priceGuide {
             .priceGuideContainer {
@@ -601,6 +692,18 @@
 }
 @mixin contentTemplate--lg() {
     .pageContentTemplate {
+        // What We Offer
+        .whatWeOfferTemplate {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0;
+            background-color: $darkpurple;
+            .whatWeOfferOptions {
+                @include page-cont-lg();
+                padding-bottom: 2%;
+            }
+        }
         .contactContainer {
             padding: 5% 0;
             section {
