@@ -56,70 +56,6 @@
         padding: 10%;
         margin: 10% auto;
         position: relative;
-        @include background(url('../assets/bgwwo.png'), 1500% auto, top, no-repeat, rgb(156, 156, 156));
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-color: $darkpurple;
-            opacity: .5;
-        }
-        section {
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: auto;
-            div {
-                display: grid;
-                justify-self: center;
-                align-self: stretch;
-                justify-content: center;
-                align-content: center;
-                background-color: $lightgrey;
-                height: auto;
-                width: auto;
-                margin: 1%;
-                margin-bottom: 5%;
-                padding: 1%;
-                z-index: 5;
-                h2 {
-                    @include main_font(42px, 600, $midgrey);
-                    text-align: center;
-                    height: 125px;
-                    margin: 10% 10% 0% 10%;
-                    padding: 1%;
-                }
-                svg {
-                    width: 70%;
-                    height: auto;
-                    margin: 0% 15%;
-                    text-align: center;
-                    padding: 20%;
-                    color: $midgrey;
-                    background-color: $white;
-                    @include border-radius(50%);
-                }
-                p {
-                    @include main_font(24px, 500, $midgrey);
-                    width: 80%;
-                    margin: 10%;
-                    padding: 7% 0%;
-                    text-align: center;
-                    border-top: 2px solid $midgrey;
-                    border-bottom: 2px solid $midgrey;
-                }
-                a {
-                    width: 80%;
-                    margin: 5% 10% 10% 10%;
-                    padding: 5% 0;
-                    text-align: center;
-                    @include main_font(28px, 600, $midgrey);
-                    @include button_style_wwo();
-                }
-            }
-        }
     }
     // Pricing page
     .priceGuide {
@@ -520,6 +456,27 @@
 }
 @mixin contentTemplate--md() {
     .pageContentTemplate {
+        // Pricing Page
+        .priceGuide {
+            .priceGuideContainer {
+                @include page-cont-md();
+            }
+        }
+        // About Page
+        .aboutContainer {
+            div {
+                @include page-cont-md();
+            }
+        }
+        .aboutHeaderContainer {
+
+        }
+        .meetTheTeamContainer {
+            section {
+                @include page-cont-md();
+            }
+        }
+        // Contact Page
         .contactContainer {
             padding: 5% 0;
             section {

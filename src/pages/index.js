@@ -10,8 +10,6 @@ import { faKey } from '@fortawesome/fontawesome-free-solid'
 import { faCar } from '@fortawesome/fontawesome-free-solid'
 import { faStar } from '@fortawesome/fontawesome-free-solid'
 
-
-
 import bgimg from "../assets/bgimg.jpg"
 
 class ReactSlick extends React.Component{
@@ -135,4 +133,4 @@ const IndexPage = () => (
   
 )
 
-export default IndexPage
+export default IndexPage 

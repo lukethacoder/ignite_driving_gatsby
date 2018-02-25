@@ -1,12 +1,24 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
-const SecondPage = () => (
-  <div>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </div>
-)
+export default class Content extends React.Component {
+  render() {
+      return(
+          <section className="pageContentTemplate">
 
-export default SecondPage
+            <header className="headerContainer">
+              <section className="headerSection">
+                <h1>page-2.js</h1>
+              </section>
+            </header>
+
+            <section className="whatWeOfferTemplate">
+              <section className="whatWeOfferOptions">
+                <div>
+                  <h1>This is just a test</h1>
+                </div>
+              </section>
+            </section>
+          </section>
+      )
+  }
+}

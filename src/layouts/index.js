@@ -49,7 +49,7 @@ const Header = () => (
           <NavLink to="/contact/" activeClassName="activeClassName"><FontAwesomeIcon icon={faPhone}/>Contact</NavLink>
         </li>
       </ul>
-      <a className="bookNowNav" href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">BOOK NOW</a>
+      <a className="bookNowNav" href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">BOOK NOW</a>
     </section>
   </nav>
 )
