@@ -24,7 +24,11 @@
             a {
                 margin: auto 10%;
                 text-decoration: none;
+                @include main_font(14px, 500, $white);   
             }
+        }
+        li:nth-of-type(1) a{
+            @include main_font(18px, 500, $white);
         }
     
     }

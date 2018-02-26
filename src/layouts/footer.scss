@@ -64,7 +64,7 @@
                     }
                 }
                 .footerSocials {
-                    width: 100%;
+                    width: 50%;
                     height: 50px;
                     position: absolute;
                     bottom: 5%;
@@ -73,7 +73,7 @@
                     padding: 0;
                     display: inline-block;
                     li { // fix the missing icons...again
-                        width: 30%;
+                        min-width: 45%;
                         height: 100%;
                         margin: 0;
                         padding: 0 3% 0 0;

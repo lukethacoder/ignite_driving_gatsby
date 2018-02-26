@@ -16,7 +16,7 @@ h2 {
     .headerContainer {
         width: 100%;
         height: 80vh;
-        padding-top: 150px;
+        padding-top: 15vh;
         text-align: center;
         display: flex;
         section {
@@ -55,7 +55,7 @@ h2 {
             text-align: center;
             color: $lightgrey;
             margin: 0 auto;
-            padding: 0 5% 30% 5%;
+            padding: 15% 5% 25% 5%;
         }
     }
     .whatWeOffer {
@@ -212,7 +212,7 @@ h2 {
             @include main_font(14px, 500, $white);
             @include button_style_custom(transparent, $white, $white, $darkpurple, 2px $white solid, 2px $white solid); //$bgColorBefore, $bgColorAfter, $colorBefore, $colorAfter, $borderBefore, $borderAfter
             display: block;
-            max-width: 50%;
+            max-width: 45%;
             height: auto;
             margin: 50px auto auto auto;
             padding: 5px;
