@@ -17,7 +17,7 @@ class ReactSlick extends React.Component{
     var settings = {
       dots: true,
       swipe: true,
-      autoplay: true
+      autoplay: false
     }
     return (
       <div className='sliderContainer'>

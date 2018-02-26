@@ -23,19 +23,20 @@ const Pricing = () => (
                         <h4>$78</h4>
                     </div>
                     <div>
-                        <a href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">Book Now</a>
+                        <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
                     </div>
                 </div>
 
                 <div className="priceGuideRow">
                     <div>
                         <h2>Individual Lesson</h2>
+                        <p>starts from $78</p>
                     </div>
                     <div>
                         <h3>1hr 1.5hr 2h</h3>
                     </div>
                     <div>
-                        <h4>$78</h4>
+                        <h4>$78*</h4>
                     </div>
                     <div>
                         <a href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">Book Now</a>

@@ -1,14 +1,6 @@
 @import "_variables.scss";
 
-h1 {
-    font-size: 60px;
-}
-h2 {
-    font-size: 80px;
-}
-
-//index.js
-
+//index.js  
 .pageContent {
     width: 100%;
     padding: 0;
@@ -224,45 +216,7 @@ h2 {
 
 @mixin content--xs() {
     .pageContent {
-        width: 100%;
-        z-index: 0;
-        .headerContainer {
-            width: 100%;
-            height: 80vh;
-            padding-top: 150px;
-            text-align: center;
-            display: flex;
-            section {
-                width: 75%;
-                height: 50%;
-                margin: auto;
-                h1 {
-                    @include main_font(42px, 600, $white);
-                }
-                h2 {
-                    @include main_font(28px, 600, $white);
-                }
-                a {
-                    @include button_style_inverted();
-                    @include main_font(20px, 600, $white);
-                    padding: 8px 18px;
-                    margin: 5%;
-                    width: auto;
-                }
-                p {
-                    @include main_font(16px, 500, $white);
-                    padding: 0;
-                    margin: 15px 2% 2% 2%;
-                    width: auto;
-                }
-            }
-        }
         .whatWeOffer {
-            width: 100%;
-            height: auto;
-            padding: 0;
-            margin: 0 auto;
-            position: relative;
             @include background(url('../assets/bgwwo.png'), 550% auto, top, no-repeat, rgb(156, 156, 156));
             &:before {
                 content: '';
@@ -275,61 +229,45 @@ h2 {
                 opacity: .5;
             }
             section {
+                @include page-cont-xs();
+            }
+        }
+        .googleReviews {
+            .sliderContainer {
+                @include page-cont-xs();
+            }
+        }
+    }
+}
+
+@mixin content--md() {
+    .pageContent {
+        .indexAbout {
+            h3 {
+                @include page-cont-md();
+            }
+        }
+        .whatWeOffer {
+            @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+            section {
                 @include page-cont-md();
                 display: grid;
-                grid-template-columns: 50% 50%;
+                grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: auto;
                 div {
-                    display: grid;
-                    justify-self: center;
-                    align-self: stretch;
-                    justify-content: center;
-                    align-content: center;
-                    background-color: $lightgrey;
-                    height: auto;
-                    width: auto;
-                    margin: 2%;
-                    padding: 2%;
-                    &:hover {
-                        @include box-shadow($rgb_mediumpurple, 35px, 5px);
-                        @include hover_trans($sec: 0.25s);
-                    }
-                    h2 {
-                        @include main_font(24px, 600, $midgrey);
-                        text-align: center;
-                        height: 75px;
-                        margin: 10% 10% 0% 10%;
-                        padding: 1%;
-                    }
-                    svg {
-                        width: 80%;
-                        height: auto;
-                        margin: 0% 10%;
-                        text-align: center;
-                        padding: 20%;
-                        color: $midgrey;
-                        background-color: $white;
-                        @include border-radius(50%);
-                    }
-                    svg:nth-of-type(2){
-                        height: 70%;
-                        background-color: green;
+                    div {
+                        h2 {
+                            @include main_font(24px, 600, $midgrey);                      
+                        }
                     }
                     p {
-                        @include main_font(16px, 500, $midgrey);
-                        width: 80%;
-                        margin: 10%;
-                        padding: 7% 0%;
-                        text-align: center;
-                        border-top: 2px solid $midgrey;
-                        border-bottom: 2px solid $midgrey;
+                        @include main_font(14px, 500, $midgrey);
                     }
                     a {
-                        width: 80%;
-                        margin: 5% 10% 10% 10%;
-                        padding: 5% 0;
-                        text-align: center;
-                        @include main_font(16px, 500, $midgrey);
+                        width: 70%;
+                        margin: 0 15% 10% 15%;
+                        padding: 4% 0;
+                        @include main_font(14px, 600, $midgrey);
                         @include button_style_wwo();
                     }
                 }
@@ -343,238 +281,129 @@ h2 {
     }
 }
 
-@mixin content--md() {
+@mixin content--lg(){
     .pageContent {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        z-index: 0;
-        .headerContainer {
-            width: 100%;
-            height: 80vh;
-            padding-top: 0;
-            text-align: center;
-            display: flex;
-            section {
-                h1 {
-                    @include main_font(48px, 600, $white);
-                }
-                h2 {
-                    @include main_font(32px, 600, $white);
-                }
-                a {
-                    @include button_style_inverted();
-                    @include main_font(24px, 600, $white);
-                }
-                p {
-                    @include main_font(18px, 500, $white);
-                }
-            }
-        }
         .indexAbout {
-            width: 100%;
-            height: 450px;
             h3 {
-                width: 50%;
-                height: auto;
-                text-align: center;
-                color: $lightgrey;
-                margin: 0 auto;
-                padding: 10% 5%;
+                @include page-cont-lg();
             }
         }
         .whatWeOffer {
-            width: 100%;
-            height: auto;
-            padding: 10%;
-            margin: 10% auto;
-            position: relative;
-            @include background(url('../assets/bgwwo.png'), 300% auto, top, no-repeat, rgb(156, 156, 156));
-            &:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background-color: $darkpurple;
-                opacity: .5;
-            }
+            @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
             section {
+                @include page-cont-lg();
                 display: grid;
-                grid-template-columns: 30% 30% 30%;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 grid-template-rows: auto;
                 div {
-                    display: grid;
-                    justify-self: center;
-                    align-self: stretch;
-                    justify-content: center;
-                    align-content: center;
-                    background-color: $lightgrey;
-                    height: auto;
-                    width: auto;
-                    margin: 2%;
-                    padding: 2%;
-                    &:hover {
-                        @include box-shadow($rgb_mediumpurple, 35px, 5px);
-                        @include hover_trans($sec: 0.25s);
-                    }
-                    
-                    h2 {
-                        @include main_font(24px, 600, $midgrey);
-                        text-align: center;
-                        height: 75px;
-                        margin: 10% 10% 0% 10%;
-                        padding: 1%;
-                    }
-                    svg {
-                        width: 80%;
-                        height: auto;
-                        margin: 0% 10%;
-                        text-align: center;
-                        padding: 20%;
-                        color: $midgrey;
-                        background-color: $white;
-                        @include border-radius(50%);
+                    div {
+                        h2 {
+                            @include main_font(24px, 600, $midgrey);                      
+                        }
                     }
                     p {
-                        @include main_font(16px, 500, $midgrey);
-                        width: 80%;
-                        margin: 10%;
-                        padding: 7% 0%;
-                        text-align: center;
-                        border-top: 2px solid $midgrey;
-                        border-bottom: 2px solid $midgrey;
+                        @include main_font(14px, 500, $midgrey);
                     }
                     a {
-                        width: 80%;
-                        margin: 5% 10% 10% 10%;
-                        padding: 5% 0;
-                        text-align: center;
-                        @include main_font(16px, 500, $midgrey);
+                        width: 70%;
+                        margin: 0 15% 10% 15%;
+                        padding: 4% 0;
+                        @include main_font(14px, 600, $midgrey);
                         @include button_style_wwo();
                     }
                 }
+            }
+        }
+        .googleReviews {
+            background-color: $darkpurple;
+            width: 100%;
+            height: auto;
+            padding: 7% 0;
+            display: block;
+            .sliderContainer {
+                @include page_container(70%, 0); //have to manually adjust this 
+                div {
+                    .slick-list {
+                        .slick-track {
+                            .slick-slide {
+                                h2 {
+                                    @include main_font(24px, 500, $white);
+                                    text-align: center;
+                                    margin-bottom: 5px;
+                                }
+                                h3 {
+                                    @include main_font(18px, 500, $white);
+                                    text-align: center;
+                                    margin-bottom: 5px;
+                                }
+                                div {
+                                    text-align: center;
+                                    margin-bottom: 10px;
+                                    svg {
+                                        color: $white;
+                                    }
+                                }
+                                p {
+                                    @include main_font(14px, 500, $white);
+                                    text-align: center;
+                                    width: 60%;
+                                    margin: 0 auto;
+                                    padding-bottom: 2%;
+                                }
+                            }
+                        }
+                    }
+                    .slick-dots {
+                        li {
+                            button {
+                                width: 5px;
+                                height: 5px;
+                                border: 2px $white solid;
+                                border-radius: 50px;
+                                background-color: transparent;
+                                &:before {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .slick-active {
+                            button {
+                                background-color: $white;
+                            }
+                        }
+                        color: $white;
+                    }
+                }
+            }
+            a {
+                @include main_font(14px, 500, $white);
+                @include button_style_custom(transparent, $white, $white, $darkpurple, 2px $white solid, 2px $white solid); //$bgColorBefore, $bgColorAfter, $colorBefore, $colorAfter, $borderBefore, $borderAfter
+                max-width: 20%;
+                height: auto;
+                margin: 50px auto auto auto;
+                padding: 5px;
+                text-align: center;
+                border-radius: 50px;
             }
         }
     }
 }
-
-@mixin content--lg(){
+@mixin content-xl(){
     .pageContent {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        z-index: 0;
-        .headerContainer {
-            width: 100%;
-            height: 80vh;
-            padding-top: 0;
-            text-align: center;
-            display: flex;
-            section {
-                h1 {
-                    @include main_font(48px, 600, $white);
-                }
-                h2 {
-                    @include main_font(32px, 600, $white);
-                }
-                a {
-                    @include button_style_inverted();
-                    @include main_font(24px, 600, $white);
-                }
-                p {
-                    @include main_font(18px, 500, $white);
-                }
-            }
-        }
         .indexAbout {
-            width: 100%;
-            height: 550px;
-            padding-bottom: 175px;
-            background-color: $darkpurple;
             h3 {
-                width: 50%;
-                height: auto;
-                text-align: center;
-                color: $lightgrey;
-                margin: 0 auto;
-                padding: 10% 5%;
+                @include page-cont-xl();
             }
         }
-
         .whatWeOffer {
-            width: 100%;
-            height: auto;
-            padding: 10%;
-            margin: 0 auto;
-            position: relative;
-            @include background(url('../assets/bgwwo.png'), 150% auto, top, no-repeat, rgb(156, 156, 156));
-            &:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background-color: $darkpurple;
-                opacity: .5;
-            }
+            @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
             section {
-                display: grid;
-                grid-template-columns: 20% 20% 20% 20% 20%;
-                grid-template-rows: auto;
-                div {
-                    display: grid;
-                    justify-self: center;
-                    align-self: stretch;
-                    justify-content: center;
-                    align-content: center;
-                    background-color: $lightgrey;
-                    height: auto;
-                    width: auto;
-                    margin: 2%;
-                    padding: 2%;
-                    &:hover {
-                        @include box-shadow($rgb_mediumpurple, 35px, 5px);
-                        @include hover_trans($sec: 0.25s);
-                    }
-                    
-                    h2 {
-                        @include main_font(24px, 600, $midgrey);
-                        text-align: center;
-                        height: 75px;
-                        margin: 10% 10% 0% 10%;
-                        padding: 1%;
-                    }
-                    svg {
-                        width: 80%;
-                        height: auto;
-                        margin: 0% 10%;
-                        text-align: center;
-                        padding: 20%;
-                        color: $midgrey;
-                        background-color: $white;
-                        @include border-radius(50%);
-                    }
-                    p {
-                        @include main_font(16px, 500, $midgrey);
-                        width: 80%;
-                        margin: 10%;
-                        padding: 7% 0%;
-                        text-align: center;
-                        border-top: 2px solid $midgrey;
-                        border-bottom: 2px solid $midgrey;
-                    }
-                    a {
-                        width: 80%;
-                        margin: 5% 10% 10% 10%;
-                        padding: 5% 0;
-                        text-align: center;
-                        @include main_font(16px, 500, $midgrey);
-                        @include button_style_wwo();
-                    }
-                }
+                @include page-cont-xl();
+            }
+        }
+        .googleReviews {
+            .sliderContainer {
+                @include page-cont-xl();
             }
         }
     }

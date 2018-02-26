@@ -157,15 +157,27 @@ $main_font: 'Raleway', sans-serif;
 }
 
 @mixin page-cont-sm() { // min width 600px
-    @include page_container(75%, 0);
+    @include page_container(80%, 0);
+    // h2 = 24px
+    // h3 = 18px
+    // p = 12px
+    // a = 14px
 }
 
-@mixin page-cont-md() { // min width 801px
+@mixin page-cont-md() { // min width 801px -> clicks over to desktop nav <-
     @include page_container(75%, 0);
+    // h2 = 24px
+    // h3 = 18px
+    // p = 12px
+    // a = 14px
 }
 
 @mixin page-cont-lg() { // min width 1024px
     @include page_container(70%, 0);
+    // h2 = 26px
+    // h3 = 20px
+    // p = 14px
+    // a = 16px
 }
 
 @mixin page-cont-xl() { // min width 1281px

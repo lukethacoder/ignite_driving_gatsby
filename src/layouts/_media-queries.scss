@@ -18,6 +18,7 @@
     @include navbar--md();
     @include contentTemplate--md();
     @include content--md();
+    @include aboutPage-md();
     @include footer-md();
 }
 /* big landscape tablets, laptops, and desktops */
@@ -32,4 +33,5 @@
     @include navbar-xl();
     @include footer-xl();
     @include contentTemplate--xl();
+    @include content-xl();
 }

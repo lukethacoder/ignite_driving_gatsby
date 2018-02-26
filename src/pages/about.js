@@ -38,10 +38,10 @@ const About = () => (
       <section>
         <div className="meetTheTeamGridContainer">
           <div className="teamMemberOne">
-            <div>
+            <div className="teamMemberImg">
               <img src={team01} alt="team member number one" />
             </div>
-            <div>
+            <div className="teamMemberInfo">
               <h2>Margaret Secomb</h2>
               <h3>Automatic | South Canberra</h3>
               <p>
@@ -51,16 +51,17 @@ const About = () => (
           </div>
 
           <div className="teamMemberTwo">
-            <div>
+            <div className="teamMemberImg">
+              <img src={team02} alt="team member number one" />
+            </div>
+            <div className="teamMemberInfo">
               <h2>Margaret Secomb</h2>
               <h3>Automatic | South Canberra</h3>
               <p>
                 Based in South Canberra, Ignite Driving was created to provide thorough and safe driving skills to Learners of all levels.  We progress at the pace of the individual Learner which means we are unable to quote how many lessons it will take Learners to obtain their P’s. 
               </p>
             </div>
-            <div>
-              <img src={team02} alt="team member number one" />
-            </div>
+            
           </div>
         </div>
       </section>
