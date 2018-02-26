@@ -8,7 +8,7 @@
     background-color: $darkpurple;
     position: relative;
     .footerMain {
-        @include page-cont-xs();
+        @include page-cont-xx();
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -26,13 +26,14 @@
                     @include list_reset();
                     li:nth-of-type(1){
                         width: auto;
-                        @include main_font(22px, 500, $mediumpurple);
+                        @include main_font(18px, 500, $mediumpurple);
                         padding-bottom: 5px;
                         border-bottom: 2px solid $mediumpurple;
                     }
                     li {
+                        margin: 0 0 2% 0;
                         a {
-                            @include main_font(20px, 500, $midgrey);
+                            @include main_font(14px, 500, $midgrey);
                         }
                     }
                 }
@@ -45,32 +46,34 @@
                     height: 100%;
                     width: 100%;
                     @include list_reset();
+                    padding-bottom: 20%;
                     > li:nth-of-type(1){
                         width: auto;
-                        @include main_font(22px, 500, $mediumpurple);
+                        @include main_font(18px, 500, $mediumpurple);
                         padding-bottom: 5px;
                         border-bottom: 2px solid $mediumpurple;
                     }
                     li {
                         height: auto;
                         border: 0;
+                        margin: 0 0 2% 0;
                         a {
-                            @include main_font(20px, 500, $midgrey);
+                            @include main_font(14px, 500, $midgrey);
                             @include hover_trans(0.25s);
                         }
                     }
                 }
                 .footerSocials {
                     width: 100%;
-                    height: 45px;
+                    height: 50px;
                     position: absolute;
                     bottom: 5%;
                     left: 5%;
                     margin: 0;
                     padding: 0;
                     display: inline-block;
-                    li {
-                        width: auto;
+                    li { // fix the missing icons...again
+                        width: 30%;
                         height: 100%;
                         margin: 0;
                         padding: 0 3% 0 0;
@@ -78,10 +81,10 @@
                         display: block;
                         a {
                             height: 100%;
-                            width: auto;
+                            width: 100%;
                             svg {
                                 height: 100%;
-                                width: auto;
+                                width: 50%;
                                 color: $midgrey;
                                 margin: 0;
                             }
@@ -158,7 +161,7 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
-            @include page_container(80%, 0);
+            @include page-cont-xx();
             ul {
                 list-style-type: none;
                 padding: 0;
@@ -190,60 +193,20 @@
     .footer {
         .footerMain {
             > div { //not include instagram plug in
-                .footerNav {
-                    ul {
-                        @include list_reset();
-                        li:nth-of-type(1){
-                            @include main_font(22px, 500, $mediumpurple);
-                            padding-bottom: 5px;
-                        }
-                        li {
-                            a {
-                                @include main_font(20px, 500, $midgrey);
-                            }
-                        }
-                    }
-                }
                 .footerContact {
-                    .footerContactChild {
-                        > li:nth-of-type(1){
-                            @include main_font(22px, 500, $mediumpurple);
-                        }
-                        li {
-                            a {
-                                @include main_font(20px, 500, $midgrey);
-                                @include hover_trans(0.25s);
-                            }
-                        }
-                    }
-                    .footerSocials {
-                        width: 100%;
-                        height: 45px;
-                        bottom: 5%;
-                        left: 5%;
-                        li {
-                            width: auto;
-                            height: 100%;
-                            margin: 0;
-                            padding: 0 3% 0 0;
-                            a {
-                                height: 100%;
-                                width: auto;
-                                svg {
-                                    height: 100%;
-                                    width: auto;
-                                    color: $midgrey;
-                                    margin: 0;
-                                }
-                            }
-                        }
-                    }
+
                 }
                 .img_adta {
                     padding: 5% 25% 1% 10%;
+                    img {
+                        margin: 0 auto;
+                    }
                 }
                 .img_k2d{
                     padding: 5% 25% 1% 10%;
+                    img {
+                        margin: 0 auto;
+                    }
                 }
             }
             .footerInstagram {

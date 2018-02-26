@@ -141,19 +141,33 @@ $main_font: 'Raleway', sans-serif;
 }
 
 //media query variables
-
-@mixin page-cont-xs() {
+@mixin page-cont-xx() { //default mobile site (less than 480px)
+    @include page_container(90%, 0);
+    // h2 = 24px
+    // h3 = 18px
+    // p = 12px
+    // a = 14px
+}
+@mixin page-cont-xs() { //min width 480px
     @include page_container(85%, 0);
+    // h2 = 24px
+    // h3 = 18px
+    // p = 12px
+    // a = 14px
 }
 
-@mixin page-cont-sm() {
+@mixin page-cont-sm() { // min width 600px
     @include page_container(75%, 0);
 }
 
-@mixin page-cont-md() {
+@mixin page-cont-md() { // min width 801px
     @include page_container(75%, 0);
 }
 
-@mixin page-cont-lg() {
+@mixin page-cont-lg() { // min width 1024px
     @include page_container(70%, 0);
+}
+
+@mixin page-cont-xl() { // min width 1281px
+    @include page_container(65%, 0);
 }

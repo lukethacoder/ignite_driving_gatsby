@@ -89,35 +89,45 @@ const IndexPage = () => (
     <section className="whatWeOffer">
       <section>
         <div>
-          <h2>Initial Lesson</h2>
+          <div>
+            <h2>Initial Lesson</h2>
+          </div>
           <FontAwesomeIcon icon={faPencilAlt}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
           <Link to="/whatweoffer.js">Initial Lesson</Link>
         </div>
 
         <div>
-          <h2>Log Book</h2>
+          <div>
+            <h2>Log Book</h2>
+          </div>
           <FontAwesomeIcon icon={faBook}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
           <Link to="/whatweoffer.js">More Info</Link>
         </div>
 
         <div>
-          <h2>Refresher Lesson</h2>
+          <div>
+            <h2>Refresher Lesson</h2>
+          </div>
           <FontAwesomeIcon icon={faSyncAlt}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
           <Link to="/whatweoffer.js">Book Lesson</Link>
         </div>
 
         <div>
-          <h2>Keys 2 Drive</h2>
+          <div>
+            <h2>Keys 2 Drive</h2>
+          </div>
           <FontAwesomeIcon icon={faKey}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
           <Link to="/whatweoffer.js">Free Lesson</Link>
         </div>
 
         <div>
-          <h2>Car Hire</h2>
+          <div>
+            <h2>Car Hire</h2>
+          </div>
           <FontAwesomeIcon icon={faCar}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
           <Link to="/whatweoffer.js">Book a Car</Link>

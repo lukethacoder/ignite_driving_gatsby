@@ -20,7 +20,7 @@ h2 {
         text-align: center;
         display: flex;
         section {
-            width: 75%;
+            @include page-cont-xx();
             height: 50%;
             margin: auto;
             h1 {
@@ -51,18 +51,18 @@ h2 {
         margin: 0;
         background-color: $darkpurple;
         h3 {
-            width: 75%;
+            @include page-cont-xx();
             text-align: center;
             color: $lightgrey;
             margin: 0 auto;
-            padding: 20% 5%;
+            padding: 0 5% 30% 5%;
         }
     }
     .whatWeOffer {
         width: 100%;
         height: auto;
-        padding: 10%;
-        margin: 10% auto;
+        padding: 0;
+        margin: 0 auto;
         position: relative;
         @include background(url('../assets/bgwwo.png'), 1500% auto, top, no-repeat, rgb(156, 156, 156));
         &:before {
@@ -76,13 +76,15 @@ h2 {
             opacity: .5;
         }
         section {
+            @include page-cont-xx();
+            padding-top: 5%;
+            padding-bottom: 5%;
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: 100%;
+            grid-template-columns: 50% 50%;
             grid-template-rows: auto;
             div {
                 display: grid;
-                justify-self: center;
-                align-self: stretch;
                 justify-content: center;
                 align-content: center;
                 background-color: $lightgrey;
@@ -92,17 +94,22 @@ h2 {
                 margin-bottom: 5%;
                 padding: 1%;
                 z-index: 5;
-                h2 {
-                    @include main_font(42px, 600, $midgrey);
-                    text-align: center;
-                    height: 125px;
-                    margin: 10% 10% 0% 10%;
+                div {
+                    min-height: 50px;
+                    margin: 10% 5%;
                     padding: 1%;
+                    vertical-align: middle;
+                    h2 {
+                        @include main_font(22px, 600, $midgrey);
+                        text-align: center;
+                        margin: 0;
+                        padding: 0;                        
+                    }
                 }
                 svg {
-                    width: 70%;
+                    width: 60%;
                     height: auto;
-                    margin: 0% 15%;
+                    margin: 0% 20%;
                     text-align: center;
                     padding: 20%;
                     color: $midgrey;
@@ -110,7 +117,7 @@ h2 {
                     @include border-radius(50%);
                 }
                 p {
-                    @include main_font(24px, 500, $midgrey);
+                    @include main_font(12px, 500, $midgrey);
                     width: 80%;
                     margin: 10%;
                     padding: 7% 0%;
@@ -120,10 +127,10 @@ h2 {
                 }
                 a {
                     width: 80%;
-                    margin: 5% 10% 10% 10%;
+                    margin: 0 10% 10% 10%;
                     padding: 5% 0;
                     text-align: center;
-                    @include main_font(28px, 600, $midgrey);
+                    @include main_font(14px, 600, $midgrey);
                     @include button_style_wwo();
                 }
             }
@@ -136,7 +143,7 @@ h2 {
         padding: 8% 0;
         display: block;
         .sliderContainer {
-            @include page_container(80%, 0);
+            @include page_container(80%, 0); //have to manually adjust this 
             padding: 0;
             div {
                 .slick-arrow .slick-next{
@@ -153,7 +160,7 @@ h2 {
                     .slick-track {
                         .slick-slide {
                             h2 {
-                                @include main_font(32px, 500, $white);
+                                @include main_font(24px, 500, $white);
                                 text-align: center;
                                 margin-bottom: 5px;
                             }
@@ -170,17 +177,17 @@ h2 {
                                 }
                             }
                             p {
-                                @include main_font(20px, 500, $white);
+                                @include main_font(12px, 500, $white);
                                 text-align: center;
                                 width: 80%;
                                 margin: 0 auto;
+                                padding-bottom: 2%;
                             }
                         }
                     }
                 }
                 .slick-dots {
                     li {
-                        
                         button {
                             width: 15px;
                             height: 15px;
@@ -202,7 +209,7 @@ h2 {
             }
         }
         a {
-            @include main_font(18px, 500, $white);
+            @include main_font(14px, 500, $white);
             @include button_style_custom(transparent, $white, $white, $darkpurple, 2px $white solid, 2px $white solid); //$bgColorBefore, $bgColorAfter, $colorBefore, $colorAfter, $borderBefore, $borderAfter
             display: block;
             max-width: 50%;
@@ -253,8 +260,8 @@ h2 {
         .whatWeOffer {
             width: 100%;
             height: auto;
-            padding: 10%;
-            margin: 10% auto;
+            padding: 0;
+            margin: 0 auto;
             position: relative;
             @include background(url('../assets/bgwwo.png'), 550% auto, top, no-repeat, rgb(156, 156, 156));
             &:before {
@@ -268,6 +275,7 @@ h2 {
                 opacity: .5;
             }
             section {
+                @include page-cont-md();
                 display: grid;
                 grid-template-columns: 50% 50%;
                 grid-template-rows: auto;
@@ -325,6 +333,11 @@ h2 {
                         @include button_style_wwo();
                     }
                 }
+            }
+        }
+        .googleReviews {
+            .sliderContainer {
+                @include page-cont-md();
             }
         }
     }
