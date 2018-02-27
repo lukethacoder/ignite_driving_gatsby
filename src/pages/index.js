@@ -94,7 +94,7 @@ const IndexPage = () => (
           </div>
           <FontAwesomeIcon icon={faPencilAlt}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
-          <Link to="/whatweoffer.js">Initial Lesson</Link>
+          <Link to="/whatweoffer/">Initial Lesson</Link>
         </div>
 
         <div>
@@ -103,7 +103,7 @@ const IndexPage = () => (
           </div>
           <FontAwesomeIcon icon={faBook}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
-          <Link to="/whatweoffer.js">More Info</Link>
+          <Link to="/whatweoffer/">More Info</Link>
         </div>
 
         <div>
@@ -112,7 +112,7 @@ const IndexPage = () => (
           </div>
           <FontAwesomeIcon icon={faSyncAlt}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
-          <Link to="/whatweoffer.js">Book Lesson</Link>
+          <Link to="/whatweoffer/">Book Lesson</Link>
         </div>
 
         <div>
@@ -121,7 +121,7 @@ const IndexPage = () => (
           </div>
           <FontAwesomeIcon icon={faKey}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
-          <Link to="/whatweoffer.js">Free Lesson</Link>
+          <Link to="/whatweoffer/">Free Lesson</Link>
         </div>
 
         <div>
@@ -130,7 +130,7 @@ const IndexPage = () => (
           </div>
           <FontAwesomeIcon icon={faCar}/>
           <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
-          <Link to="/whatweoffer.js">Book a Car</Link>
+          <Link to="/whatweoffer/">Book a Car</Link>
         </div>
       </section>
     </section>

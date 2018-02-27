@@ -65,7 +65,7 @@
                 }
                 .footerSocials {
                     width: 50%;
-                    height: 50px;
+                    height: 40px;
                     position: absolute;
                     bottom: 5%;
                     left: 5%;
@@ -73,10 +73,10 @@
                     padding: 0;
                     display: inline-block;
                     li { // fix the missing icons...again
-                        min-width: 45%;
+                        width: auto;
                         height: 100%;
                         margin: 0;
-                        padding: 0 3% 0 0;
+                        padding: 0 5% 0 0;
                         float: left;
                         display: block;
                         a {
@@ -84,7 +84,7 @@
                             width: 100%;
                             svg {
                                 height: 100%;
-                                width: 50%;
+                                width: auto;
                                 color: $midgrey;
                                 margin: 0;
                             }
@@ -475,14 +475,14 @@
                     }
                     .footerSocials {
                         width: 100%;
-                        height: 45px;
+                        height: 35px;
                         bottom: 5%;
                         left: 5%;
                         li {
                             width: auto;
                             height: 100%;
                             margin: 0;
-                            padding: 0 3% 0 0;
+                            padding: 0 5% 0 0;
                             &:hover {
                                 a {
                                     svg {

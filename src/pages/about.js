@@ -38,9 +38,7 @@ const About = () => (
       <section>
         <div className="meetTheTeamGridContainer">
           <div className="teamMemberOne">
-            <div className="teamMemberImg">
-              <img src={team01} alt="team member number one" />
-            </div>
+            <img src={team01} alt="team member number one" />
             <div className="teamMemberInfo">
               <h2>Margaret Secomb</h2>
               <h3>Automatic | South Canberra</h3>
@@ -51,9 +49,7 @@ const About = () => (
           </div>
 
           <div className="teamMemberTwo">
-            <div className="teamMemberImg">
-              <img src={team02} alt="team member number one" />
-            </div>
+            <img src={team02} alt="team member number one" />
             <div className="teamMemberInfo">
               <h2>Margaret Secomb</h2>
               <h3>Automatic | South Canberra</h3>

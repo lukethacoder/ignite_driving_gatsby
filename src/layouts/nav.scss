@@ -183,13 +183,13 @@
             }        
         }
         .topNav {
-        width: 30%;
-        height: 150px;
-        position: relative;
-        float: left;
-        display: block;
-        padding: 0;
-        background-color: transparent;
+            width: 30%;
+            height: 150px;
+            position: relative;
+            float: left;
+            display: block;
+            padding: 0;
+            background-color: transparent;
             a {
                 width: auto;
                 height: 100%;
@@ -247,7 +247,7 @@
                     .activeClassName {
                         background-color: transparent;
                         @at-root #{&} {
-                            @include main_font(18px, 600, $white);
+                            font-weight: 600;
                         }
                     }
                 }

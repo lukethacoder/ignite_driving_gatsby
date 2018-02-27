@@ -41,8 +41,8 @@
         @include page-cont-xx();
         .meetTheTeamGridContainer { //whole grid container
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
             align-content: stretch;
             .teamMemberOne, .teamMemberTwo{ // one row
                 background-color: $white;
@@ -58,12 +58,12 @@
                     padding: 0;
                     overflow: hidden;
                     position: relative;
-                    height: 400px;
+                    height: auto;
                     width: auto;
                     img {
                         width: 100%;
                         height: auto;
-                        margin: 0;
+                        margin: 0 !important;
                         padding: 0;
                     }
                 }
@@ -72,15 +72,15 @@
                     display: block;
                     margin: auto;
                     h2 {
-                        @include main_font(24px, 600, $darkgrey);
+                        @include main_font(26px, 600, $darkgrey);
                         margin: 0 0 2% 0;
                     }
                     h3 {
-                        @include main_font(18px, 500, $mediumpurple);
+                        @include main_font(20px, 500, $mediumpurple);
                         margin: 0 0 3% 0;
                     }
                     p {
-                        @include main_font(12px, 500, $darkgrey);
+                        @include main_font(14px, 500, $darkgrey);
                         margin: 0 0 3% 0;
                     }
                 }
@@ -116,6 +116,27 @@
     .meetTheTeamContainer {
         section {
             @include page-cont-sm();
+            .meetTheTeamGridContainer { //whole grid container
+                .teamMemberOne, .teamMemberTwo{ // one row
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: auto;
+                    .teamMemberInfo{
+                        padding: 5% 5% 15% 5%;
+                        h2 {
+                            @include main_font(24px, 600, $darkgrey);
+                            margin: 0 0 2% 0;
+                        }
+                        h3 {
+                            @include main_font(18px, 500, $mediumpurple);
+                            margin: 0 0 3% 0;
+                        }
+                        p {
+                            @include main_font(12px, 500, $darkgrey);
+                            margin: 0 0 3% 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -123,11 +144,36 @@
     .aboutContainer {
         div {
             @include page-cont-md();
+            p {
+                @include main_font(18px, 500, $darkgrey);
+                padding: 3% 5%;
+            }
         }
     }
     .meetTheTeamContainer {
         section {
             @include page-cont-md();
+            .meetTheTeamGridContainer { //whole grid container
+                .teamMemberOne, .teamMemberTwo{ // one row
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: auto;
+                    .teamMemberInfo{
+                        padding: 5% 5% 15% 5%;
+                        h2 {
+                            @include main_font(24px, 600, $darkgrey);
+                            margin: 0 0 2% 0;
+                        }
+                        h3 {
+                            @include main_font(18px, 500, $mediumpurple);
+                            margin: 0 0 3% 0;
+                        }
+                        p {
+                            @include main_font(14px, 500, $darkgrey);
+                            margin: 0 0 3% 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -135,11 +181,36 @@
     .aboutContainer {
         div {
             @include page-cont-lg();
+            p {
+                @include main_font(18px, 500, $darkgrey);
+                padding: 3% 5%;
+            }
         }
     }
     .meetTheTeamContainer {
         section {
             @include page-cont-lg();
+            .meetTheTeamGridContainer { //whole grid container
+                .teamMemberOne, .teamMemberTwo{ // one row
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: auto;
+                    .teamMemberInfo{
+                        padding: 5% 5% 15% 5%;
+                        h2 {
+                            @include main_font(28px, 600, $darkgrey);
+                            margin: 0 0 2% 0;
+                        }
+                        h3 {
+                            @include main_font(22px, 500, $mediumpurple);
+                            margin: 0 0 3% 0;
+                        }
+                        p {
+                            @include main_font(18px, 500, $darkgrey);
+                            margin: 0 0 3% 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }

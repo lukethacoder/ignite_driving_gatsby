@@ -1,0 +1,172 @@
+@import "_variables.scss";
+
+.whatWeOfferTemplate {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 5% auto;
+    position: relative;
+    z-index: 1;
+    @include background(url('../assets/bgwwo.png'), 150% auto, top, no-repeat, rgb(156, 156, 156));
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $darkpurple;
+        width: 100%;
+        opacity: .5;
+        z-index: -5;
+    }
+    .whatWeOfferOptions {
+        @include page-cont-xx();
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: 0;
+        z-index: 50;
+        overflow: hidden;
+        width: 100%;
+        div {
+            display: block;
+            justify-content: center;
+            align-content: center;
+            background-color: $lightgrey;
+            height: auto;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            z-index: 50;
+            .whatWeOfferOptionsUl {
+                background-color: red;
+                height: auto;
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+                grid-template-rows: 100%;
+                .whatWeOfferOptionsLi {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    div {
+                        height: auto;
+                        width: auto;
+                        svg {
+                            width: 50%;
+                            height: auto;
+                            margin: 0%;
+                            text-align: center;
+                            padding: 20%;
+                            color: $midgrey;
+                            background-color: $white;
+                            @include border-radius(50%);
+                        }
+                    }
+                    h2 {
+                        @include main_font(24px, 500, $darkgrey);
+                    }
+                }
+            }
+            .whatWeOfferContent {
+                background-color: green;
+                width: 100%;
+                height: auto;
+                p {
+                    @include main_font(12px, 500, $midgrey);
+                    width: 80%;
+                    margin: 10%;
+                    padding: 7% 0%;
+                    text-align: center;
+                }
+                a {
+                    @include main_font(14px, 600, $midgrey);
+                    @include button_style_wwo();
+                    width: 80%;
+                    margin: auto;
+                    padding: 5% 0;
+                    text-align: center;
+                    
+                }
+            }
+        }
+    }
+}
+@mixin whatweoffer--xs() {
+    // .whatWeOfferTemplate {
+    //     @include background(url('../assets/bgwwo.png'), 550% auto, top, no-repeat, rgb(156, 156, 156));
+    //     &:before {
+    //         content: '';
+    //         position: absolute;
+    //         top: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         left: 0;
+    //         background-color: $darkpurple;
+    //         opacity: .5;
+    //     }
+    //     section {
+    //         @include page-cont-xs();
+    //     }
+    // }
+}
+@mixin whatweoffer--sm() {
+    .whatWeOfferTemplate {
+        .whatWeOfferOptions {
+            @include page-cont-xs();
+        }
+    }
+}
+@mixin whatweoffer--md() {
+    // .whatWeOfferTemplate {
+    //     @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+    //     &:before {
+    //         content: '';
+    //         position: absolute;
+    //         top: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         left: 0;
+    //         background-color: $darkpurple;
+    //         opacity: .5;
+    //     }
+    //     .whatWeOfferOptions {
+    //         @include page-cont-md();
+    //     }
+    // }
+}
+@mixin whatweoffer--lg() {
+    // .whatWeOfferTemplate {
+    //     @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+    //     &:before {
+    //         content: '';
+    //         position: absolute;
+    //         top: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         left: 0;
+    //         background-color: $darkpurple;
+    //         opacity: .5;
+    //     }
+    //     .whatWeOfferOptions {
+    //         @include page-cont-lg();
+    //     }
+    // }   
+}
+@mixin whatweoffer--xl() {
+    // .whatWeOfferTemplate {
+    //     @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+    //     &:before {
+    //         content: '';
+    //         position: absolute;
+    //         top: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         left: 0;
+    //         background-color: $darkpurple;
+    //         opacity: .5;
+    //     }
+    //     .whatWeOfferOptions {
+    //         @include page-cont-xl();
+    //     }
+    // }
+}
