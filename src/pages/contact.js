@@ -83,7 +83,7 @@ const Contact = () => (
                         </p>
                         <div>
                             <a href="tel:+61434833131">0434 833 131</a>
-                            <a href="mailto:margaret@ignitedriving.com.au?subject=Direct Email Enquiry">margaret@ignitedriving.com.au</a>
+                            <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#109;&#x61;&#x72;&#x67;&#x61;&#114;&#x65;&#116;&#x40;&#x69;&#x67;&#110;&#x69;&#116;&#101;&#100;&#x72;&#x69;&#118;&#x69;&#x6e;&#103;&#46;&#x63;&#111;&#109;&#x2e;&#x61;&#x75;">&#109;&#97;&#x72;&#x67;&#x61;&#114;&#101;&#x74;&#x40;&#x69;&#103;&#110;&#105;&#116;&#x65;&#x64;&#x72;&#105;&#x76;&#x69;&#x6e;&#x67;&#x2e;&#99;&#111;&#x6d;&#46;&#x61;&#117;</a>
                             <ul>
                                 <li><a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon icon={["fab", "instagram"]}/>

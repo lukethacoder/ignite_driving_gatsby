@@ -81,33 +81,43 @@ export default class Content extends React.Component {
                     <ul className="whatWeOfferOptionsUl">
                         <li className="whatWeOfferOptionsLi" onClick={ () => ( this.changeContent('initial_lesson'))}>
                           <div>
-                            <FontAwesomeIcon icon={faPencilAlt}/>
-                          </div>
+                            <div>
+                              <FontAwesomeIcon icon={faPencilAlt}/>
+                            </div>
                           <h2>First Lesson</h2>
+                          </div>
                         </li>
                         <li className="whatWeOfferOptionsLi" onClick={ () => ( this.changeContent('log_book') ) }>
                           <div>
-                            <FontAwesomeIcon icon={faBook}/>
+                            <div>
+                              <FontAwesomeIcon icon={faBook}/>
+                            </div>
+                            <h2>Log Book</h2>
                           </div>
-                          <h2>Log Book</h2>
                         </li>
                         <li className="whatWeOfferOptionsLi" onClick={ () => ( this.changeContent('refresher') ) }>
                           <div>
-                            <FontAwesomeIcon icon={faSyncAlt}/>
+                            <div>
+                              <FontAwesomeIcon icon={faSyncAlt}/>
+                            </div>
+                            <h2>Refresher Lesson</h2>
                           </div>
-                          <h2>Refresher Lesson</h2>
                         </li>
                         <li className="whatWeOfferOptionsLi" onClick={ () => ( this.changeContent('keys2drive') ) }>
                           <div>
-                            <FontAwesomeIcon icon={faKey}/>
+                            <div>
+                              <FontAwesomeIcon icon={faKey}/>
+                            </div>
+                            <h2>Keys2Drive</h2>
                           </div>
-                          <h2>Keys2Drive</h2>
                         </li>
                         <li className="whatWeOfferOptionsLi" onClick={ () => ( this.changeContent('car_hire') ) }>
                           <div>
-                            <FontAwesomeIcon icon={faCar}/>
+                            <div>
+                              <FontAwesomeIcon icon={faCar}/>
+                            </div>
+                            <h2>Car Hire</h2>
                           </div>
-                          <h2>Car Hire</h2>
                         </li>
                     </ul>
                     <div className="whatWeOfferContent">

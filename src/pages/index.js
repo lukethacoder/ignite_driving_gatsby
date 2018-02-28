@@ -90,46 +90,56 @@ const IndexPage = () => (
       <section>
         <div>
           <div>
-            <h2>Initial Lesson</h2>
+            <div>
+              <h2>First<br></br>Lesson</h2>
+            </div>
+            <FontAwesomeIcon icon={faPencilAlt}/>
           </div>
-          <FontAwesomeIcon icon={faPencilAlt}/>
-          <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
+          <p>We talk about where you are at in your driving and work out where to go from there. <br></br><br></br> We will cover at least competency 1, depending on driving experience.  Includes an intro to the Keys 2 Drive program.</p>
           <Link to="/whatweoffer/">Initial Lesson</Link>
         </div>
 
         <div>
           <div>
-            <h2>Log Book</h2>
+            <div>
+              <h2>Log<br></br>Book</h2>
+            </div>
+            <FontAwesomeIcon icon={faBook}/>
           </div>
-          <FontAwesomeIcon icon={faBook}/>
-          <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
+          <p>Ignite Driving Instructors are ACT qualified to undertake Log Book assessments and issue P Licences.  <br></br>Early lessons are focussed on instructing to help the learner gain as much experience as possible before beginning assessing.</p>
           <Link to="/whatweoffer/">More Info</Link>
         </div>
 
         <div>
           <div>
-            <h2>Refresher Lesson</h2>
+            <div>
+              <h2>Refresher<br></br>Lesson</h2>
+            </div>
+            <FontAwesomeIcon icon={faSyncAlt}/>
           </div>
-          <FontAwesomeIcon icon={faSyncAlt}/>
-          <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
+          <p>Great for building confidence if it’s been a while since you’ve driven or if you have your licence but not feeling as safe on the road as you would like.  Also good for Seniors who need a refresher before the Government Assessment</p>
           <Link to="/whatweoffer/">Book Lesson</Link>
         </div>
 
         <div>
           <div>
-            <h2>Keys 2 Drive</h2>
+            <div>
+              <h2>Keys 2<br></br>Drive</h2>
+            </div>
+            <FontAwesomeIcon icon={faKey}/>
           </div>
-          <FontAwesomeIcon icon={faKey}/>
-          <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
+          <p>A Federally funded FREE lesson with the aim to give you good learning techniques for you and your supervising driver.  Supervising driver must be present for the duration of the lesson.  Register on Keys2Drive website before booking this lesson.</p>
           <Link to="/whatweoffer/">Free Lesson</Link>
         </div>
 
         <div>
           <div>
-            <h2>Car Hire</h2>
+            <div>
+              <h2>Car<br></br>Hire</h2>
+            </div>
+            <FontAwesomeIcon icon={faCar}/>
           </div>
-          <FontAwesomeIcon icon={faCar}/>
-          <p>Short paragraph about the initial lesson and stuff 4 lines should be g. Guess we can always make the font smaller but want them all similar</p>
+          <p>If you are ready to undertake the one off test but don’t have access to a car you are able to hire a car from Ignite Driving.  Rates are based on a regular per hour lesson.</p>
           <Link to="/whatweoffer/">Book a Car</Link>
         </div>
       </section>

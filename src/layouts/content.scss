@@ -74,11 +74,11 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: auto;
+            grid-template-rows: 35% 1fr 20%;
+            align-content: stretch;
             div {
                 display: grid;
                 justify-content: center;
-                align-content: center;
                 background-color: $lightgrey;
                 height: auto;
                 width: auto;
@@ -87,26 +87,31 @@
                 padding: 1%;
                 z-index: 5;
                 div {
-                    min-height: 50px;
-                    margin: 10% 5%;
-                    padding: 1%;
-                    vertical-align: middle;
-                    h2 {
-                        @include main_font(22px, 600, $midgrey);
-                        text-align: center;
-                        margin: 0;
-                        padding: 0;                        
+                    display: block;
+                    div {
+                        min-height: 50px;
+                        margin: 10% 5%;
+                        padding: 1%;
+                        vertical-align: middle;
+                        align-self: start;
+                        h2 {
+                            @include main_font(22px, 600, $midgrey);
+                            text-align: center;
+                            margin: 0;
+                            padding: 0;                        
+                        }
                     }
-                }
-                svg {
-                    width: 60%;
-                    height: auto;
-                    margin: 0% 20%;
-                    text-align: center;
-                    padding: 20%;
-                    color: $midgrey;
-                    background-color: $white;
-                    @include border-radius(50%);
+                    svg {
+                        @include border-radius(50%);
+                        align-self: start;
+                        width: 60%;
+                        height: auto;
+                        margin: 0% 20%;
+                        text-align: center;
+                        padding: 20%;
+                        color: $midgrey;
+                        background-color: $white;
+                    }
                 }
                 p {
                     @include main_font(12px, 500, $midgrey);
@@ -114,16 +119,16 @@
                     margin: 10%;
                     padding: 7% 0%;
                     text-align: center;
-                    border-top: 2px solid $midgrey;
-                    border-bottom: 2px solid $midgrey;
+                    align-self: center;
                 }
                 a {
-                    width: 80%;
-                    margin: 0 10% 10% 10%;
-                    padding: 5% 0;
-                    text-align: center;
                     @include main_font(14px, 600, $midgrey);
                     @include button_style_wwo();
+                    align-self: end;
+                    width: 80%;
+                    margin: 0 10% 10% 10%;
+                    padding: 2% 0;
+                    text-align: center;
                 }
             }
         }
@@ -254,23 +259,58 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: auto;
-                div {
-                    div {
-                        h2 {
-                            @include main_font(24px, 600, $midgrey);                      
-                        }
-                    }
-                    p {
-                        @include main_font(14px, 500, $midgrey);
-                    }
-                    a {
-                        width: 70%;
-                        margin: 0 15% 10% 15%;
-                        padding: 4% 0;
-                        @include main_font(14px, 600, $midgrey);
-                        @include button_style_wwo();
-                    }
-                }
+                // div {
+                //     display: grid;
+                //     justify-content: center;
+                //     background-color: $lightgrey;
+                //     height: auto;
+                //     width: auto;
+                //     margin: 1%;
+                //     margin-bottom: 5%;
+                //     padding: 1%;
+                //     z-index: 5;
+                //     div {
+                //         min-height: 50px;
+                //         margin: 10% 5%;
+                //         padding: 1%;
+                //         vertical-align: middle;
+                //         align-self: start;
+                //         h2 {
+                //             @include main_font(22px, 600, $midgrey);
+                //             text-align: center;
+                //             margin: 0;
+                //             padding: 0;                        
+                //         }
+                //     }
+                //     svg {
+                //         @include border-radius(50%);
+                //         align-self: start;
+                //         width: 60%;
+                //         height: auto;
+                //         margin: 0% 20%;
+                //         text-align: center;
+                //         padding: 20%;
+                //         color: $midgrey;
+                //         background-color: $white;
+                //     }
+                //     p {
+                //         @include main_font(12px, 500, $midgrey);
+                //         width: 80%;
+                //         margin: 10%;
+                //         padding: 7% 0%;
+                //         text-align: center;
+                //         align-self: center;
+                //     }
+                //     a {
+                //         @include main_font(14px, 600, $midgrey);
+                //         @include button_style_wwo();
+                //         align-self: end;
+                //         width: 80%;
+                //         margin: 0 10% 10% 10%;
+                //         padding: 2% 0;
+                //         text-align: center;
+                //     }
+                // }
             }
         }
         .googleReviews {
@@ -295,23 +335,58 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 grid-template-rows: auto;
-                div {
-                    div {
-                        h2 {
-                            @include main_font(24px, 600, $midgrey);                      
-                        }
-                    }
-                    p {
-                        @include main_font(14px, 500, $midgrey);
-                    }
-                    a {
-                        width: 70%;
-                        margin: 0 15% 10% 15%;
-                        padding: 4% 0;
-                        @include main_font(14px, 600, $midgrey);
-                        @include button_style_wwo();
-                    }
-                }
+                // div {
+                //     display: grid;
+                //     justify-content: center;
+                //     background-color: $lightgrey;
+                //     height: auto;
+                //     width: auto;
+                //     margin: 1%;
+                //     margin-bottom: 5%;
+                //     padding: 1%;
+                //     z-index: 5;
+                //     div {
+                //         min-height: 50px;
+                //         margin: 10% 5%;
+                //         padding: 1%;
+                //         vertical-align: middle;
+                //         align-self: start;
+                //         h2 {
+                //             @include main_font(26px, 600, $midgrey);
+                //             text-align: center;
+                //             margin: 0;
+                //             padding: 0;                        
+                //         }
+                //     }
+                //     svg {
+                //         @include border-radius(50%);
+                //         align-self: start;
+                //         width: 60%;
+                //         height: auto;
+                //         margin: 0% 20%;
+                //         text-align: center;
+                //         padding: 20%;
+                //         color: $midgrey;
+                //         background-color: $white;
+                //     }
+                //     p {
+                //         @include main_font(14px, 500, $midgrey);
+                //         width: 80%;
+                //         margin: 10%;
+                //         padding: 7% 0%;
+                //         text-align: center;
+                //         align-self: center;
+                //     }
+                //     a {
+                //         @include main_font(16px, 600, $midgrey);
+                //         @include button_style_wwo();
+                //         align-self: end;
+                //         width: 80%;
+                //         margin: 0 10% 10% 10%;
+                //         padding: 2% 0;
+                //         text-align: center;
+                //     }
+                // }
             }
         }
         .googleReviews {

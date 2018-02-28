@@ -38,33 +38,36 @@
             margin: 0;
             padding: 0;
             z-index: 50;
-            .whatWeOfferOptionsUl {
+            .whatWeOfferOptionsUl { //ul
                 background-color: red;
                 height: auto;
                 display: grid;
                 grid-template-columns: 20% 20% 20% 20% 20%;
                 grid-template-rows: 100%;
-                .whatWeOfferOptionsLi {
+                .whatWeOfferOptionsLi { //li
                     display: block;
                     height: 100%;
                     width: 100%;
                     div {
                         height: auto;
                         width: auto;
-                        svg {
-                            width: 50%;
-                            height: auto;
-                            margin: 0%;
-                            text-align: center;
-                            padding: 20%;
-                            color: $midgrey;
-                            background-color: $white;
-                            @include border-radius(50%);
+                        div {
+                            svg {
+                                width: 50%;
+                                height: auto;
+                                margin: 0%;
+                                text-align: center;
+                                padding: 20%;
+                                color: $midgrey;
+                                background-color: $white;
+                                @include border-radius(50%);
+                            }
+                        }
+                        h2 {
+                            @include main_font(24px, 500, $darkgrey);
                         }
                     }
-                    h2 {
-                        @include main_font(24px, 500, $darkgrey);
-                    }
+                    
                 }
             }
             .whatWeOfferContent {

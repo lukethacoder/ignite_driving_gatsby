@@ -24,7 +24,7 @@ const Header = () => (
   <nav className="navbar">
     <ul className="navContact">
         <li><Link to="/">0434 833 131</Link></li>
-        <li><Link to="/">margaret@ignitedriving.com.au</Link></li>
+        <li><a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#109;&#x61;&#x72;&#x67;&#x61;&#114;&#x65;&#116;&#x40;&#x69;&#x67;&#110;&#x69;&#116;&#101;&#100;&#x72;&#x69;&#118;&#x69;&#x6e;&#103;&#46;&#x63;&#111;&#109;&#x2e;&#x61;&#x75;">&#109;&#97;&#x72;&#x67;&#x61;&#114;&#101;&#x74;&#x40;&#x69;&#103;&#110;&#105;&#116;&#x65;&#x64;&#x72;&#105;&#x76;&#x69;&#x6e;&#x67;&#x2e;&#99;&#111;&#x6d;&#46;&#x61;&#117;</a></li>
       </ul>
     <section className="topNav">
       
@@ -71,12 +71,12 @@ const Footer = () => (
         <div className="footerContact">
           <ul className="footerContactChild">
             <li>Contact</li>
-            <li><Link to="tel:+61434833131" itemprop="telephone">Phone: 0434 833 131</Link></li>
-            <li><Link to="mailto:margaret@ignitedriving.com.au" itemprop="email">margaret@ignitedriving.com.au</Link></li>
+            <li><a to="tel:+61434833131" itemprop="telephone">Phone: 0434 833 131</a></li>
+            <li><a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#109;&#x61;&#x72;&#x67;&#x61;&#114;&#x65;&#116;&#x40;&#x69;&#x67;&#110;&#x69;&#116;&#101;&#100;&#x72;&#x69;&#118;&#x69;&#x6e;&#103;&#46;&#x63;&#111;&#109;&#x2e;&#x61;&#x75;">&#109;&#97;&#x72;&#x67;&#x61;&#114;&#101;&#x74;&#x40;&#x69;&#103;&#110;&#105;&#116;&#x65;&#x64;&#x72;&#105;&#x76;&#x69;&#x6e;&#x67;&#x2e;&#99;&#111;&#x6d;&#46;&#x61;&#117;</a></li>
           </ul>
           <ul className="footerSocials">
-            <li><Link to="/"><FontAwesomeIcon icon={["fab","facebook"]}/></Link></li>
-            <li><Link to="/"><FontAwesomeIcon icon={["fab","instagram"]}/></Link></li>
+            <li><a href="https://www.bookitlive.net/ignite_driving_isabella-plains"><FontAwesomeIcon icon={["fab","facebook"]}/></a></li>
+            <li><a href="https://www.instagram.com/ignitedriving/"><FontAwesomeIcon icon={["fab","instagram"]}/></a></li>
           </ul>
         </div>
         <Link to="/" className="img_adta"><img src={adta} alt="ADTA Logo"/></Link>
@@ -92,9 +92,9 @@ const Footer = () => (
           <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
           <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
 
+          {/* <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
           <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
-          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
-          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
+          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link> */}
         </div>
         <Link to="/">See more on Instagram</Link>
       </div>
