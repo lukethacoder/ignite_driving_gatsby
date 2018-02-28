@@ -14,13 +14,15 @@ const Pricing = () => (
             <div className="priceGuideContainer">
                 <div className="priceGuideRow">
                     <div>
-                        <h2>Initial Lesson</h2>
+                        <h2>First Lesson</h2>
                     </div>
                     <div>
                         <h3>1hr</h3>
+                        <h3>1.5hr</h3>
                     </div>
                     <div>
                         <h4>$78</h4>
+                        <h4>$117</h4>
                     </div>
                     <div>
                         <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
@@ -29,17 +31,20 @@ const Pricing = () => (
 
                 <div className="priceGuideRow">
                     <div>
-                        <h2>Individual Lesson</h2>
-                        <p>starts from $78</p>
+                        <h2>Ongoing Lesson</h2>
                     </div>
                     <div>
-                        <h3>1hr 1.5hr 2h</h3>
+                        <h3>1hr</h3>
+                        <h3>1.5hr</h3>
+                        <h3>2h</h3>
                     </div>
                     <div>
-                        <h4>$78*</h4>
+                        <h4>$78</h4>
+                        <h4>$117</h4>
+                        <h4>$156</h4>
                     </div>
                     <div>
-                        <a href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">Book Now</a>
+                        <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
                     </div>
                 </div>
 
@@ -55,7 +60,7 @@ const Pricing = () => (
                         <h4>$370</h4>
                     </div>
                     <div>
-                        <a href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">Book Now</a>
+                        <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
                     </div>
                 </div>
 
@@ -71,7 +76,7 @@ const Pricing = () => (
                         <h4>$702</h4>
                     </div>
                     <div>
-                        <a href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">Book Now</a>
+                        <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
                     </div>
                 </div>
 
@@ -87,14 +92,14 @@ const Pricing = () => (
                         <h4>$156</h4>
                     </div>
                     <div>
-                        <a href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">Book Now</a>
+                        <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
                     </div>
                 </div>
 
                 <div className="priceGuideRow">
                     <div>
                         <h2>Keys2Drive Lesson</h2>
-                        <p>recommended after your first lesson</p>
+                        <p>recommended after your first lesson | dicuss with your instructor</p>
                     </div>
                     <div>
                         <h3>2hr</h3>
@@ -103,7 +108,7 @@ const Pricing = () => (
                         <h4>FREE*</h4>
                     </div>
                     <div>
-                        <a href={`${process.env.BOOK_URL}`} target="_blank" rel="noopener noreferrer">Book Now</a>
+                        <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
                     </div>
                 </div>
 
