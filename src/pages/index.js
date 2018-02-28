@@ -83,7 +83,7 @@ const IndexPage = () => (
     </header>
 
     <section className="indexAbout">
-      <h3>Based in Canberra Ignite Driving aims to help safely transition L plater drivers to confident and safe P plater drivers using thourrough and informative teaching technique</h3>
+      <h3>Based in Canberra Ignite Driving aims to help <span>safely</span> transition L plater drivers to confident and safe P plater drivers using thourrough and informative teaching technique</h3>
     </section> 
 
     <section className="whatWeOffer">

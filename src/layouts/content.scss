@@ -47,7 +47,11 @@
             text-align: center;
             color: $lightgrey;
             margin: 0 auto;
+            line-height: 1.5;
             padding: 15% 5% 25% 5%;
+            span {
+                border-bottom: 1px solid $white;
+            }
         }
     }
     .whatWeOffer {
