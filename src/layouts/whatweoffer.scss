@@ -11,7 +11,7 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    @include background(url('../assets/bgwwo.png'), 150% auto, top, no-repeat, rgb(156, 156, 156));
+    @include background(url('../assets/bgwwo.jpg'), 150% auto, top, no-repeat, rgb(156, 156, 156));
     &:before {
         content: '';
         position: absolute;
@@ -205,7 +205,7 @@
 }
 @mixin whatweoffer--md() {
     .whatWeOfferTemplate {
-        @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+        @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
         &:before {
             content: '';
             position: absolute;
@@ -267,7 +267,7 @@
 }
 @mixin whatweoffer--lg() {
     .whatWeOfferTemplate {
-        @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+        @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
         &:before {
             content: '';
             position: absolute;
@@ -329,7 +329,7 @@
 }
 @mixin whatweoffer--xl() {
     .whatWeOfferTemplate {
-        @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+        @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
         &:before {
             content: '';
             position: absolute;

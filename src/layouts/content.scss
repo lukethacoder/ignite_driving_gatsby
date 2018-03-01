@@ -60,7 +60,7 @@
         padding: 0;
         margin: 0 auto;
         position: relative;
-        @include background(url('../assets/bgwwo.png'), 1500% auto, top, no-repeat, rgb(156, 156, 156));
+        @include background(url('../assets/bgwwo.jpg'), 1500% auto, top, no-repeat, rgb(156, 156, 156));
         &:before {
             content: '';
             position: absolute;
@@ -226,7 +226,7 @@
 @mixin content--xs() {
     .pageContent {
         .whatWeOffer {
-            @include background(url('../assets/bgwwo.png'), 550% auto, top, no-repeat, rgb(156, 156, 156));
+            @include background(url('../assets/bgwwo.jpg'), 550% auto, top, no-repeat, rgb(156, 156, 156));
             &:before {
                 content: '';
                 position: absolute;
@@ -257,7 +257,7 @@
             }
         }
         .whatWeOffer {
-            @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+            @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
             section {
                 @include page-cont-md();
                 display: grid;
@@ -333,7 +333,7 @@
             }
         }
         .whatWeOffer {
-            @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+            @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
             section {
                 @include page-cont-lg();
                 display: grid;
@@ -423,7 +423,7 @@
             }
         }
         .whatWeOffer {
-            @include background(url('../assets/bgwwo.png'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+            @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
             section {
                 @include page-cont-xl();
             }
