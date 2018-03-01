@@ -49,7 +49,7 @@ const Header = () => (
           <NavLink to="/contact/" activeClassName="activeClassName"><FontAwesomeIcon icon={faPhone}/>Contact</NavLink>
         </li>
       </ul>
-      <a className="bookNowNav" href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">BOOK NOW</a>
+      <a className="bookNowNav" href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank">BOOK NOW</a>
     </section>
   </nav>
 )
@@ -75,39 +75,36 @@ const Footer = () => (
             <li><a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#109;&#x61;&#x72;&#x67;&#x61;&#114;&#x65;&#116;&#x40;&#x69;&#x67;&#110;&#x69;&#116;&#101;&#100;&#x72;&#x69;&#118;&#x69;&#x6e;&#103;&#46;&#x63;&#111;&#109;&#x2e;&#x61;&#x75;">&#109;&#97;&#x72;&#x67;&#x61;&#114;&#101;&#x74;&#x40;&#x69;&#103;&#110;&#105;&#116;&#x65;&#x64;&#x72;&#105;&#x76;&#x69;&#x6e;&#x67;&#x2e;&#99;&#111;&#x6d;&#46;&#x61;&#117;</a></li>
           </ul>
           <ul className="footerSocials">
-            <li><a href="https://www.bookitlive.net/ignite_driving_isabella-plains"><FontAwesomeIcon icon={["fab","facebook"]}/></a></li>
-            <li><a href="https://www.instagram.com/ignitedriving/"><FontAwesomeIcon icon={["fab","instagram"]}/></a></li>
+            <li><a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab","facebook"]}/></a></li>
+            <li><a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab","instagram"]}/></a></li>
           </ul>
         </div>
-        <Link to="/" className="img_adta"><img src={adta} alt="ADTA Logo"/></Link>
-        <Link to="/" className="img_k2d"><img src={k2d} alt="K2D Logo - coloured to match the ignite driving branding"/></Link>
+        <a href="https://www.adta.com.au/"  target="_blank" className="img_adta"><img src={adta} alt="ADTA Logo"/></a>
+        <a href="https://www.keys2drive.com.au/"  target="_blank" className="img_k2d"><img src={k2d} alt="K2D Logo - coloured to match the ignite driving branding"/></a>
       </div>
       <div className="footerInstagram">
         <div>
-          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/03ce0f49cdeefe1dfd646f6bb0e1cb84/5B0E289D/t51.2885-15/e35/26068700_1976868225862136_7210256067047981056_n.jpg" alt="January all booked out but luckily the $10 off your first lesson offer has been extended through February "/></Link>
-          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/d2b83ab921a16bf0637cec595b1ef997/5B03317F/t51.2885-15/e35/25038260_157651714858146_6247807750609305600_n.jpg" alt="Merry Christmas.  A bit of fun. Ignite Driving will help explain some of these gauges properly during your lessons."/></Link>
-          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/ebe8d73a9bf455f8f43c635cd324afe9/5B13FE40/t51.2885-15/e35/25012892_2064962146959578_2431920923784249344_n.jpg" alt="Picked up the new business cards today.  Looking good thanks to @luke_secomb_digital .  He's the man for design!"/></Link>
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/03ce0f49cdeefe1dfd646f6bb0e1cb84/5B0E289D/t51.2885-15/e35/26068700_1976868225862136_7210256067047981056_n.jpg" alt="January all booked out but luckily the $10 off your first lesson offer has been extended through February "/></a>
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/d2b83ab921a16bf0637cec595b1ef997/5B03317F/t51.2885-15/e35/25038260_157651714858146_6247807750609305600_n.jpg" alt="Merry Christmas.  A bit of fun. Ignite Driving will help explain some of these gauges properly during your lessons."/></a>
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/ebe8d73a9bf455f8f43c635cd324afe9/5B13FE40/t51.2885-15/e35/25012892_2064962146959578_2431920923784249344_n.jpg" alt="Picked up the new business cards today.  Looking good thanks to @luke_secomb_digital .  He's the man for design!"/></a>
 
-          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
-          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
-          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></a>
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></a>
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></a>
 
-          {/* <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
-          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link>
-          <Link to="/"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></Link> */}
         </div>
-        <Link to="/">See more on Instagram</Link>
+        <a href="https://www.instagram.com/ignitedriving/">See more on Instagram</a>
       </div>
     </section>
     <section className="footerBottom">
       <div>
         <ul>
-          <li><Link to="/">Privacy</Link></li>
-          <li><Link to="/">T&C</Link></li>
-          <li><Link to="/">Sitemap</Link></li>
+          <li><a href="/">Privacy</a></li>
+          <li><a href="/">T&C</a></li>
+          <li><a href="/">Sitemap</a></li>
         </ul>
-        <Link to="/">@ 2018 All Rights Reserved</Link>
-        <Link to="/">Created by Luke Secomb Digital</Link>
+        <a href="/">@ 2018 All Rights Reserved</a>
+        <a href="http://lukesecomb.digital/" >Created by Luke Secomb Digital</a>
       </div>
     </section>
   </footer>

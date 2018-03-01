@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import aboutImg from '../assets/car01.jpg'
 import team01 from '../assets/team01.jpg'
-import team02 from '../assets/team02.jpg'
+// import team02 from '../assets/team02.jpg'
 
 const About = () => (
   <section className="pageContentTemplate">
