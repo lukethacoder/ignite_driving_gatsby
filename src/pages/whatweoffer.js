@@ -97,7 +97,7 @@ export default class Content extends React.Component {
         this.changeContent = this.changeContent.bind(this)
     }
 
-    componentWillMount(key) {
+    componentDidMount(key) {
       // Get the key value in the url
       var urlLocation = window.location.href.split('=')[1];
 
