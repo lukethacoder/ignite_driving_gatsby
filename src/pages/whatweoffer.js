@@ -124,7 +124,7 @@ export default class Content extends React.Component {
         return(
             <section className="pageContentTemplate">
 
-              <header className="headerContainer">
+              <header className="headerContainer whatWeOfferHeader">
                 <section className="headerSection">
                   <h1>What We Offer</h1>
                 </section>

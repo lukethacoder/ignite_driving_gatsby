@@ -86,9 +86,11 @@ const Pricing = () => (
                         <p>make sure to book your <a href="link this to somewhere that actually exists">ACT Gov test</a> first</p>
                     </div>
                     <div>
+                        <h3>1hr</h3>
                         <h3>2hr</h3>
                     </div>
                     <div>
+                        <h4>$78</h4>
                         <h4>$156</h4>
                     </div>
                     <div>
