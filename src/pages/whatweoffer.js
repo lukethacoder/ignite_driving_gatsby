@@ -48,9 +48,43 @@ const content = {
     }
 }
 
-const select_box = {
-  
-}
+const select = [
+  {
+    'name': 'First Lesson',
+    'key': 'initial_lesson',
+    'icon': faPencilAlt,
+    'selectURL': 'initial_lesson',
+    className: 'selectInitialLesson'
+  },
+  {
+    'name': 'Ongoing Lesson',
+    'key': 'log_book',
+    'icon': faBook,
+    'selectURL': 'log_book',
+    className: `selectLogBook`
+  },
+  {
+    'name': 'Refresher Lesson',
+    'key': 'refresher',
+    'icon': faSyncAlt,
+    'selectURL': 'refresher',
+    className: `selectRefresher`
+  },
+  {
+    'name': 'Keys 2 Drive',
+    'key': 'keys2drive',
+    'icon': faKey,
+    'selectURL': 'keys2drive',
+    className: `selectKeys2Drive`
+  },
+  {
+    'name': 'Car Hire',
+    'key': 'car_hire',
+    'icon': faCar,
+    'selectURL': 'car_hire',
+    className: `selectCarHire`
+  }
+]
 
 export default class Content extends React.Component {
     constructor() {
@@ -61,6 +95,23 @@ export default class Content extends React.Component {
         }
 
         this.changeContent = this.changeContent.bind(this)
+    }
+
+    componentWillMount(key) {
+      // Get the key value in the url
+      var urlLocation = window.location.href.split('=')[1];
+
+      // If the key varaible is not undefined (There is ?key=something in the URL)
+      if (typeof urlLocation !== 'undefined') {
+          // If the content has a key of the urlLocation (eg initial_lesson etc)
+        if (content.hasOwnProperty(urlLocation)) {
+            // Set the state
+          this.setState({
+            content: urlLocation
+          })
+        }
+      }
+      // If none of this happens then it will use the default state in the constructor function
     }
 
     changeContent(key) {
@@ -82,47 +133,20 @@ export default class Content extends React.Component {
               <section className="whatWeOfferTemplate">
                 <section className="whatWeOfferOptions">
                   <div>
-                    <ul className="whatWeOfferOptionsUl">
-                        <li className="whatWeOfferOptionsLi" onClick={ () => ( this.changeContent('initial_lesson'))}>
-                          <div>
+                    <ul className="whatWeOfferOptionsList">
+                    {
+                      select.map((select, index) => {
+                        return (
+                          <li className={`${select.className} ${this.state.content === select.key ? 'active' : ''}`}
+                            onClick={ () => ( this.changeContent(select.selectURL) )} >
+                            <FontAwesomeIcon icon={select.icon}/>
                             <div>
-                              <FontAwesomeIcon icon={faPencilAlt}/>
+                              <h2>{select.name}</h2>
                             </div>
-                          <h2>First Lesson</h2>
-                          </div>
-                        </li>
-                        <li className={`whatWeOfferOptionsLi ${ this.state.content === 'log_book' ? 'active': ''}`} onClick={ () => ( this.changeContent('log_book') ) }>
-                          <div>
-                            <div>
-                              <FontAwesomeIcon icon={faBook}/>
-                            </div>
-                            <h2>Log Book</h2>
-                          </div>
-                        </li>
-                        <li className="whatWeOfferOptionsLi" onClick={ () => ( this.changeContent('refresher') ) }>
-                          <div>
-                            <div>
-                              <FontAwesomeIcon icon={faSyncAlt}/>
-                            </div>
-                            <h2>Refresher Lesson</h2>
-                          </div>
-                        </li>
-                        <li className="whatWeOfferOptionsLi" onClick={ () => ( this.changeContent('keys2drive') ) }>
-                          <div>
-                            <div>
-                              <FontAwesomeIcon icon={faKey}/>
-                            </div>
-                            <h2>Keys2Drive</h2>
-                          </div>
-                        </li>
-                        <li className="whatWeOfferOptionsLi" onClick={ () => ( this.changeContent('car_hire') ) }>
-                          <div>
-                            <div>
-                              <FontAwesomeIcon icon={faCar}/>
-                            </div>
-                            <h2>Car Hire</h2>
-                          </div>
-                        </li>
+                          </li>
+                        )
+                      })
+                    }
                     </ul>
                     <div className="whatWeOfferContent">
                       <div>

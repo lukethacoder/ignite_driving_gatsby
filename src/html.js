@@ -1,5 +1,7 @@
 import React from "react"
 
+import favicon from "./assets/favicon.ico"
+
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
   try {
@@ -29,6 +31,8 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <link rel="shortcut icon" href={favicon} type="image/x-icon"/>
+          <meta name="theme-color" content="#1b1432"/>
           {this.props.headComponents}
           {css}
         </head>
