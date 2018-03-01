@@ -48,6 +48,10 @@ const content = {
     }
 }
 
+const select_box = {
+  
+}
+
 export default class Content extends React.Component {
     constructor() {
         super();
@@ -87,7 +91,7 @@ export default class Content extends React.Component {
                           <h2>First Lesson</h2>
                           </div>
                         </li>
-                        <li className="whatWeOfferOptionsLi" onClick={ () => ( this.changeContent('log_book') ) }>
+                        <li className={`whatWeOfferOptionsLi ${ this.state.content === 'log_book' ? 'active': ''}`} onClick={ () => ( this.changeContent('log_book') ) }>
                           <div>
                             <div>
                               <FontAwesomeIcon icon={faBook}/>
