@@ -17,6 +17,12 @@
             margin: auto;
             h1 {
                 @include main_font(36px, 600, $white);
+                margin-bottom: 10px;
+            }
+            h4 {
+                padding: 0;
+                margin-bottom: 24px;
+                @include main_font(22px, 500, $white);
             }
             h2 {
                 @include main_font(24px, 600, $white);
