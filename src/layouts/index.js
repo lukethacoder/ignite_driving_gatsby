@@ -115,7 +115,7 @@ const Footer = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Ignite Driving"
+      title="Ignite Driving | South Canberra Learner Driving School"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
