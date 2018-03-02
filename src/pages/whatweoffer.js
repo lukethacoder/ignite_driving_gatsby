@@ -154,7 +154,7 @@ export default class Content extends React.Component {
                       </div>
                       <p>{ content[this.state.content].description }</p>
                       <div className="wwoBtnDiv">
-                        <img src={content[this.state.content].image} />
+                        {/* <img src={content[this.state.content].image} /> */}
                         <a href={content[this.state.content].link}>{content[this.state.content].linkName}</a>
                       </div>
                     </div>
