@@ -83,7 +83,7 @@ const IndexPage = () => (
     </header>
 
     <section className="indexAbout">
-      <h3>Based in Canberra Ignite Driving aims to help <span>safely</span> transition L plater drivers to confident and safe P plater drivers using thourrough and informative teaching technique</h3>
+      <h3>Based in South Canberra, Ignite Driving aims to help Learner drivers transition to confident and safe P plate drivers using thorough and informative teaching techniques</h3>
     </section> 
 
     <section className="whatWeOffer">
@@ -117,7 +117,7 @@ const IndexPage = () => (
             </div>
             <FontAwesomeIcon icon={faSyncAlt}/>
           </div>
-          <p>Great for building confidence if it’s been a while since you’ve driven or if you have your licence but not feeling as safe on the road as you would like.  Also good for Seniors who need a refresher before the Government Assessment</p>
+          <p>Great for building confidence if it’s been a while since you’ve driven or if you have your licence but not feeling as safe on the road as you would like.  Also good for Seniors who need a refresher lesson before the Government Assessment.</p>
           <Link to="/whatweoffer?key=refresher">More Info</Link>
         </div>
 
@@ -147,7 +147,7 @@ const IndexPage = () => (
 
     <section className="googleReviews">
       <ReactSlick />
-      <a href="https://google.com.au">See All Reviews</a>
+      <a href="https://goo.gl/Mqd2oZ">See All Reviews</a>
     </section>
   </section>
   

@@ -24,7 +24,7 @@ const About = () => (
             <br></br><br></br>
             When Learners are issued with their P’s through Ignite Driving the supervising driver can be reassured that their new P plate driver is competent, confident and safe to be on the road.
             <br></br><br></br>
-            Ignite Driving can also help prepare Learners for the one off ACT or NSW P Test.  Having some professional lessons can only be beneficial for Learners about to do the 1 off test.
+            Ignite Driving can also help prepare Learners for the one off ACT P Test.  Having some professional lessons can only be beneficial for Learners about to do the one off test.
             <br></br><br></br>
             Our Instructors meet industry standards by holding a minimum Certificate IV in Driving Instructing, WWVP Card ACT, are members of ADTA (Australian Driver Training Association), and are recognised with ACT Government to be authorised to conduct Log Book Assessments.  
             <br></br><br></br>

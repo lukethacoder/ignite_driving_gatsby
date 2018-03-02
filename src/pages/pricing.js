@@ -101,10 +101,10 @@ const Pricing = () => (
                 <div className="priceGuideRow">
                     <div>
                         <h2>Keys2Drive Lesson</h2>
-                        <p>recommended after your first lesson | dicuss with your instructor</p>
+                        <p>*recommended after your first lesson | dicuss with your instructor</p>
                     </div>
                     <div>
-                        <h3>2hr</h3>
+                        <h3>1hr</h3>
                     </div>
                     <div>
                         <h4>FREE*</h4>

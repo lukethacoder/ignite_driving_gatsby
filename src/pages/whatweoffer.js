@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import initial from "../assets/car02.jpg"
 import logBook from "../assets/image01.jpg"
 import refresh from "../assets/car03.jpg"
-import k2d from "../assets/car04.jpg"
+import k2d from "../assets/k2d.png"
 import carHire from "../assets/car05.jpg"
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
@@ -31,17 +31,17 @@ const content = {
     'refresher': {
       description: 'If it has been a while since you’ve been behind the wheel then having a Refresher Lesson is a great way to gain back some confidence on the road.  Also perfect for Seniors who are preparing for the Government Assessment to get some professional feedback.',
       link: 'https://www.bookitlive.net/ignite_driving_isabella-plains',
-      linkName: 'more info about log book',
+      linkName: 'Book Now',
       image: refresh
     },
     'keys2drive': {
-      description: 'Ignite Driving has the only female qualified K2D instructor South Side to deliver the free Federal Government funded Keys2Drive lesson.  We recommend talking with your instructor to work out when would be the most beneficial time for the lesson to be undertaken.  The Learner and Supervising Driver must be present for the duration of the lesson.  The lesson includes a chat for approximately 25 minutes and driving for the remainder of the time.  Registering on the Keys2Drive website is required to obtain the K2D code to enter when booking the lesson with Ignite Driving.  Please see the <a href="">Keys2Drive website</a> for further information and to register',
-      link: 'https://www.keys2drive.com.au/',
-      linkName: 'More Info',
+      description: 'Ignite Driving has the only female qualified K2D instructor in South Canberra to deliver the free Federal Government funded Keys2Drive lesson.  We recommend talking with your instructor to work out when would be the most beneficial time for the lesson to be undertaken.  The Learner and Supervising Driver must be present for the duration of the lesson.  The lesson includes a chat for approximately 25 minutes and driving for the remainder of the time.  Registering on the Keys2Drive website is required to obtain the K2D code to enter when booking the lesson with Ignite Driving.  Please see the Keys2Drive website for further information and to register.',
+      link: 'https://www.bookitlive.net/ignite_driving_isabella-plains',
+      linkName: 'Book Now',
       image: k2d
     },
     'car_hire': {
-      description: 'So you’re ready to undertake your ACT Government one off test but don’t have access to a car?  Ignite Driving can hire out their cars for the one off test.  A two hour hire includes pick up, duration of the test and associated paper work on passing, and return to pick up address.  Shorter hire periods are available with the meeting point at Access Canberra.  Minimum hire time is 1 hour.  Contact Ignite Driving to discuss.',
+      description: 'So you’re ready to undertake your ACT Government one off test but don’t have access to a car?  Ignite Driving can hire out their cars for the one off test.  A two hour hire includes pick up, duration of the test and associated paper work on passing, and return to pick up address.  Shorter hire periods are available with the meeting point at Access Canberra, Tuggeranong.  Minimum hire time is 1 hour.  Contact Ignite Driving to discuss.',
       link: 'https://www.bookitlive.net/ignite_driving_isabella-plains',
       linkName: 'Book Now',
       image: carHire
@@ -150,10 +150,11 @@ export default class Content extends React.Component {
                     </ul>
                     <div className="whatWeOfferContent">
                       <div>
-                        <img src={content[this.state.content].image} />
+                        
                       </div>
                       <p>{ content[this.state.content].description }</p>
                       <div className="wwoBtnDiv">
+                        <img src={content[this.state.content].image} />
                         <a href={content[this.state.content].link}>{content[this.state.content].linkName}</a>
                       </div>
                     </div>
