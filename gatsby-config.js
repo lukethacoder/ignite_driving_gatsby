@@ -27,6 +27,14 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-74760611-6",
+        head: false,
+        anonymize: true,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify`
   ],
