@@ -100,8 +100,8 @@ const Contact = () => (
                             </ul>
                         </div>
                     </div>
-                    <form name="igniteDrivingContactFormNumberTwo" method="post" data-netlify-honeypot="bot-field" action="/thanks-for-your-submission/" netlify>
-                        <input name="bot-field" className="olHoneyPot"/>
+                    <form name="igniteDrivingContactFormNumberTwo" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks-for-your-submission/">
+                        <input name="bot-field" className="olHoneyPot" hidden/>
                         <div className="contactFormName">
                             <div>
                                 <label>Name</label>
@@ -122,7 +122,7 @@ const Contact = () => (
                         </div>
                         <div className="contactFormSubmit">
                             <div>
-                                <button type="submit" value="Send">Submit</button>
+                                <button type="submit">Submit</button>
                             </div>
                         </div>
                     </form>
