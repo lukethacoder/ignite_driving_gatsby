@@ -104,7 +104,7 @@ const Contact = () => (
                         <input name="bot-field" className="olHoneyPot"/>
                         <div className="contactFormName">
                             <div>
-                                <label className="formLabel">Name</label>
+                                <label>Name</label>
                                 <input type="text" name="name" placeholder="Name" required/>
                             </div>
                         </div>

@@ -317,6 +317,16 @@
             }
         }
     }
+    //submit thanks page
+    .submissionPage {
+        height: 100vh;
+        div {
+            height: 100vh;
+            h1 {
+                height: 100vh;
+            }
+        }
+    }
 }
 @mixin contentTemplate--sm() {
     .pageContentTemplate {
