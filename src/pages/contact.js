@@ -8,6 +8,66 @@ import { faStar } from '@fortawesome/fontawesome-free-solid'
 // import { faFacebookSquare } from '@fortawesome/fontawesome-free-solid'
 import brands from '@fortawesome/fontawesome-free-solid'
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(dat[key]))
+        .join("&");
+}
+
+class ContactForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { name: "", email: "", message: ""};
+    }
+
+    handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded"},
+            body: encode({ "form-name": "igniteDrivingContactFormNumberTwo", ...this.state})
+        })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+
+        e.preventDefault();
+    };
+
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+    render() {
+        const { name, email, message } = this.state;
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <div className="contactFormName">
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="Name" value={ name } onChange={this.handleChange} required/>
+                    </div>
+                </div>
+                <div className="contactFormEmail">
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="Email" value={ email } onChange={this.handleChange} required/>
+                    </div>
+                </div>
+                <div className="contactFormTextArea">
+                    <div>
+                        <label>Message</label>
+                        <textarea type="text" name="message" placeholder="Your message" value={ message } onChange={this.handleChange} required></textarea>
+                    </div>
+                </div>
+                <div className="contactFormSubmit">
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        );
+    }
+}
+
+
+
 class ReactSlickContact extends React.Component{
     render() {
       var settings = {
@@ -100,7 +160,7 @@ const Contact = () => (
                             </ul>
                         </div>
                     </div>
-                    <form name="igniteDrivingContactFormNumberTwo" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks-for-your-submission/">
+                    {/* <form name="igniteDrivingContactFormNumberTwo" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks-for-your-submission/">
                         <input name="bot-field" className="olHoneyPot" hidden/>
                         <div className="contactFormName">
                             <div>
@@ -125,7 +185,8 @@ const Contact = () => (
                                 <button type="submit">Submit</button>
                             </div>
                         </div>
-                    </form>
+                    </form> */}
+                    <ContactForm />
                 </div>
                 
             </section>
