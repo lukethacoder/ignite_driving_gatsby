@@ -111,13 +111,13 @@ const Contact = () => (
                         <div className="contactFormEmail">
                             <div>
                                 <label>Email</label>
-                                <input type="email" name="_replyto" placeholder="Email" required/>
+                                <input type="email" name="email" placeholder="Email" required/>
                             </div>
                         </div>
                         <div className="contactFormTextArea">
                             <div>
                                 <label>Message</label>
-                                <textarea name="message" placeholder="Your message" required></textarea>
+                                <textarea type="text" name="message" placeholder="Your message" required></textarea>
                             </div>
                         </div>
                         <div className="contactFormSubmit">
