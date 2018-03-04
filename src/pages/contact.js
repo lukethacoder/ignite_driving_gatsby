@@ -65,7 +65,7 @@ class ContactForm extends React.Component {
                 </div>
                 <div className="contactFormSubmit">
                     <div>
-                        <button type="submit">Submit</button>
+                        <button type="submit" value="send">Submit</button>
                     </div>
                 </div>
             </form>
