@@ -1,26 +1,7 @@
-<form name="igniteDrivingContactForm" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks-for-your-submission/">
+<form name="igniteDrivingContactFormNumberTwo" method="post"netlify data-netlify-honeypot="bot-field" hidden>
     <input name="bot-field" className="olHoneyPot"/>
-    <div className="contactFormName">
-        <div>
-            <label>Name</label>
-            <input type="text" name="name" placeholder="Name" required/>
-        </div>
-    </div>
-    <div className="contactFormEmail">
-        <div>
-            <label>Email</label>
-            <input type="email" name="_replyto" placeholder="Email" required/>
-        </div>
-    </div>
-    <div className="contactFormTextArea">
-        <div>
-            <label>Message</label>
-            <textarea name="message" placeholder="Your message" required></textarea>
-        </div>
-    </div>
-    <div className="contactFormSubmit">
-        <div>
-            <button type="submit" value="Send">Submit</button>
-        </div>
-    </div>
+    <input type="text" name="name" placeholder="Name" required/>
+    <input type="email" name="_replyto" placeholder="Email" required/>
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit" value="Send">Submit</button>
 </form>
