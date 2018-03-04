@@ -37,8 +37,15 @@ class ContactForm extends React.Component {
     render() {
         const { name, email, message } = this.state;
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form
+                name="igniteDrivingContactFormNumberTwo"
+                method="post"
+                action="/thanks-for-your-submission/"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={this.handleSubmit}>
                 <div className="contactFormName">
+                    <input name="bot-field" hidden/>
                     <div>
                         <label>Name</label>
                         <input type="text" name="name" placeholder="Name" value={ name } onChange={this.handleChange} required/>
