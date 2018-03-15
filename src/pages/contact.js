@@ -154,7 +154,7 @@ const Contact = () => (
                                     <FontAwesomeIcon icon={["fab", "instagram"]}/>
                                     </a>
                                 </li>
-                                <li><a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">
+                                <li><a href="https://www.facebook.com/ignitedriving" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon icon={["fab", "facebook"]}/>
                                     </a>
                                 </li>

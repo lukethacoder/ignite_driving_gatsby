@@ -1,11 +1,20 @@
 import React from 'react'
 
+import '../layouts/content.scss'
+
 const NotFoundPage = () => (
-  <div>
-    <h1>error 404</h1>
-    <h2>page not found.</h2>
-    <p>you must be lost, let me take you back to the home page</p>
-  </div>
+  <section className="pageContentTemplate">
+
+    <header className="headerContainer submissionPage">
+      <section className="headerSection ">
+        <h1>error 404</h1>
+        <h2>page not found.</h2>
+        <p>you must be lost, let me take you back home</p>
+        <a href="/">Home</a>
+      </section>
+    </header>
+
+  </section>
 )
 
 export default NotFoundPage

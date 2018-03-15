@@ -10,14 +10,6 @@ const tfys = () => (
             </section>
         </header>
 
-        <section className="class">
-            <section>
-                <div>
-                    {/* give suggestions to the user */}
-                </div>
-            </section>
-        </section>
-
     </section>
 )
 

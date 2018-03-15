@@ -76,7 +76,7 @@ const Footer = () => (
             <li><a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#109;&#x61;&#x72;&#x67;&#x61;&#114;&#x65;&#116;&#x40;&#x69;&#x67;&#110;&#x69;&#116;&#101;&#100;&#x72;&#x69;&#118;&#x69;&#x6e;&#103;&#46;&#x63;&#111;&#109;&#x2e;&#x61;&#x75;">&#109;&#97;&#x72;&#x67;&#x61;&#114;&#101;&#x74;&#x40;&#x69;&#103;&#110;&#105;&#116;&#x65;&#x64;&#x72;&#105;&#x76;&#x69;&#x6e;&#x67;&#x2e;&#99;&#111;&#x6d;&#46;&#x61;&#117;</a></li>
           </ul>
           <ul className="footerSocials">
-            <li><a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab","facebook"]}/></a></li>
+            <li><a href="https://www.facebook.com/ignitedriving" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab","facebook"]}/></a></li>
             <li><a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab","instagram"]}/></a></li>
           </ul>
         </div>
@@ -105,7 +105,7 @@ const Footer = () => (
           <li><a href="/">Sitemap</a></li>
         </ul>
         <a href="/">@ 2018 All Rights Reserved</a>
-        <a href="http://lukesecomb.digital/" >Created by Luke Secomb Digital</a>
+        <a href="https://lukesecomb.digital/" target="_blank">Created by Luke Secomb Digital</a>
       </div>
     </section>
   </footer>
