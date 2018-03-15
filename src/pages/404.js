@@ -1,7 +1,5 @@
 import React from 'react'
 
-import '../layouts/content.scss'
-
 const NotFoundPage = () => (
   <section className="pageContentTemplate">
 
