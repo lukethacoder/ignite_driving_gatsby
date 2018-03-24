@@ -8,6 +8,13 @@ import adta from "../assets/adta.png"
 import k2d from "../assets/k2d.png"
 import { NavLink } from 'react-router-dom'
 
+import instagram_06 from '../assets/insta/instagram_post_07.jpg'
+import instagram_05 from '../assets/insta/instagram_post_06.jpg'
+import instagram_04 from '../assets/insta/instagram_post_05.jpg'
+import instagram_03 from '../assets/insta/instagram_post_04.jpg'
+import instagram_02 from '../assets/insta/instagram_post_03.jpg'
+import instagram_01 from '../assets/insta/instagram_post_02.jpg'
+
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faHome, faCar, faDollarSign, faInfo, faPhone } from '@fortawesome/fontawesome-free-solid'
 import { faInstagram } from '@fortawesome/fontawesome-free-solid'
@@ -63,9 +70,9 @@ const Footer = () => (
           <ul>
             <li>Ignite Driving</li>
             <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/whatweoffer/">What We Offer</NavLink></li>
+            <li><NavLink to="/whatweoffer">What We Offer</NavLink></li>
             <li><NavLink to="/pricing">Pricing</NavLink></li>
-            <li><NavLink to="/about/">About</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
         </div>
@@ -85,14 +92,13 @@ const Footer = () => (
       </div>
       <div className="footerInstagram">
         <div>
-          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/03ce0f49cdeefe1dfd646f6bb0e1cb84/5B0E289D/t51.2885-15/e35/26068700_1976868225862136_7210256067047981056_n.jpg" alt="January all booked out but luckily the $10 off your first lesson offer has been extended through February "/></a>
-          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/d2b83ab921a16bf0637cec595b1ef997/5B03317F/t51.2885-15/e35/25038260_157651714858146_6247807750609305600_n.jpg" alt="Merry Christmas.  A bit of fun. Ignite Driving will help explain some of these gauges properly during your lessons."/></a>
-          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/ebe8d73a9bf455f8f43c635cd324afe9/5B13FE40/t51.2885-15/e35/25012892_2064962146959578_2431920923784249344_n.jpg" alt="Picked up the new business cards today.  Looking good thanks to @luke_secomb_digital .  He's the man for design!"/></a>
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src={instagram_06} alt="January all booked out but luckily the $10 off your first lesson offer has been extended through February "/></a>
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src={instagram_05} alt="Merry Christmas.  A bit of fun. Ignite Driving will help explain some of these gauges properly during your lessons."/></a>
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src={instagram_04} alt="Picked up the new business cards today.  Looking good thanks to @luke_secomb_digital .  He's the man for design!"/></a>
 
-          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></a>
-          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></a>
-          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src="https://instagram.fcbr1-1.fna.fbcdn.net/vp/7cab58e54034086fe8b672efa6f2d229/5B207BA1/t51.2885-15/s1080x1080/e15/fr/24845373_178589426211839_217166543056797696_n.jpg" alt="Ignite Driving Logo"/></a>
-
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src={instagram_03} alt="Instagram Post"/></a>
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src={instagram_02} alt="Instagram Post"/></a>
+          <a href="https://www.instagram.com/ignitedriving/" target="_blank" rel="noopener noreferrer"><img src={instagram_01} alt="Instagram Post"/></a>
         </div>
         <a href="https://www.instagram.com/ignitedriving/">See more on Instagram</a>
       </div>
