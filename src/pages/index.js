@@ -23,8 +23,22 @@ class ReactSlick extends React.Component{
       <div className='sliderContainer'>
         <Slider {...settings}>
           <div>
-            <h2>Rod McGuirk</h2>
+            <h2>A C</h2>
             <h3>3 weeks ago</h3>
+            <div>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+            </div>
+            <p>Thankyou Ignite driving. I now have a very confident and capable P plater. Thanks for you encourgement and support, I highly recomend Margaret from Ignite drivine.
+            </p>
+          </div>
+
+          <div>
+            <h2>Rod McGuirk</h2>
+            <h3>1 Month ago</h3>
             <div>
               <FontAwesomeIcon icon={faStar}/>
               <FontAwesomeIcon icon={faStar}/>
@@ -38,7 +52,7 @@ class ReactSlick extends React.Component{
 
           <div>
             <h2>Emma Browne</h2>
-            <h3>1 month ago</h3>
+            <h3>2 month ago</h3>
             <div>
               <FontAwesomeIcon icon={faStar}/>
               <FontAwesomeIcon icon={faStar}/>
@@ -52,7 +66,7 @@ class ReactSlick extends React.Component{
 
           <div>
             <h2>Anna Garretson</h2>
-            <h3>1 month ago</h3>
+            <h3>2 month ago</h3>
             <div>
               <FontAwesomeIcon icon={faStar}/>
               <FontAwesomeIcon icon={faStar}/>
