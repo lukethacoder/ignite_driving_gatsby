@@ -75,71 +75,71 @@
             padding: 0;
         }
     }
-    .bottomNav {
-        width: 100%;
-        height: auto;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background-color: $lightgrey;
-        display: flex;
-        flex-direction: column;
-        z-index: 100;
-        .navMenuList {
+        .bottomNav {
             width: 100%;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: grid;
-            grid-template-columns: 20% 20% 20% 20% 20%;
-            // grid-template-rows: 5% 50px 5%;
-            order: 2;
-            li {
-                justify-self: center;
-                align-self: center;
-                text-align: center;
+            height: auto;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background-color: $lightgrey;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+            .navMenuList {
+                width: 100%;
+                list-style-type: none;
                 padding: 0;
                 margin: 0;
-                display: block;
-                height: 65px;
-                a {
-                    width: 100%;
-                    height: 100%;
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+                // grid-template-rows: 5% 50px 5%;
+                order: 2;
+                li {
+                    justify-self: center;
+                    align-self: center;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
                     display: block;
-                    @include main_font(10px, 500, $darkgrey);
-                    margin: 0 auto;
-                    padding: 6% 0;
-                    svg {
+                    height: 65px;
+                    a {
                         width: 100%;
-                        height: 23px;
-                        color: $darkgrey;
-                        margin: 5% 0 5% 0;
-                        padding: 0;
+                        height: 100%;
+                        display: block;
+                        @include main_font(10px, 500, $darkgrey);
+                        margin: 0 auto;
+                        padding: 6% 0;
+                        svg {
+                            width: 100%;
+                            height: 23px;
+                            color: $darkgrey;
+                            margin: 5% 0 5% 0;
+                            padding: 0;
+                        }
+                    }
+                }
+                .activeClassName {
+                    background-color: $mediumpurple;
+                    color: $white;
+                    svg {
+                        color: $white;
+                    }
+                    a {
+                        color: $white;
                     }
                 }
             }
-            .activeClassName {
+            .bookNowNav {
+                @include main_font(16px, 600, $white);
                 background-color: $mediumpurple;
-                color: $white;
-                svg {
-                    color: $white;
-                }
-                a {
-                    color: $white;
-                }
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin: auto;
+                padding: 3% 0;
+                order: 1;
             }
         }
-        .bookNowNav {
-            @include main_font(16px, 600, $white);
-            background-color: $mediumpurple;
-            width: 100%;
-            height: auto;
-            text-align: center;
-            margin: auto;
-            padding: 3% 0;
-            order: 1;
-        }
-    }
 }
 @mixin navbar--sm() {
     .navbar {
