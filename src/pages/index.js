@@ -19,11 +19,11 @@ const IndexPage = () => (
 
     <header className="headerContainer">
       <section className="headerSection">
-        <h1>SCHOOL HOLIDAYS ARE<br/>FAST APPROACHING...</h1>
+        <h1>MOVING YOU SAFELY<br/>FROM L's TO P's</h1>
         {/* <h4></h4> */}
-        <h2>Book now to secure your spot</h2>
+        <h2>Austomatic Lessions</h2>
         <a className="bookNowNav" href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
-        <p>T&C's apply</p>
+        <p>South Canberra Exclusive</p>
       </section>
     </header>
 
