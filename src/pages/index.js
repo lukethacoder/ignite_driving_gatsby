@@ -21,7 +21,7 @@ const IndexPage = () => (
       <section className="headerSection">
         <h1>MOVING YOU SAFELY<br/>FROM L's TO P's</h1>
         {/* <h4></h4> */}
-        <h2>Austomatic Lessions</h2>
+        <h2>Automatic Lessons</h2>
         <a className="bookNowNav" href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
         <p>South Canberra Exclusive</p>
       </section>
