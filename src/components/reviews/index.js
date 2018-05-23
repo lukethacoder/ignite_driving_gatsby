@@ -16,6 +16,21 @@ class ReviewsSlick extends React.Component{
       <div className='sliderContainer'>
         <Slider {...settings}>
           <div>
+            <h2>Ramya Karthik</h2>
+            <h3>1 week ago</h3>
+            <div>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+            </div>
+            <p>
+              Margaret helped me to get the full ACT Driver's licence. Having a full overseas licence and many years of driving experience, I narrowly failed my first Practical Driver's assessment. So I took a Learner's licence and booked 3 classes with her prior to the test. Because of her flawless instructions and patient / pleasant approach,  I corrected my mistakes and refined my driving skills , thereby  enabling me to successfully pass the test . 
+              I highly recommend her for Driving lessons -- for any skill level. Once again, a Big Thanks to you Margaret.
+            </p>
+          </div>
+          <div>
             <h2>Bridie Allan</h2>
             <h3>1 week ago</h3>
             <div>
@@ -43,7 +58,7 @@ class ReviewsSlick extends React.Component{
             <p>Probably the best driving school I have heard of from anyone. Margaret is the most lovely and friendly person I know. She put up with my somewhat boisterous attitude throughout and made me into a wonderful driver. After completing the log book with Margaret, I feel confident in my ability to do everything that is required by the 23 competencies. Even afterwards, when the auditors hadn’t signed off properly, she was still really kind and helpful to me trying to work out what I needed to do. So thank you Ignite Driving and thank you Margaret for being so kind and supportive to me while I was learning to drive.
             </p>
           </div>
-          <div>
+          {/* <div>
             <h2>A C</h2>
             <h3>2 months ago</h3>
             <div>
@@ -55,7 +70,7 @@ class ReviewsSlick extends React.Component{
             </div>
             <p>Thankyou Ignite driving. I now have a very confident and capable P plater. Thanks for you encourgement and support, I highly recomend Margaret from Ignite drivine.
             </p>
-          </div>
+          </div> */}
 
           <div>
             <h2>Rod McGuirk</h2>
