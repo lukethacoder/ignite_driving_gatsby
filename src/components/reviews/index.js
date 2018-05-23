@@ -16,8 +16,23 @@ class ReviewsSlick extends React.Component{
       <div className='sliderContainer'>
         <Slider {...settings}>
           <div>
-            <h2>Toby BLEYS</h2>
+            <h2>Bridie Allan</h2>
             <h3>1 week ago</h3>
+            <div>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+              <FontAwesomeIcon icon={faStar}/>
+            </div>
+            <p>
+              Margaret is hands down the best driving instructor I've come across in Canberra. She is extremely thorough yet patient when one is learning to drive, which makes for a cautious and capable learner or provisional driver.
+              All of Canberra should know of ignite driving when looking for a driving instructor... she is THAT good at what she does!
+            </p>
+          </div>
+          <div>
+            <h2>Toby BLEYS</h2>
+            <h3>1 month ago ago</h3>
             <div>
               <FontAwesomeIcon icon={faStar}/>
               <FontAwesomeIcon icon={faStar}/>
@@ -30,7 +45,7 @@ class ReviewsSlick extends React.Component{
           </div>
           <div>
             <h2>A C</h2>
-            <h3>2 monthss ago</h3>
+            <h3>2 months ago</h3>
             <div>
               <FontAwesomeIcon icon={faStar}/>
               <FontAwesomeIcon icon={faStar}/>
@@ -44,7 +59,7 @@ class ReviewsSlick extends React.Component{
 
           <div>
             <h2>Rod McGuirk</h2>
-            <h3>2 months ago</h3>
+            <h3>3 months ago</h3>
             <div>
               <FontAwesomeIcon icon={faStar}/>
               <FontAwesomeIcon icon={faStar}/>
@@ -58,7 +73,7 @@ class ReviewsSlick extends React.Component{
 
           <div>
             <h2>Emma Browne</h2>
-            <h3>3 months ago</h3>
+            <h3>5 months ago</h3>
             <div>
               <FontAwesomeIcon icon={faStar}/>
               <FontAwesomeIcon icon={faStar}/>
@@ -72,7 +87,7 @@ class ReviewsSlick extends React.Component{
 
           <div>
             <h2>Anna Garretson</h2>
-            <h3>3 months ago</h3>
+            <h3>5 months ago</h3>
             <div>
               <FontAwesomeIcon icon={faStar}/>
               <FontAwesomeIcon icon={faStar}/>
