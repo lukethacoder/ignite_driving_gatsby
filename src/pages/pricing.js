@@ -21,8 +21,8 @@ const Pricing = () => (
                         <h3>1.5hr</h3>
                     </div>
                     <div>
-                        <h4>$78</h4>
-                        <h4>$117</h4>
+                        <h4>$82</h4>
+                        <h4>$123</h4>
                     </div>
                     <div>
                         <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
@@ -39,9 +39,9 @@ const Pricing = () => (
                         <h3>2h</h3>
                     </div>
                     <div>
-                        <h4>$78</h4>
-                        <h4>$117</h4>
-                        <h4>$156</h4>
+                        <h4>$82</h4>
+                        <h4>$123</h4>
+                        <h4>$164</h4>
                     </div>
                     <div>
                         <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
@@ -57,7 +57,7 @@ const Pricing = () => (
                         <h3>1hr</h3>
                     </div>
                     <div>
-                        <h4>$370</h4>
+                        <h4>$389.50</h4>
                     </div>
                     <div>
                         <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
@@ -73,7 +73,7 @@ const Pricing = () => (
                         <h3>1hr</h3>
                     </div>
                     <div>
-                        <h4>$702</h4>
+                        <h4>$738</h4>
                     </div>
                     <div>
                         <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
@@ -90,8 +90,8 @@ const Pricing = () => (
                         <h3>2hr</h3>
                     </div>
                     <div>
-                        <h4>$78</h4>
-                        <h4>$156</h4>
+                        <h4>$82</h4>
+                        <h4>$164</h4>
                     </div>
                     <div>
                         <a href="https://www.bookitlive.net/ignite_driving_isabella-plains" target="_blank" rel="noopener noreferrer">Book Now</a>
