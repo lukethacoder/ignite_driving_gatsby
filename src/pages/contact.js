@@ -71,81 +71,81 @@ import brands from '@fortawesome/fontawesome-free-solid';
 //     }
 // }
 
-class ReactSlickContact extends React.Component {
-  render() {
-    var settings = {
-      dots: true,
-      swipe: true,
-      autoplay: true,
-    };
-    return (
-      <div className="sliderContainer">
-        <Slider {...settings}>
-          <div>
-            <h2>Rod McGuirk</h2>
-            <h3>3 weeks ago</h3>
-            <div>
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-            </div>
-            <p>
-              Margaret is a cheerful and unflappable instructor. She's a thorough, conscientious and
-              meticulous teacher who instills confidence in the student and parents. From my
-              experience, she doesn't rush a student through the process, not does she unnecessarily
-              prolong it. I wouldn't hesitate in recommending her to any parent who isn't looking
-              for shortcuts but wants confidence that a child has the adequate skills needed for a
-              P-plate.
-            </p>
-          </div>
+// class ReactSlickContact extends React.Component {
+//   render() {
+//     var settings = {
+//       dots: true,
+//       swipe: true,
+//       autoplay: true,
+//     };
+//     return (
+//       <div className="sliderContainer">
+//         <Slider {...settings}>
+//           <div>
+//             <h2>Rod McGuirk</h2>
+//             <h3>3 weeks ago</h3>
+//             <div>
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//             </div>
+//             <p>
+//               Margaret is a cheerful and unflappable instructor. She's a thorough, conscientious and
+//               meticulous teacher who instills confidence in the student and parents. From my
+//               experience, she doesn't rush a student through the process, not does she unnecessarily
+//               prolong it. I wouldn't hesitate in recommending her to any parent who isn't looking
+//               for shortcuts but wants confidence that a child has the adequate skills needed for a
+//               P-plate.
+//             </p>
+//           </div>
 
-          <div>
-            <h2>Emma Browne</h2>
-            <h3>1 month ago</h3>
-            <div>
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-            </div>
-            <p>
-              Margret is an amazing instructor and all around lovely person too! I really enjoyed
-              her approach to both teaching and assessment. I've definitely gained so much more
-              confidence in the car and feel really comfortable with all aspects of my driving. She
-              explains things really well and gives great feedback!
-            </p>
-          </div>
+//           <div>
+//             <h2>Emma Browne</h2>
+//             <h3>1 month ago</h3>
+//             <div>
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//             </div>
+//             <p>
+//               Margret is an amazing instructor and all around lovely person too! I really enjoyed
+//               her approach to both teaching and assessment. I've definitely gained so much more
+//               confidence in the car and feel really comfortable with all aspects of my driving. She
+//               explains things really well and gives great feedback!
+//             </p>
+//           </div>
 
-          <div>
-            <h2>Anna Garretson</h2>
-            <h3>1 month ago</h3>
-            <div>
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-            </div>
-            <p>
-              Highly recommend Margaret Secomb as a driving instructor. I decided to book lessons
-              with her after getting my third Learner’s license (having let my previous ones expire
-              after a handful of lessons with family members). I was in my 30’s by this time and
-              very nervous about driving, but Margaret proved a calm, supportive and effective
-              teacher. She was thorough in her instruction and assessment, which is exactly what I
-              wanted: my priority was to become a good, safe driver, rather than rush through the
-              competencies. After all my false starts it was great to finally get my P’s in 2017.
-              Nearly six months on, I feel confident on the road and am enjoying my newfound
-              freedom!
-            </p>
-          </div>
-        </Slider>
-      </div>
-    );
-  }
-}
+//           <div>
+//             <h2>Anna Garretson</h2>
+//             <h3>1 month ago</h3>
+//             <div>
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//               <FontAwesomeIcon icon={faStar} />
+//             </div>
+//             <p>
+//               Highly recommend Margaret Secomb as a driving instructor. I decided to book lessons
+//               with her after getting my third Learner’s license (having let my previous ones expire
+//               after a handful of lessons with family members). I was in my 30’s by this time and
+//               very nervous about driving, but Margaret proved a calm, supportive and effective
+//               teacher. She was thorough in her instruction and assessment, which is exactly what I
+//               wanted: my priority was to become a good, safe driver, rather than rush through the
+//               competencies. After all my false starts it was great to finally get my P’s in 2017.
+//               Nearly six months on, I feel confident on the road and am enjoying my newfound
+//               freedom!
+//             </p>
+//           </div>
+//         </Slider>
+//       </div>
+//     );
+//   }
+// }
 
 const Contact = () => (
   <section className="pageContentTemplate">
@@ -198,34 +198,37 @@ const Contact = () => (
               </ul>
             </div>
           </div>
-          {/* 
-                    <form name="igniteDrivingContactFormNumberTwo" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="http://briskforms.com/go/9edfe9a542113b094d37c7634a738bd4">
-                        <input name="bot-field" className="olHoneyPot" hidden/>
-                        <div className="contactFormName">
-                            <div>
-                                <label>Name</label>
-                                <input type="text" name="name" placeholder="Name" required/>
-                            </div>
-                        </div>
-                        <div className="contactFormEmail">
-                            <div>
-                                <label>Email</label>
-                                <input type="email" name="email" placeholder="Email" required/>
-                            </div>
-                        </div>
-                        <div className="contactFormTextArea">
-                            <div>
-                                <label>Message</label>
-                                <textarea type="text" name="message" placeholder="Your message" required></textarea>
-                            </div>
-                        </div>
-                        <div className="contactFormSubmit">
-                            <div>
-                                <button type="submit">Submit</button>
-                            </div>
-                        </div>
-                    </form> 
-                    */}
+          <form
+            className="contact_form"
+            name="contact-form"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
+            action="/success"
+          >
+            <div>
+              <label htmlFor="contact-name" style={{ display: 'flex', flexDirection: 'column' }}>
+                Name
+                <input name="name" id="contact-name" type="text" />
+              </label>
+            </div>
+            <div>
+              <label htmlFor="contact-email" style={{ display: 'flex', flexDirection: 'column' }}>
+                E-Mail <input name="email" id="contact-email" type="email" required />
+              </label>
+            </div>
+            <div>
+              <label htmlFor="contact-message" style={{ display: 'flex', flexDirection: 'column' }}>
+                Your Message <textarea name="message" id="contact-message" />
+              </label>
+            </div>
+            <div data-netlify-recaptcha="true" />
+            <div className="contactBtn">
+              <button>Send</button>
+            </div>
+            <input type="hidden" name="form-name" value="contact-form" />
+          </form>
           {/* <ContactForm /> */}
         </div>
       </section>
