@@ -204,11 +204,10 @@ const Contact = () => (
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            data-netlify-recaptcha="true"
             action="/success"
           >
             <div>
-              <label htmlFor="contact-name" style={{ display: 'flex', flexDirection: 'column' }}>
+              <label htmlFor="contact" style={{ display: 'flex', flexDirection: 'column' }}>
                 Name
                 <input name="name" id="contact-name" type="text" />
               </label>
@@ -223,11 +222,10 @@ const Contact = () => (
                 Your Message <textarea name="message" id="contact-message" />
               </label>
             </div>
-            <div data-netlify-recaptcha="true" />
             <div className="contactBtn">
               <button>Send</button>
             </div>
-            <input type="hidden" name="form-name" value="contact-form" />
+            <input type="hidden" name="form-name" value="contact" />
           </form>
           {/* <ContactForm /> */}
         </div>
