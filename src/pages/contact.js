@@ -198,7 +198,7 @@ const Contact = () => (
               </ul>
             </div>
           </div>
-          <form
+          {/* <form
             className="contact_form"
             name="contact-form"
             method="post"
@@ -226,7 +226,7 @@ const Contact = () => (
               <button>Send</button>
             </div>
             <input type="hidden" name="form-name" value="contact" />
-          </form>
+          </form> */}
           {/* <ContactForm /> */}
         </div>
       </section>
