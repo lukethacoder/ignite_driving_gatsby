@@ -23,6 +23,7 @@ class ContactForm extends React.Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contactForm', ...this.state }),
+      redirect: '/success',
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
