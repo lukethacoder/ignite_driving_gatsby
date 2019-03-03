@@ -372,3 +372,10 @@
     font-family: $main_font;
   }
 }
+
+.contactForm {
+  input,
+  textarea {
+    box-shadow: none;
+  }
+}

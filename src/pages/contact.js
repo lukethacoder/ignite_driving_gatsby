@@ -6,70 +6,96 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/fontawesome-free-solid';
 import brands from '@fortawesome/fontawesome-free-solid';
 
-// const encode = (data) => {
-//     return Object.keys(data)
-//         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(dat[key]))
-//         .join("&");
-// }
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(dat[key]))
+    .join('&');
+};
 
-// class ContactForm extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = { name: "", email: "", message: ""};
-//     }
+class ContactForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: '', email: '', message: '' };
+  }
 
-//     handleSubmit = e => {
-//         fetch("/", {
-//             method: "POST",
-//             headers: { "Content-Type": "application/x-www-form-urlencoded"},
-//             body: encode({ "form-name": "igniteDrivingContactFormNumberTwo", ...this.state})
-//         })
-//         .then(() => alert("Success!"))
-//         .catch(error => alert(error));
+  handleSubmit = e => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contactForm', ...this.state }),
+    })
+      .then(() => alert('Success!'))
+      .catch(error => alert(error));
 
-//         e.preventDefault();
-//     };
+    e.preventDefault();
+  };
 
-//     handleChange = e => this.setState({ [e.target.name]: e.target.value });
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
-//     render() {
-//         const { name, email, message } = this.state;
-//         return (
-//             <form
-//                 name="igniteDrivingContactFormNumberTwo"
-//                 method="post"
-//                 action="/thanks-for-your-submission/"
-//                 data-netlify="true"
-//                 data-netlify-honeypot="bot-field"
-//                 onSubmit={this.handleSubmit}>
-//                 <input name="bot-field" hidden/>
-//                 <div className="contactFormName">
-//                     <div>
-//                         <label>Name</label>
-//                         <input type="text" name="name" placeholder="Name" value={ name } onChange={this.handleChange} required/>
-//                     </div>
-//                 </div>
-//                 <div className="contactFormEmail">
-//                     <div>
-//                         <label>Email</label>
-//                         <input type="email" name="email" placeholder="Email" value={ email } onChange={this.handleChange} required/>
-//                     </div>
-//                 </div>
-//                 <div className="contactFormTextArea">
-//                     <div>
-//                         <label>Message</label>
-//                         <textarea rows="4" type="text" name="message" placeholder="Your message" value={ message } onChange={this.handleChange} required></textarea>
-//                     </div>
-//                 </div>
-//                 <div className="contactFormSubmit">
-//                     <div>
-//                         <button type="submit" value="send">Submit</button>
-//                     </div>
-//                 </div>
-//             </form>
-//         );
-//     }
-// }
+  render() {
+    const { name, email, message } = this.state;
+    return (
+      <form
+        name="contactForm"
+        className="contactForm"
+        method="post"
+        action="/success"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={this.handleSubmit}
+      >
+        <input name="bot-field" hidden />
+        <div className="contactFormName">
+          <div>
+            <label>Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={name}
+              onChange={this.handleChange}
+              required
+            />
+          </div>
+        </div>
+        <div className="contactFormEmail">
+          <div>
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={email}
+              onChange={this.handleChange}
+              required
+            />
+          </div>
+        </div>
+        <div className="contactFormTextArea">
+          <div>
+            <label>Message</label>
+            <textarea
+              rows="4"
+              type="text"
+              name="message"
+              placeholder="Your message"
+              value={message}
+              onChange={this.handleChange}
+              required
+            />
+          </div>
+        </div>
+        <div className="contactFormSubmit">
+          <div>
+            <button type="submit" value="send">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    );
+  }
+}
 
 // class ReactSlickContact extends React.Component {
 //   render() {
@@ -227,7 +253,7 @@ const Contact = () => (
             </div>
             <input type="hidden" name="form-name" value="contact" />
           </form> */}
-          {/* <ContactForm /> */}
+          <ContactForm />
         </div>
       </section>
     </section>
