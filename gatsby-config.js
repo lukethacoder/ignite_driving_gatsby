@@ -11,7 +11,7 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
-      }
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -20,22 +20,20 @@ module.exports = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              destinationDir:`${__dirname}/public/static`,
-              ignoreFileExtensions: [`pdf`]
-            }
-          }
-        ]
-      }
+              destinationDir: `${__dirname}/public/static`,
+              ignoreFileExtensions: [`pdf`],
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-74760611-6",
-        head: false,
-        anonymize: true,
+        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_CODE,
       },
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-netlify`
+    `gatsby-plugin-netlify`,
   ],
-}
+};
