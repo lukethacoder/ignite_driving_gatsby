@@ -1,693 +1,696 @@
-@import "_variables.scss";
+@import '_variables.scss';
 
 .pageContentTemplate {
+  width: 100%;
+  padding-top: 35vh;
+  margin: 0;
+  .headerContainer {
     width: 100%;
-    padding-top: 35vh;
-    margin: 0;
-    .headerContainer {
-        width: 100%;
-        height: 25vh;
-        padding-top: 15px;
-        text-align: center;
-        display: flex;
-        section {
-            width: 75%;
-            height: 50%;
-            margin: auto;
-            h1 {
-                @include main_font(36px, 600, $white);
-            }
-            h2 {
-                @include main_font(24px, 600, $white);
-            }
-            a {
-                @include button_style_inverted();
-                font-size: 16px;
-                padding: 8px 18px;
-                margin: 5%;
-                width: auto;
-            }
-            p {
-                @include main_font(12px, 500, $white);
-                padding: 0;
-                margin: 15px 2% 2% 2%;
-                width: auto;
-            }
-        }
-    }
-    .indexAbout {
-        width: 100%;
-        height: auto;
+    height: 25vh;
+    padding-top: 15px;
+    text-align: center;
+    display: flex;
+    section {
+      width: 75%;
+      height: 50%;
+      margin: auto;
+      h1 {
+        @include main_font(36px, 600, $white);
+      }
+      h2 {
+        @include main_font(24px, 600, $white);
+      }
+      a {
+        @include button_style_inverted();
+        font-size: 16px;
+        padding: 8px 18px;
+        margin: 5%;
+        width: auto;
+      }
+      p {
+        @include main_font(12px, 500, $white);
         padding: 0;
-        margin: 0;
-        background-color: $darkpurple;
-        h3 {
-            width: 75%;
-            text-align: center;
-            color: $lightgrey;
-            margin: 0 auto;
-            padding: 20% 5%;
-        }
+        margin: 15px 2% 2% 2%;
+        width: auto;
+      }
     }
-    // Pricing page
-    .priceGuide {
-        background-color: $darkpurple;
-        padding: 5% 0 10% 0;
-        .priceGuideContainer {
-            @include page-cont-xx();
-            display: grid;
-            grid-template-columns: 100%;
-            grid-auto-rows: auto;
-            justify-content: center;
-            align-content: stretch;
-            .priceGuideRow {
-                display: grid;
-                grid-template-columns: 33% 1fr 1fr 27%;
-                grid-auto-rows: 1fr;
-                justify-content: start;
-                align-content: stretch;
-                $priceGuideMargin: 10%;
-                div {
-                    align-self: stretch;
-                    border-right: 2px solid $darkgrey;
-                    margin: 10% 0;
-                    padding: 0;
-                    min-height: 75px;
-                    display: grid;
-                    vertical-align: middle;
-                    justify-content: center;;
-                    display: grid;
-                    grid-template-columns: 100%;
-                    grid-template-rows: auto;
-                    h2 {
-                        @include main_font(16px, 500, $darkgrey);
-                        width: 100%;
-                        margin: 0;
-                        padding: 5% 5% 0 5%;
-                        text-align: left;
-                        width: auto;
-                    }
-                    p {
-                        @include main_font(11px, 500, $darkgrey);
-                        width: 100%;
-                        padding: 0 5% 5% 5%;
-                        margin: 0;
-                        float: left;
-                        a {
-                            color: $mediumpurple;
-                        }
-                    }
-                    h3 {
-                        @include main_font(16px, 500, $mediumpurple);
-                        margin: auto;
-                        text-align: center;
-                    }
-                    h4 {
-                        @include main_font(16px, 600, $mediumpurple);
-                        margin: auto;
-                        text-align: center;
-                    }
-                    
-                }
-                div:nth-of-type(4){
-                    border: none;
-                    a {
-                        @include main_font(12px, 600, $darkpurple);
-                        @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 2px $darkpurple solid, 2px $darkpurple solid);
-                        padding: 2% 6%;
-                        margin: 0 6% 0 4%;
-                        text-align: center;
-                    }
-                }
-            }
-            .priceGuideRow:nth-of-type(1) {
-                div {
-                    align-self: center;
-                    padding: 7% 0;
-                }
-            }
-            .priceGuideRow:nth-of-type(2) {
-                div {
-                    align-self: center;
-                    padding: 7% 0;
-                }
-            }
-            .priceGuideRow:nth-of-type(odd){
-                background-color: $white;
-            }
-            .priceGuideRow:nth-of-type(even){
-                background-color: $lightgrey;
-            }
-        }
-        
+  }
+  .indexAbout {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: $darkpurple;
+    h3 {
+      width: 75%;
+      text-align: center;
+      color: $lightgrey;
+      margin: 0 auto;
+      padding: 20% 5%;
     }
-    // Contact page
-    .contactContainer {
-        background-color: $darkpurple;
-        padding: 5% 0;
-        section {
-            @include page-cont-xx();
-            background-color: $white;
-            div {
-                padding: 3% 5%;
-                margin: 0;
-                overflow: hidden;
-                .contactIntro { //contact intro
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: auto;
-                    p {
-                        @include main_font(24px, 500, $darkgrey);
-                        margin: 0 0 5% 0;
-                    }
-                    div {
-                        margin: 0;
-                        padding: 0;
-                        a {
-                            @include main_font(18px, 500, $mediumpurple);
-                            width: 100%;
-                            float: left;
-                            margin: 0;
-                        }
-                        ul {
-                            @include list_reset();
-                            width: auto;
-                            height: 50px;
-                            float: left;
-                            display: grid;
-                            grid-template-columns: 1fr 1fr 1fr;
-                            grid-template-rows: 1fr;
-                            li {
-                                height: 45px;
-                                width: 45px;
-                                margin: 0;
-                                a {
-                                    width: 100%;
-                                    height: 100%;
-                                    padding: 15% 15% 15% 0;
-                                    color: $mediumpurple;
-                                    float: left;
-                                    svg {
-                                        height: 90%;
-                                        width: 90%;
-                                        color: $mediumpurple;
-                                        float: left;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                form { //form here
-                    display: grid;
-                    grid-template-columns: 100%;
-                    grid-template-rows: auto;
-                    margin: 0;
-                    padding: 3% 5%;
-                    align-content: center;
-                    .olHoneyPot {
-                        display: none;
-                    }
-                    div {
-                        div {
-                            background-color: $white;
-                            display: block;
-                            label {
-                                display: none;
-                            }
-                            input{
-                                @include main_font(20px, 500, $darkgrey);
-                                background-color: transparent;
-                                border: none;
-                                float: left;
-                                width: 100%;
-                            }
-                            input::placeholder {
-                                @include main_font(20px, 500, $darkgrey);
-                                background-color: transparent;
-                            }
-                            input:focus {
-                                outline: 0px;
-                                color: $darkpurple;
-                                &::placeholder {
-                                    color: $white;
-                                }
-                            }
-                            textarea{
-                                @include main_font(20px, 500, $darkgrey);
-                                background-color: transparent;
-                                border: none;
-                                float: left;
-                                width: 100%;
-                                min-height: 175px;
-                                resize: none;
-                                overflow-wrap: normal;
-                            }
-                            textarea::placeholder {
-                                @include main_font(20px, 500, $darkgrey);
-                                background-color: transparent;
-                            }
-                            textarea:focus {
-                                outline: 0px;
-                                color: $darkpurple;
-                                &::placeholder {
-                                    color: $white;
-                                }
-                            }
-                            input:-webkit-autofill,
-                            input:-webkit-autofill:hover, 
-                            input:-webkit-autofill:focus
-                            input:-webkit-autofill, 
-                            textarea:-webkit-autofill,
-                            textarea:-webkit-autofill:hover
-                            textarea:-webkit-autofill:focus,
-                            select:-webkit-autofill,
-                            select:-webkit-autofill:hover,
-                            select:-webkit-autofill:focus {
-                            -webkit-text-fill-color: $darkpurple;
-                            -webkit-box-shadow: 0 0 0px 1000px $lightgrey inset;
-                            transition: background-color 5000 ease-in-out 0s;
-                            padding: 1%;
-                            }
-                        }
-                    }
-                    .contactFormName {
-                        padding: 0;
-                        div {
-                            border-bottom: 1px solid $darkgrey;
-                            padding: 3% 15px;
-                            margin-right: 0;
-                        }
-                    }
-                    .contactFormEmail {
-                        padding: 0;
-                        div {
-                            border-bottom: 1px solid $darkgrey;
-                            padding: 3% 15px;
-                        }
-                    }
-                    .contactFormTextArea {
-                        width: 100%;
-                        padding: 0;
-                        div {
-                            border-bottom: 1px solid $darkgrey;
-                            padding: 3% 15px;
-                            textarea {
-                                padding: 0;
-                                margin: 0;
-                            }
-                        }
-                    }
-                    .contactFormSubmit {
-                        div {
-                            border-bottom: none;
-                            margin: 0 auto;
-                            display: flex;
-                            justify-content: center;
-                            button {
-                                margin: 0 auto;
-                                @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 1px $darkpurple solid, 1px $white solid);
-                                padding: 2% 4%;
-                                min-width: 45%;
-                                @include main_font(20px, 500, $darkpurple);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    //submit thanks page
-    .submissionPage {
-        height: 100vh;
+  }
+  // Pricing page
+  .priceGuide {
+    background-color: $darkpurple;
+    padding: 5% 0 10% 0;
+    .priceGuideContainer {
+      @include page-cont-xx();
+      display: grid;
+      grid-template-columns: 100%;
+      grid-auto-rows: auto;
+      justify-content: center;
+      align-content: stretch;
+      .priceGuideRow {
+        display: grid;
+        grid-template-columns: 33% 1fr 1fr 27%;
+        grid-auto-rows: 1fr;
+        justify-content: start;
+        align-content: stretch;
+        $priceGuideMargin: 10%;
         div {
-            height: 100vh;
-            h1 {
-                height: 100vh;
+          align-self: stretch;
+          border-right: 2px solid $darkgrey;
+          margin: 10% 0;
+          padding: 0;
+          min-height: 75px;
+          display: grid;
+          vertical-align: middle;
+          justify-content: center;
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: auto;
+          h2 {
+            @include main_font(16px, 500, $darkgrey);
+            width: 100%;
+            margin: 0;
+            padding: 5% 5% 0 5%;
+            text-align: left;
+            width: auto;
+          }
+          p {
+            @include main_font(11px, 500, $darkgrey);
+            width: 100%;
+            padding: 0 5% 5% 5%;
+            margin: 0;
+            float: left;
+            a {
+              color: $mediumpurple;
             }
+          }
+          h3 {
+            @include main_font(16px, 500, $mediumpurple);
+            margin: auto;
+            text-align: center;
+          }
+          h4 {
+            @include main_font(16px, 600, $mediumpurple);
+            margin: auto;
+            text-align: center;
+          }
         }
+        div:nth-of-type(4) {
+          border: none;
+          a {
+            @include main_font(12px, 600, $darkpurple);
+            @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 2px $darkpurple solid, 2px $darkpurple solid);
+            padding: 2% 6%;
+            margin: 0 6% 0 4%;
+            text-align: center;
+          }
+        }
+      }
+      .priceGuideRow:nth-of-type(1) {
+        div {
+          align-self: center;
+          padding: 7% 0;
+        }
+      }
+      .priceGuideRow:nth-of-type(2) {
+        div {
+          align-self: center;
+          padding: 7% 0;
+        }
+      }
+      .priceGuideRow:nth-of-type(odd) {
+        background-color: $white;
+      }
+      .priceGuideRow:nth-of-type(even) {
+        background-color: $lightgrey;
+      }
     }
+  }
+  // Contact page
+  .contactContainer {
+    background-color: $darkpurple;
+    padding: 5% 0;
+    section {
+      @include page-cont-xx();
+      background-color: $white;
+      div {
+        padding: 3% 5%;
+        margin: 0;
+        overflow: hidden;
+        .contactIntro {
+          //contact intro
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          p {
+            @include main_font(24px, 500, $darkgrey);
+            margin: 0 0 5% 0;
+          }
+          div {
+            margin: 0;
+            padding: 0;
+            a {
+              @include main_font(18px, 500, $mediumpurple);
+              width: 100%;
+              float: left;
+              margin: 0;
+            }
+            ul {
+              @include list_reset();
+              width: auto;
+              height: 50px;
+              float: left;
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: 1fr;
+              li {
+                height: 45px;
+                width: 45px;
+                margin: 0;
+                a {
+                  width: 100%;
+                  height: 100%;
+                  padding: 15% 15% 15% 0;
+                  color: $mediumpurple;
+                  float: left;
+                  svg {
+                    height: 90%;
+                    width: 90%;
+                    color: $mediumpurple;
+                    float: left;
+                  }
+                }
+              }
+            }
+          }
+        }
+        form {
+          //form here
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: auto;
+          margin: 0;
+          padding: 3% 5%;
+          align-content: center;
+          .olHoneyPot {
+            display: none;
+          }
+          div {
+            div {
+              background-color: $white;
+              display: block;
+              label {
+                display: none;
+              }
+              input {
+                @include main_font(20px, 500, $darkgrey);
+                background-color: transparent;
+                border: none;
+                float: left;
+                width: 100%;
+              }
+              input::placeholder {
+                @include main_font(20px, 500, $darkgrey);
+                background-color: transparent;
+              }
+              input:focus {
+                outline: 0px;
+                color: $darkpurple;
+                &::placeholder {
+                  color: $white;
+                }
+              }
+              textarea {
+                @include main_font(20px, 500, $darkgrey);
+                background-color: transparent;
+                border: none;
+                float: left;
+                width: 100%;
+                min-height: 175px;
+                resize: none;
+                overflow-wrap: normal;
+              }
+              textarea::placeholder {
+                @include main_font(20px, 500, $darkgrey);
+                background-color: transparent;
+              }
+              textarea:focus {
+                outline: 0px;
+                color: $darkpurple;
+                &::placeholder {
+                  color: $white;
+                }
+              }
+              input:-webkit-autofill,
+              input:-webkit-autofill:hover,
+              input:-webkit-autofill:focus input:-webkit-autofill,
+              textarea:-webkit-autofill,
+              textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+              select:-webkit-autofill,
+              select:-webkit-autofill:hover,
+              select:-webkit-autofill:focus {
+                -webkit-text-fill-color: $darkpurple;
+                -webkit-box-shadow: 0 0 0px 1000px $lightgrey inset;
+                transition: background-color 5000 ease-in-out 0s;
+                padding: 1%;
+              }
+            }
+          }
+          .contactFormName,
+          .contactFormEmail,
+          .contactFormTextArea {
+            margin: 24px 0 8px;
+            div {
+              border: 1px solid $darkgrey;
+            }
+          }
+          .contactFormName {
+            padding: 0;
+            div {
+              padding: 3% 15px;
+              margin-right: 0;
+            }
+          }
+          .contactFormEmail {
+            padding: 0;
+            div {
+              padding: 3% 15px;
+            }
+          }
+          .contactFormTextArea {
+            width: 100%;
+            padding: 0;
+            div {
+              padding: 3% 15px;
+              textarea {
+                padding: 0;
+                margin: 0;
+              }
+            }
+          }
+          .contactFormSubmit {
+            div {
+              border-bottom: none;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              button {
+                cursor: pointer;
+                margin: 0 auto;
+                @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 1px $darkpurple solid, 1px $white solid);
+                padding: 2% 4%;
+                min-width: 45%;
+                @include main_font(20px, 500, $darkpurple);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //submit thanks page
+  .submissionPage {
+    height: 100vh;
+    div {
+      height: 100vh;
+      h1 {
+        height: 100vh;
+      }
+    }
+  }
 }
 @mixin contentTemplate--sm() {
-    .pageContentTemplate {
-        .priceGuide {
-            padding: 5% 0 10% 0;
-            .priceGuideContainer {
-                @include page-cont-sm();
-                .priceGuideRow {
-                    grid-template-columns: 33% 1fr .75fr 30%;
-                    div {
-                        border-right: 2px solid $darkgrey;
-                        margin: 10% 0;
-                        padding: 0;
-                        min-height: 75px;
-                        grid-template-columns: 100%;
-                        grid-template-rows: auto;
-                        h2 {
-                            @include main_font(18px, 500, $darkgrey);
-                            width: 100%;
-                            margin: 0;
-                            padding: 5% 5% 0 10%;
-                        }
-                        p {
-                            @include main_font(12px, 500, $darkgrey);
-                            width: 100%;
-                            padding: 0 5% 5% 10%;
-                        }
-                        h3 {
-                            @include main_font(18px, 500, $mediumpurple);
-                        }
-                        h4 {
-                            @include main_font(18px, 600, $mediumpurple);
-                        }
-                    }
-                    div:nth-of-type(4){
-                        border: none;
-                        a {
-                            @include main_font(14px, 600, $darkpurple);
-                            padding: 4% 8%;
-                            margin: 0 13% 0 10%;
-                        }
-                    }
-                }
+  .pageContentTemplate {
+    .priceGuide {
+      padding: 5% 0 10% 0;
+      .priceGuideContainer {
+        @include page-cont-sm();
+        .priceGuideRow {
+          grid-template-columns: 33% 1fr 0.75fr 30%;
+          div {
+            border-right: 2px solid $darkgrey;
+            margin: 10% 0;
+            padding: 0;
+            min-height: 75px;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            h2 {
+              @include main_font(18px, 500, $darkgrey);
+              width: 100%;
+              margin: 0;
+              padding: 5% 5% 0 10%;
             }
-            
+            p {
+              @include main_font(12px, 500, $darkgrey);
+              width: 100%;
+              padding: 0 5% 5% 10%;
+            }
+            h3 {
+              @include main_font(18px, 500, $mediumpurple);
+            }
+            h4 {
+              @include main_font(18px, 600, $mediumpurple);
+            }
+          }
+          div:nth-of-type(4) {
+            border: none;
+            a {
+              @include main_font(14px, 600, $darkpurple);
+              padding: 4% 8%;
+              margin: 0 13% 0 10%;
+            }
+          }
         }
+      }
     }
+  }
 }
 @mixin contentTemplate--md() {
-    .pageContentTemplate {
-        width: 100%;
-        padding-top: 5vh;
-        margin: 0;
-        // Pricing Page
-        .priceGuide {
-            .priceGuideContainer {
-                @include page-cont-md();
+  .pageContentTemplate {
+    width: 100%;
+    padding-top: 5vh;
+    margin: 0;
+    // Pricing Page
+    .priceGuide {
+      .priceGuideContainer {
+        @include page-cont-md();
+      }
+    }
+    // Contact Page
+    .contactContainer {
+      padding: 5% 0;
+      section {
+        @include page-cont-md();
+        div {
+          .contactIntro {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            p {
+              @include main_font(26px, 500, $darkgrey);
+              padding-right: 10%;
+              margin: 0;
             }
-        }
-        // Contact Page
-        .contactContainer {
-            padding: 5% 0;
-            section {
-                @include page-cont-md();
-                div {    
-                    .contactIntro {
-                        display: grid;
-                        grid-template-columns: 50% 50%;
-                        grid-template-rows: auto;
-                        p {
-                            @include main_font(26px, 500, $darkgrey);
-                            padding-right: 10%;
-                            margin: 0;
-                        }
-                        div {
-                            position: relative;
-                            a {
-                                @include main_font(18px, 500, $mediumpurple);
-                                width: 100%;
-                                float: left;
-                            }
-                            ul {
-                                @include list_reset();
-                                height: 50px;
-                                float: left;
-                                display: grid;
-                                grid-template-columns: 1fr 1fr 1fr;
-                                grid-template-rows: 1fr;
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                li {
-                                    height: 50px;
-                                    width: 50px;
-                                    margin: 0;
-                                    a {
-                                        width: 100%;
-                                        height: 100%;
-                                        color: $mediumpurple;
-                                        svg {
-                                            color: $mediumpurple;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+            div {
+              position: relative;
+              a {
+                @include main_font(18px, 500, $mediumpurple);
+                width: 100%;
+                float: left;
+              }
+              ul {
+                @include list_reset();
+                height: 50px;
+                float: left;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                li {
+                  height: 50px;
+                  width: 50px;
+                  margin: 0;
+                  a {
+                    width: 100%;
+                    height: 100%;
+                    color: $mediumpurple;
+                    svg {
+                      color: $mediumpurple;
                     }
-                    form {
-                        grid-template-columns: 50% 50%;
-                        grid-template-rows: 40% 40% 20%;
-                        grid-template-areas:
-                        "a b"
-                        "c c"
-                        "d d";
-                        margin: 0;
-                        padding: 5% 5% 0 5%;
-                        align-content: center;
-                        div {
-                            div {
-                                background-color: $white;
-                                display: block;
-                                input{
-                                    @include main_font(20px, 500, $darkgrey);
-                                }
-                                input::placeholder {
-                                    @include main_font(20px, 500, $darkgrey);
-                                }
-                                textarea{
-                                    @include main_font(20px, 500, $darkgrey);
-                                    min-height: 175px;
-                                }
-                                textarea::placeholder {
-                                    @include main_font(20px, 500, $darkgrey);
-                                }
-                                textarea:focus {
-                                    outline: 0px;
-                                    color: $darkpurple;
-                                    &::placeholder {
-                                        color: $white;
-                                    }
-                                }
-                            }
-                        }
-                        .contactFormName {
-                            grid-area: a;
-                            div {
-                                padding: 3% 15px;
-                                margin-right: 25px;
-                            }
-                        }
-                        .contactFormEmail {
-                            grid-area: b;
-                            padding: 0;
-                            div {
-                                padding: 3% 15px;
-                            }
-                        }
-                        .contactFormTextArea {
-                            grid-area: c;
-                            padding: 0;
-                            div {
-                                border-bottom: 1px solid $darkgrey;
-                            }
-                        }
-                        .contactFormSubmit {
-                            grid-area: d;
-                            div {
-                                button {
-                                    margin: 0 auto;
-                                    @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 1px $darkpurple solid, 1px $white solid);
-                                    padding: 1% 3%;
-                                    min-width: 25%;
-                                    @include main_font(20px, 500, $darkpurple);
-                                }
-                            }
-                        }
-                    }
+                  }
                 }
+              }
             }
+          }
+          form {
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 40% 40% 20%;
+            grid-template-areas:
+              'a b'
+              'c c'
+              'd d';
+            margin: 0;
+            padding: 5% 5% 0 5%;
+            align-content: center;
+            div {
+              div {
+                background-color: $white;
+                display: block;
+                input {
+                  @include main_font(20px, 500, $darkgrey);
+                }
+                input::placeholder {
+                  @include main_font(20px, 500, $darkgrey);
+                }
+                textarea {
+                  @include main_font(20px, 500, $darkgrey);
+                  min-height: 175px;
+                }
+                textarea::placeholder {
+                  @include main_font(20px, 500, $darkgrey);
+                }
+                textarea:focus {
+                  outline: 0px;
+                  color: $darkpurple;
+                  &::placeholder {
+                    color: $white;
+                  }
+                }
+              }
+            }
+            .contactFormName {
+              grid-area: a;
+              div {
+                padding: 3% 15px;
+                margin-right: 25px;
+              }
+            }
+            .contactFormEmail {
+              grid-area: b;
+              padding: 0;
+              div {
+                padding: 3% 15px;
+              }
+            }
+            .contactFormTextArea {
+              grid-area: c;
+              padding: 0;
+              div {
+                border-bottom: 1px solid $darkgrey;
+              }
+            }
+            .contactFormSubmit {
+              grid-area: d;
+              div {
+                button {
+                  margin: 0 auto;
+                  @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 1px $darkpurple solid, 1px $white solid);
+                  padding: 1% 3%;
+                  min-width: 25%;
+                  @include main_font(20px, 500, $darkpurple);
+                }
+              }
+            }
+          }
         }
-    } 
+      }
+    }
+  }
 }
 @mixin contentTemplate--lg() {
-    .pageContentTemplate {
-        padding-top: 0;
-        // Pricing Page
-        .priceGuide {
-            .priceGuideContainer {
-                @include page-cont-lg();
-                .priceGuideRow {
-                    grid-template-columns: 33% 1fr .75fr 30%;
-                    div {
-                        border-right: 2px solid $darkgrey;
-                        margin: 10% 0;
-                        padding: 0;
-                        min-height: 75px;
-                        grid-template-columns: 100%;
-                        grid-template-rows: auto;
-                        h2 {
-                            @include main_font(22px, 500, $darkgrey);
-                            width: 100%;
-                            margin: 0;
-                            padding: 5% 5% 0 10%;
-                        }
-                        p {
-                            @include main_font(14px, 500, $darkgrey);
-                            width: 100%;
-                            padding: 0 5% 5% 10%;
-                        }
-                        h3 {
-                            @include main_font(22px, 500, $mediumpurple);
-                        }
-                        h4 {
-                            @include main_font(22px, 600, $mediumpurple);
-                        }
-                    }
-                    div:nth-of-type(4){
-                        a {
-                            @include main_font(16px, 600, $darkpurple);
-                            padding: 4% 8%;
-                            margin: 0 13% 0 10%;
-                        }
-                    }
-                }
+  .pageContentTemplate {
+    padding-top: 0;
+    // Pricing Page
+    .priceGuide {
+      .priceGuideContainer {
+        @include page-cont-lg();
+        .priceGuideRow {
+          grid-template-columns: 33% 1fr 0.75fr 30%;
+          div {
+            border-right: 2px solid $darkgrey;
+            margin: 10% 0;
+            padding: 0;
+            min-height: 75px;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            h2 {
+              @include main_font(22px, 500, $darkgrey);
+              width: 100%;
+              margin: 0;
+              padding: 5% 5% 0 10%;
             }
-        }
-        .contactContainer {
-            padding: 5% 0;
-            section {
-                @include page-cont-lg();
-                div {    
-                    .contactIntro {
-                        display: grid;
-                        grid-template-columns: 50% 50%;
-                        grid-template-rows: auto;
-                        p {
-                            @include main_font(26px, 500, $darkgrey);
-                            padding-right: 10%;
-                            margin: 0;
-                        }
-                        div {
-                            position: relative;
-                            a {
-                                @include main_font(18px, 500, $mediumpurple);
-                                width: 100%;
-                                float: left;
-                            }
-                            ul {
-                                @include list_reset();
-                                height: 50px;
-                                float: left;
-                                display: grid;
-                                grid-template-columns: 1fr 1fr 1fr;
-                                grid-template-rows: 1fr;
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                li {
-                                    height: 50px;
-                                    width: 50px;
-                                    margin: 0;
-                                    a {
-                                        width: 100%;
-                                        height: 100%;
-                                        color: $mediumpurple;
-                                        svg {
-                                            color: $mediumpurple;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    form {
-                        grid-template-columns: 50% 50%;
-                        grid-template-rows: 40% 40% 20%;
-                        grid-template-areas:
-                        "a b"
-                        "c c"
-                        "d d";
-                        margin: 0;
-                        padding: 5% 5% 0 5%;
-                        align-content: center;
-                        div {
-                            div {
-                                background-color: $white;
-                                display: block;
-                                input{
-                                    @include main_font(20px, 500, $darkgrey);
-                                }
-                                input::placeholder {
-                                    @include main_font(20px, 500, $darkgrey);
-                                }
-                                textarea{
-                                    @include main_font(20px, 500, $darkgrey);
-                                    min-height: 175px;
-                                }
-                                textarea::placeholder {
-                                    @include main_font(20px, 500, $darkgrey);
-                                }
-                                textarea:focus {
-                                    outline: 0px;
-                                    color: $darkpurple;
-                                    &::placeholder {
-                                        color: $white;
-                                    }
-                                }
-                            }
-                        }
-                        .contactFormName {
-                            grid-area: a;
-                            div {
-                                padding: 3% 15px;
-                                margin-right: 25px;
-                            }
-                        }
-                        .contactFormEmail {
-                            grid-area: b;
-                            padding: 0;
-                            div {
-                                padding: 3% 15px;
-                            }
-                        }
-                        .contactFormTextArea {
-                            grid-area: c;
-                            padding: 0;
-                            div {
-                                border-bottom: 1px solid $darkgrey;
-                            }
-                        }
-                        .contactFormSubmit {
-                            grid-area: d;
-                            div {
-                                button {
-                                    margin: 0 auto;
-                                    @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 1px $darkpurple solid, 1px $white solid);
-                                    padding: 1% 3%;
-                                    min-width: 25%;
-                                    @include main_font(20px, 500, $darkpurple);
-                                }
-                            }
-                        }
-                    }
-                }
+            p {
+              @include main_font(14px, 500, $darkgrey);
+              width: 100%;
+              padding: 0 5% 5% 10%;
             }
+            h3 {
+              @include main_font(22px, 500, $mediumpurple);
+            }
+            h4 {
+              @include main_font(22px, 600, $mediumpurple);
+            }
+          }
+          div:nth-of-type(4) {
+            a {
+              @include main_font(16px, 600, $darkpurple);
+              padding: 4% 8%;
+              margin: 0 13% 0 10%;
+            }
+          }
         }
+      }
     }
+    .contactContainer {
+      padding: 5% 0;
+      section {
+        @include page-cont-lg();
+        div {
+          .contactIntro {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            p {
+              @include main_font(26px, 500, $darkgrey);
+              padding-right: 10%;
+              margin: 0;
+            }
+            div {
+              position: relative;
+              a {
+                @include main_font(18px, 500, $mediumpurple);
+                width: 100%;
+                float: left;
+              }
+              ul {
+                @include list_reset();
+                height: 50px;
+                float: left;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                li {
+                  height: 50px;
+                  width: 50px;
+                  margin: 0;
+                  a {
+                    width: 100%;
+                    height: 100%;
+                    color: $mediumpurple;
+                    svg {
+                      color: $mediumpurple;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          form {
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 40% 40% 20%;
+            grid-template-areas:
+              'a b'
+              'c c'
+              'd d';
+            margin: 0;
+            padding: 5% 5% 0 5%;
+            align-content: center;
+            div {
+              div {
+                background-color: $white;
+                display: block;
+                input {
+                  @include main_font(20px, 500, $darkgrey);
+                }
+                input::placeholder {
+                  @include main_font(20px, 500, $darkgrey);
+                }
+                textarea {
+                  @include main_font(20px, 500, $darkgrey);
+                  min-height: 175px;
+                }
+                textarea::placeholder {
+                  @include main_font(20px, 500, $darkgrey);
+                }
+                textarea:focus {
+                  outline: 0px;
+                  color: $darkpurple;
+                  &::placeholder {
+                    color: $white;
+                  }
+                }
+              }
+            }
+            .contactFormName {
+              grid-area: a;
+              div {
+                padding: 3% 15px;
+                margin-right: 25px;
+              }
+            }
+            .contactFormEmail {
+              grid-area: b;
+              padding: 0;
+              div {
+                padding: 3% 15px;
+              }
+            }
+            .contactFormTextArea {
+              grid-area: c;
+              padding: 0;
+              div {
+                border: 1px solid $darkgrey;
+              }
+            }
+            .contactFormSubmit {
+              grid-area: d;
+              div {
+                button {
+                  margin: 0 auto;
+                  @include button_style_custom(transparent, $darkpurple, $darkpurple, $white, 1px $darkpurple solid, 1px $white solid);
+                  padding: 1% 3%;
+                  min-width: 25%;
+                  @include main_font(20px, 500, $darkpurple);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @mixin contentTemplate--xl() {
-    .pageContentTemplate {
-        // Pricing Page
-        .priceGuide {
-            .priceGuideContainer {
-                @include page-cont-xl();
-            }
-        }
-        .contactContainer {
-            padding: 5% 0;
-            section {
-                @include page-cont-xl();
-            }
-        }
+  .pageContentTemplate {
+    // Pricing Page
+    .priceGuide {
+      .priceGuideContainer {
+        @include page-cont-xl();
+      }
     }
+    .contactContainer {
+      padding: 5% 0;
+      section {
+        @include page-cont-xl();
+      }
+    }
+  }
 }

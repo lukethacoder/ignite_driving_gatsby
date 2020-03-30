@@ -1,350 +1,381 @@
-@import "_variables.scss";
+@import '_variables.scss';
 
 .whatWeOfferHeader {
-    padding-bottom: 15vh;
+  padding-bottom: 15vh;
 }
 
 .whatWeOfferTemplate {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  @include background(url('../assets/bgwwo.jpg'), 150% auto, top, no-repeat, rgb(156, 156, 156));
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $darkpurple;
     width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-    @include background(url('../assets/bgwwo.jpg'), 150% auto, top, no-repeat, rgb(156, 156, 156));
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: $darkpurple;
+    opacity: 0.5;
+    z-index: -5;
+  }
+  .whatWeOfferOptions {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0;
+    z-index: 50;
+    overflow: hidden;
+    width: 100%;
+    div {
+      display: block;
+      justify-content: center;
+      align-content: center;
+      background-color: $lightgrey;
+      height: auto;
+      @include page-cont-xx();
+      padding: 0;
+      z-index: 50;
+      .whatWeOfferOptionsList {
+        //ul
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 1fr;
         width: 100%;
-        opacity: .5;
-        z-index: -5;
-    }
-    .whatWeOfferOptions {
-        padding-top: 5%;
-        padding-bottom: 5%;
         margin: 0;
-        z-index: 50;
-        overflow: hidden;
-        width: 100%;
-        div {
-            display: block;
-            justify-content: center;
-            align-content: center;
-            background-color: $lightgrey;
+        padding: 2%;
+        background-color: none;
+        @include list_reset();
+        cursor: pointer;
+        li {
+          background-color: $white;
+          color: $darkgrey;
+          text-align: center;
+          padding: 20% 0;
+          margin: 0;
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: 55% 45%;
+          @include hover_trans(0.5s);
+          svg {
+            width: 75%;
             height: auto;
-            @include page-cont-xx();
+            margin: 10% auto;
+            padding: 20%;
+            color: $darkgrey;
+            background-color: $lightgrey;
+            border-radius: 50%;
+            align-self: start;
+          }
+          div {
+            width: 94%;
+            height: auto;
+            margin: 3% auto;
             padding: 0;
-            z-index: 50;
-            .whatWeOfferOptionsList { //ul
-                display: grid;
-                grid-template-columns: 20% 20% 20% 20% 20%;
-                grid-template-rows: 1fr;
-                width: 100%;
-                margin: 0;
-                padding: 2%;
-                background-color: none;
-                @include list_reset();
-                cursor: pointer;
-                li {
-                    background-color: $white;
-                    color: $darkgrey;
-                    text-align: center;
-                    padding: 20% 0;
-                    margin: 0;
-                    display: grid;
-                    grid-template-columns: 100%;
-                    grid-template-rows: 55% 45%;
-                    @include hover_trans(.5s);
-                    svg {
-                        width: 75%;
-                        height: auto;
-                        margin: 10% auto;
-                        padding: 20%;
-                        color: $darkgrey;
-                        background-color: $lightgrey;
-                        border-radius: 50%;
-                        align-self: start;
-                    }
-                    div {
-                        width: 94%;
-                        height: auto;
-                        margin: 3% auto;
-                        padding: 0;
-                        background-color: transparent;
-                        display: flex;
-                        align-self: end;
-                        justify-self: center;
-                        h2 {
-                            @include main_font(12px, 500, $darkgrey);
-                            padding-top: 10%;
-                            text-align: center;
-                        }
-                    }
-                    &:hover {
-                        @include hover_trans(.15s);
-                        background-color: $mediumpurple;
-                        color: $darkpurple;
-                    }
-                    &:not(.active):hover {
-                        background-color: $lightgrey;
-                    }
-                }
-                .active {
-                    background-color: $mediumpurple;
-                    div {
-                        h2 {
-                            color: $white;
-                        }
-                    }
-                    svg {
-                        background-color: $white;
-                        color: $mediumpurple;
-                    }
-                        
-                }
+            background-color: transparent;
+            display: flex;
+            align-self: end;
+            justify-self: center;
+            h2 {
+              @include main_font(12px, 500, $darkgrey);
+              padding-top: 10%;
+              text-align: center;
             }
-            .whatWeOfferContent {
-                width: 100%;
-                margin: 0;
-                display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows: auto;
-                padding-bottom: 5%;
-                div {
-                    width: 100%;
-                    height: auto;
-                    overflow: hidden;
-                    margin: 0;
-                    display: none;
-                    img {
-                        width: 100%;
-                        margin: 0;
-                    }
-                }
-                p {
-                    @include main_font(14px, 500, $darkgrey);
-                    padding: 3% 5%;
-                    width: 100%;
-                }
-                .wwoBtnDiv {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    a {
-                        @include button_style_custom($mediumpurple, $white, $white, $darkpurple, 2px solid $mediumpurple, 2px solid $mediumpurple);
-                        @include main_font(16px, 500, $white);
-                        padding: 1% 3%;
-                        margin: 0 auto;
-                    }
-                }
-            }
+          }
+          &:hover {
+            @include hover_trans(0.15s);
+            background-color: $mediumpurple;
+            color: $darkpurple;
+          }
+          &:not(.active):hover {
+            background-color: $lightgrey;
+          }
         }
+        .active {
+          background-color: $mediumpurple;
+          div {
+            h2 {
+              color: $white;
+            }
+          }
+          svg {
+            background-color: $white;
+            color: $mediumpurple;
+          }
+        }
+      }
+      .whatWeOfferContent {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        padding-bottom: 5%;
+        div {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+          margin: 0;
+          display: none;
+          img {
+            width: 100%;
+            margin: 0;
+          }
+        }
+        p {
+          @include main_font(14px, 500, $darkgrey);
+          padding: 3% 5%;
+          width: 100%;
+        }
+        .wwoBtnDiv {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          a {
+            @include button_style_custom($mediumpurple, $white, $white, $darkpurple, 2px solid $mediumpurple, 2px solid $mediumpurple);
+            @include main_font(16px, 500, $white);
+            padding: 1% 3%;
+            margin: 0 auto;
+          }
+        }
+      }
     }
+  }
 }
 @mixin whatweoffer--xs() {
-    .whatWeOfferTemplate {
-        .whatWeOfferOptions {
-            div {
-                @include page-cont-xs();
-                .whatWeOfferOptionsList { //ul
-                    li {
-                        padding: 20% 0;
-                        margin: 0;
-                        display: grid;
-                        grid-template-columns: 100%;
-                        grid-template-rows: 55% 45%;
-                        svg {
-                            width: 75%;
-                            height: auto;
-                            margin: 10% auto;
-                            padding: 20%;
-                            border-radius: 50%;
-                        }
-                        div {
-                            margin: 3% auto;
-                            h2 {
-                                @include main_font(14px, 500, $darkgrey);
-                                padding-top: 10%;
-                            }
-                        }
-                    }
-                }
-                .whatWeOfferContent {
-                    grid-template-columns: 100%;
-                    grid-template-rows: 30% 1fr 10%;
-                    padding-bottom: 5%;
-                    div {
-                        img {
-                        }
-                    }
-                    p {
-                        @include main_font(14px, 500, $darkgrey);
-                    }
-                    .wwoBtnDiv {
-                        a {
-                            @include main_font(16px, 500, $white);
-                        }
-                    }
-                }
+  .whatWeOfferTemplate {
+    .whatWeOfferOptions {
+      div {
+        @include page-cont-xs();
+        .whatWeOfferOptionsList {
+          //ul
+          li {
+            padding: 20% 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 55% 45%;
+            svg {
+              width: 75%;
+              height: auto;
+              margin: 10% auto;
+              padding: 20%;
+              border-radius: 50%;
             }
+            div {
+              margin: 3% auto;
+              h2 {
+                @include main_font(14px, 500, $darkgrey);
+                padding-top: 10%;
+              }
+            }
+          }
         }
+        .whatWeOfferContent {
+          grid-template-columns: 100%;
+          grid-template-rows: auto;
+          padding-bottom: 5%;
+          div {
+            img {
+            }
+          }
+          p {
+            @include main_font(14px, 500, $darkgrey);
+          }
+          .wwoBtnDiv {
+            a {
+              @include main_font(16px, 500, $white);
+            }
+          }
+        }
+      }
     }
+  }
 }
 @mixin whatweoffer--sm() {
-    .whatWeOfferTemplate {
-        .whatWeOfferOptions {
-            div {
-                @include page-cont-sm();
-            }
-        }
+  .whatWeOfferTemplate {
+    .whatWeOfferOptions {
+      div {
+        @include page-cont-sm();
+      }
     }
+  }
 }
 @mixin whatweoffer--md() {
-    .whatWeOfferTemplate {
-        @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-color: $darkpurple;
-            opacity: .5;
-        }
-        .whatWeOfferOptions {
-            div {
-                @include page-cont-md();
-                .whatWeOfferOptionsList { //ul
-                    li {
-                        padding: 20% 0;
-                        margin: 0;
-                        display: grid;
-                        grid-template-columns: 100%;
-                        grid-template-rows: 55% 45%;
-                        svg {
-                            width: 75%;
-                            height: auto;
-                            margin: 10% auto;
-                            padding: 20%;
-                            border-radius: 50%;
-                        }
-                        div {
-                            margin: 3% auto;
-                            h2 {
-                                @include main_font(16px, 500, $darkgrey);
-                                padding-top: 10%;
-                            }
-                        }
-                    }
-                }
-                .whatWeOfferContent {
-                    grid-template-columns: 100%;
-                    grid-template-rows: 25% 1fr 10%;
-                    padding-bottom: 5%;
-                    div {
-                        max-height: 350px;
-                        img {
-                            height: 100%;
-                        }
-                    }
-                    p {
-                        @include main_font(14px, 500, $darkgrey);
-                    }
-                    .wwoBtnDiv {
-                        a {
-                            @include main_font(16px, 500, $white);
-                        }
-                    }
-                }
-            }
-        }
+  .whatWeOfferTemplate {
+    @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $darkpurple;
+      opacity: 0.5;
     }
+    .whatWeOfferOptions {
+      div {
+        @include page-cont-md();
+        .whatWeOfferOptionsList {
+          //ul
+          li {
+            padding: 20% 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 55% 45%;
+            svg {
+              width: 75%;
+              height: auto;
+              margin: 10% auto;
+              padding: 20%;
+              border-radius: 50%;
+            }
+            div {
+              margin: 3% auto;
+              h2 {
+                @include main_font(16px, 500, $darkgrey);
+                padding-top: 10%;
+              }
+            }
+          }
+        }
+        .whatWeOfferContent {
+          grid-template-columns: 100%;
+          grid-template-rows: auto;
+          padding-bottom: 5%;
+          div {
+            max-height: 350px;
+            img {
+              height: 100%;
+            }
+          }
+          p {
+            @include main_font(14px, 500, $darkgrey);
+          }
+          .wwoBtnDiv {
+            a {
+              @include main_font(16px, 500, $white);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @mixin whatweoffer--lg() {
-    .whatWeOfferTemplate {
-        @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-color: $darkpurple;
-            opacity: .5;
-        }
-        .whatWeOfferOptions {
-            div {
-                @include page-cont-lg();
-                .whatWeOfferOptionsList { //ul
-                    li {
-                        width: 100%;
-                        padding: 20% 15%;
-                        display: grid;
-                        grid-template-columns: 100%;
-                        grid-template-rows: 55% 45%;
-                        svg {
-                            width: 75%;
-                            height: auto;
-                            margin: 10% auto;
-                            padding: 20%;
-                            border-radius: 50%;
-                        }
-                        div {
-                            margin: 3% auto;
-                            h2 {
-                                @include main_font(22px, 500, $darkgrey);
-                                padding-top: 10%;
-                            }
-                        }
-                    }
-                }
-                .whatWeOfferContent {
-                    grid-template-columns: 100%;
-                    grid-template-rows: 25% 1fr 10%;
-                    padding-bottom: 5%;
-                    div {
-                        max-height: 400px;
-                        img {
-                            height: 100%;
-                        }
-                    }
-                    p {
-                        @include main_font(18px, 500, $darkgrey);
-                    }
-                    .wwoBtnDiv {
-                        a {
-                            @include main_font(20px, 500, $white);
-                        }
-                    }
-                }
+  .whatWeOfferTemplate {
+    @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $darkpurple;
+      opacity: 0.5;
+    }
+    .whatWeOfferOptions {
+      div {
+        @include page-cont-lg();
+        .whatWeOfferOptionsList {
+          //ul
+          li {
+            width: 100%;
+            padding: 20% 15%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 55% 45%;
+            svg {
+              width: 75%;
+              height: auto;
+              margin: 10% auto;
+              padding: 20%;
+              border-radius: 50%;
             }
+            div {
+              margin: 3% auto;
+              h2 {
+                @include main_font(22px, 500, $darkgrey);
+                padding-top: 10%;
+              }
+            }
+          }
         }
-    }   
+        .whatWeOfferContent {
+          grid-template-columns: 100%;
+          grid-template-rows: auto;
+          padding-bottom: 5%;
+          div {
+            max-height: 400px;
+            img {
+              height: 100%;
+            }
+          }
+          p {
+            @include main_font(18px, 500, $darkgrey);
+          }
+          .wwoBtnDiv {
+            a {
+              @include main_font(20px, 500, $white);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @mixin whatweoffer--xl() {
-    .whatWeOfferTemplate {
-        @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-color: $darkpurple;
-            opacity: .5;
-        }
-        .whatWeOfferOptions {
-            div {
-                @include page-cont-xl();
-            }
-        }
+  .whatWeOfferTemplate {
+    @include background(url('../assets/bgwwo.jpg'), 350% auto, top, no-repeat, rgb(156, 156, 156));
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $darkpurple;
+      opacity: 0.5;
     }
+    .whatWeOfferOptions {
+      div {
+        @include page-cont-xl();
+      }
+    }
+  }
+}
+
+.contactBtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  button {
+    cursor: pointer;
+    @include button_style_custom($mediumpurple, $white, $white, $darkpurple, 2px solid $mediumpurple, 2px solid $mediumpurple);
+    @include main_font(16px, 500, $white);
+    padding: 12px 16px;
+    margin: 0;
+    border-radius: 12px;
+  }
+}
+
+.contact_form {
+  label {
+    font-family: $main_font;
+  }
+}
+
+.contactForm {
+  input,
+  textarea {
+    box-shadow: none;
+  }
 }

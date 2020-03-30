@@ -9,3 +9,5 @@ yarn-error.log
 .env.development
 .env.production
 to_do.md
+.env
+package-lock.json
