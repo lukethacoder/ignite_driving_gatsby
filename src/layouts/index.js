@@ -20,8 +20,8 @@ import Terms from '../assets/ignite-driving-school-terms-and-conditions.pdf';
 
 import '../assets/slick/slick.css';
 import '../assets/slick/slick-theme.css';
-import './style.scss';
-import './index.scss';
+import './style.css';
+import './index.css';
 
 /* stateless function */
 const Header = () => (

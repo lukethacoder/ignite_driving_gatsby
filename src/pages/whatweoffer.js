@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Link from 'gatsby-link';
 
 import initial from '../assets/car02.jpg';
@@ -156,13 +156,16 @@ export default class Content extends React.Component {
               </ul>
               <div className="whatWeOfferContent">
                 <div></div>
+                <p>
                 {this.state.content === 'keys2drive' ? (
-                  <p style={{ fontWeight: 700 }}>
+                  <span style={{ fontWeight: 700 }}>
                     Due to the Corona Virus pandemic Ignite Driving is unable to
                     deliver the free Keys2Drive Lesson until further notice.
-                  </p>
+                  <br/>
+                  <br/>
+                  </span>
                 ) : null}
-                <p>{content[this.state.content].description}</p>
+                  {content[this.state.content].description}</p>
                 <div className="wwoBtnDiv">
                   {/* <img src={content[this.state.content].image} /> */}
                   <a href={content[this.state.content].link}>

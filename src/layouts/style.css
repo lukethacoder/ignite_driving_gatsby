@@ -1,0 +1,3381 @@
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-family: "Raleway", sans-serif;
+}
+.navbar .navContact {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+  padding: 3% 0%;
+  list-style-type: none;
+}
+.navbar .navContact li {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  float: left;
+  text-align: center;
+}
+.navbar .navContact li a {
+  margin: auto 10%;
+  text-decoration: none;
+  color: #ffffff;
+  font: 500 14px "Raleway", sans-serif;
+}
+.navbar .navContact li p {
+  margin: auto 10%;
+  text-decoration: none;
+  width: auto;
+  color: #ffffff;
+  font: 500 14px "Raleway", sans-serif;
+}
+.navbar .navContact li:nth-of-type(1) a {
+  color: #ffffff;
+  font: 500 18px "Raleway", sans-serif;
+}
+.navbar .topNav {
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: block;
+}
+.navbar .topNav .navContact {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 1% 2%;
+  display: flex;
+  list-style-type: none;
+}
+.navbar .topNav .navContact li {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  float: left;
+  text-align: center;
+  white-space: nowrap;
+}
+.navbar .topNav .navContact li a {
+  margin: auto 5%;
+  text-decoration: none;
+}
+.navbar .topNav img {
+  width: 80%;
+  max-height: 100%;
+  display: block;
+  margin: 12% 10%;
+  padding: 0;
+}
+.navbar .bottomNav {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.navbar .bottomNav .navMenuList {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  order: 2;
+}
+.navbar .bottomNav .navMenuList li {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: block;
+  height: 65px;
+}
+.navbar .bottomNav .navMenuList li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #636566;
+  font: 500 10px "Raleway", sans-serif;
+  margin: 0 auto;
+  padding: 6% 0;
+}
+.navbar .bottomNav .navMenuList li a svg {
+  width: 100%;
+  height: 23px;
+  color: #636566;
+  margin: 5% 0 5% 0;
+  padding: 0;
+}
+.navbar .bottomNav .navMenuList .activeClassName {
+  background-color: #553B8C;
+  color: #ffffff;
+}
+.navbar .bottomNav .navMenuList .activeClassName svg {
+  color: #ffffff;
+}
+.navbar .bottomNav .navMenuList .activeClassName a {
+  color: #ffffff;
+}
+.navbar .bottomNav .bookNowNav {
+  color: #ffffff;
+  font: 600 16px "Raleway", sans-serif;
+  background-color: #553B8C;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  padding: 3% 0;
+  order: 1;
+}
+
+.pageContent {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.pageContent .headerContainer {
+  width: 100%;
+  height: 80vh;
+  padding-top: 15vh;
+  text-align: center;
+  display: flex;
+}
+.pageContent .headerContainer section {
+  width: 90%;
+  margin: 0 5%;
+  height: 50%;
+  margin: auto;
+}
+.pageContent .headerContainer section h1 {
+  color: #ffffff;
+  font: 600 36px "Raleway", sans-serif;
+  margin-bottom: 10px;
+}
+.pageContent .headerContainer section h4 {
+  padding: 0;
+  margin-bottom: 24px;
+  color: #ffffff;
+  font: 500 22px "Raleway", sans-serif;
+}
+.pageContent .headerContainer section h2 {
+  color: #ffffff;
+  font: 600 24px "Raleway", sans-serif;
+}
+.pageContent .headerContainer section a {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px #ffffff solid;
+  border-radius: 25px;
+  font-family: "Raleway", sans-serif;
+  white-space: nowrap;
+  text-align: center;
+  align-self: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 18px;
+  margin: 5%;
+  width: auto;
+}
+.pageContent .headerContainer section a:hover {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  color: #ffffff;
+  border: 2px #ffffff solid;
+  background-color: #553B8C !important;
+}
+.pageContent .headerContainer section p {
+  color: #ffffff;
+  font: 500 12px "Raleway", sans-serif;
+  padding: 0;
+  margin: 15px 2% 2% 2%;
+  width: auto;
+}
+.pageContent .indexAbout {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #1b1432;
+}
+.pageContent .indexAbout h3 {
+  width: 90%;
+  margin: 0 5%;
+  text-align: center;
+  color: #f6f6f6;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 15% 5% 25% 5%;
+}
+.pageContent .indexAbout h3 span {
+  border-bottom: 1px solid #ffffff;
+}
+.pageContent .whatWeOffer {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  background: url("../assets/bgwwo.jpg");
+  -webkit-background: url("../assets/bgwwo.jpg");
+  -moz-background: url("../assets/bgwwo.jpg");
+  -o-background: url("../assets/bgwwo.jpg");
+  background-size: 1500% auto;
+  -webkit-background-size: 1500% auto;
+  -moz-background-size: 1500% auto;
+  -o-background-size: 1500% auto;
+  background-position: top;
+  -webkit-background-position: top;
+  -moz-background-position: top;
+  -o-background-position: top;
+  background-repeat: no-repeat;
+  -webkit-background-position: top;
+  -moz-background-position: top;
+  -o-background-position: top;
+  background-color: #9c9c9c;
+}
+.pageContent .whatWeOffer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1b1432;
+  opacity: 0.5;
+}
+.pageContent .whatWeOffer section {
+  width: 90%;
+  margin: 0 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 35% 1fr 20%;
+  align-content: stretch;
+}
+.pageContent .whatWeOffer section div {
+  display: grid;
+  justify-content: center;
+  background-color: #f6f6f6;
+  height: auto;
+  width: auto;
+  margin: 1%;
+  margin-bottom: 5%;
+  padding: 1%;
+  z-index: 5;
+}
+.pageContent .whatWeOffer section div div {
+  display: block;
+}
+.pageContent .whatWeOffer section div div div {
+  min-height: 50px;
+  margin: 10% 5%;
+  padding: 1%;
+  vertical-align: middle;
+  align-self: start;
+}
+.pageContent .whatWeOffer section div div div h2 {
+  color: #95989A;
+  font: 600 22px "Raleway", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.pageContent .whatWeOffer section div div svg {
+  border-radius: 50%;
+  /* the magic */
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  align-self: start;
+  width: 60%;
+  height: auto;
+  margin: 0% 20%;
+  text-align: center;
+  padding: 20%;
+  color: #95989A;
+  background-color: #ffffff;
+  border: 1.5px solid #95989A;
+}
+.pageContent .whatWeOffer section div p {
+  color: #95989A;
+  font: 500 12px "Raleway", sans-serif;
+  width: 80%;
+  margin: 10%;
+  padding: 7% 0%;
+  text-align: center;
+  align-self: center;
+}
+.pageContent .whatWeOffer section div a {
+  color: #95989A;
+  font: 600 14px "Raleway", sans-serif;
+  background-color: transparent;
+  color: #95989A;
+  border: 2px #95989A solid;
+  border-radius: 50px;
+  white-space: nowrap;
+  text-align: center;
+  align-self: center;
+  align-self: end;
+  width: 80%;
+  margin: 0 10% 10% 10%;
+  padding: 2% 0;
+  text-align: center;
+}
+.pageContent .whatWeOffer section div a:hover {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: #ffffff;
+  color: #1b1432;
+  border: 2px #1b1432 solid;
+  background-color: transparent;
+}
+.pageContent .googleReviews {
+  background-color: #1b1432;
+  width: 100%;
+  height: auto;
+  padding: 8% 0;
+  display: block;
+}
+.pageContent .googleReviews .sliderContainer {
+  width: 80%;
+  margin: 0 10%;
+  padding: 0;
+}
+.pageContent .googleReviews .sliderContainer div .slick-arrow .slick-next {
+  color: #ffffff;
+  background-color: transparent;
+  background: transparent;
+}
+.pageContent .googleReviews .sliderContainer div .slick-arrow .slick-next:before {
+  color: transparent;
+  background-color: transparent;
+  background: transparent;
+}
+.pageContent .googleReviews .sliderContainer div .slick-list .slick-track .slick-slide h2 {
+  color: #ffffff;
+  font: 500 24px "Raleway", sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.pageContent .googleReviews .sliderContainer div .slick-list .slick-track .slick-slide h3 {
+  color: #ffffff;
+  font: 500 18px "Raleway", sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.pageContent .googleReviews .sliderContainer div .slick-list .slick-track .slick-slide div {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pageContent .googleReviews .sliderContainer div .slick-list .slick-track .slick-slide div svg {
+  color: #ffffff;
+}
+.pageContent .googleReviews .sliderContainer div .slick-list .slick-track .slick-slide p {
+  color: #ffffff;
+  font: 500 12px "Raleway", sans-serif;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2%;
+}
+.pageContent .googleReviews .sliderContainer div .slick-dots {
+  color: #ffffff;
+}
+.pageContent .googleReviews .sliderContainer div .slick-dots li button {
+  width: 15px;
+  height: 15px;
+  border: 2px #ffffff solid;
+  border-radius: 50px;
+  background-color: transparent;
+}
+.pageContent .googleReviews .sliderContainer div .slick-dots li button:before {
+  display: none;
+}
+.pageContent .googleReviews .sliderContainer div .slick-dots .slick-active button {
+  background-color: #ffffff;
+}
+.pageContent .googleReviews a {
+  color: #ffffff;
+  font: 500 14px "Raleway", sans-serif;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px #ffffff solid;
+  border-radius: 50px;
+  white-space: nowrap;
+  text-align: center;
+  align-self: center;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  display: block;
+  max-width: 45%;
+  height: auto;
+  margin: 50px auto auto auto;
+  padding: 5px;
+  text-align: center;
+  border-radius: 50px;
+}
+.pageContent .googleReviews a:hover {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: #ffffff;
+  color: #1b1432;
+  border: 2px #ffffff solid;
+}
+
+.aboutContainer {
+  background-color: #1b1432;
+  margin: 0;
+  padding: 2% 0 1% 0;
+}
+.aboutContainer div {
+  width: 90%;
+  margin: 0 5%;
+  background-color: #ffffff;
+  display: block;
+}
+.aboutContainer div div {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.aboutContainer div div img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+.aboutContainer div p {
+  color: #636566;
+  font: 500 16px "Raleway", sans-serif;
+  padding: 3% 5%;
+}
+
+.aboutHeaderContainer {
+  background-color: #1b1432;
+}
+
+.meetTheTeamContainer {
+  background-color: #1b1432;
+  padding: 0 0 5% 0;
+}
+.meetTheTeamContainer section {
+  width: 90%;
+  margin: 0 5%;
+}
+.meetTheTeamContainer section .meetTheTeamGridContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  align-content: stretch;
+}
+.meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  align-content: stretch;
+  margin: 0 0 5% 0;
+  padding: 0;
+}
+.meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberImg, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberImg {
+  align-self: stretch;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+.meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberImg img, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberImg img {
+  width: 100%;
+  height: auto;
+  margin: 0 !important;
+  padding: 0;
+}
+.meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo {
+  padding: 5% 5% 15% 5%;
+  display: block;
+  margin: auto;
+}
+.meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo h2, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo h2 {
+  color: #636566;
+  font: 600 26px "Raleway", sans-serif;
+  margin: 0 0 2% 0;
+}
+.meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo h3, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo h3 {
+  color: #553B8C;
+  font: 500 20px "Raleway", sans-serif;
+  margin: 0 0 3% 0;
+}
+.meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo p, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo p {
+  color: #636566;
+  font: 500 14px "Raleway", sans-serif;
+  margin: 0 0 3% 0;
+}
+
+.whatWeOfferHeader {
+  padding-bottom: 15vh;
+}
+
+.whatWeOfferTemplate {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  background: url("../assets/bgwwo.jpg");
+  -webkit-background: url("../assets/bgwwo.jpg");
+  -moz-background: url("../assets/bgwwo.jpg");
+  -o-background: url("../assets/bgwwo.jpg");
+  background-size: 150% auto;
+  -webkit-background-size: 150% auto;
+  -moz-background-size: 150% auto;
+  -o-background-size: 150% auto;
+  background-position: top;
+  -webkit-background-position: top;
+  -moz-background-position: top;
+  -o-background-position: top;
+  background-repeat: no-repeat;
+  -webkit-background-position: top;
+  -moz-background-position: top;
+  -o-background-position: top;
+  background-color: #9c9c9c;
+}
+.whatWeOfferTemplate:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1b1432;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -5;
+}
+.whatWeOfferTemplate .whatWeOfferOptions {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 0;
+  z-index: 50;
+  overflow: hidden;
+  width: 100%;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div {
+  display: block;
+  justify-content: center;
+  align-content: center;
+  background-color: #f6f6f6;
+  height: auto;
+  width: 90%;
+  margin: 0 5%;
+  padding: 0;
+  z-index: 50;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 1fr;
+  width: 100%;
+  margin: 0;
+  padding: 2%;
+  background-color: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li {
+  background-color: #ffffff;
+  color: #636566;
+  text-align: center;
+  padding: 20% 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 55% 45%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li svg {
+  width: 75%;
+  height: auto;
+  margin: 10% auto;
+  padding: 20%;
+  color: #636566;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  align-self: start;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li div {
+  width: 94%;
+  height: auto;
+  margin: 3% auto;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  align-self: end;
+  justify-self: center;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li div h2 {
+  color: #636566;
+  font: 500 12px "Raleway", sans-serif;
+  padding-top: 10%;
+  text-align: center;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li:hover {
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  background-color: #553B8C;
+  color: #1b1432;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li:not(.active):hover {
+  background-color: #f6f6f6;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList .active {
+  background-color: #553B8C;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList .active div h2 {
+  color: #ffffff;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList .active svg {
+  background-color: #ffffff;
+  color: #553B8C;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  padding-bottom: 5%;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent div {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+  display: none;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent div img {
+  width: 100%;
+  margin: 0;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent p {
+  color: #636566;
+  font: 500 14px "Raleway", sans-serif;
+  padding: 3% 5%;
+  width: 100%;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent .wwoBtnDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent .wwoBtnDiv a {
+  background-color: #553B8C;
+  color: #ffffff;
+  border: 2px solid #553B8C;
+  border-radius: 50px;
+  white-space: nowrap;
+  text-align: center;
+  align-self: center;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  color: #ffffff;
+  font: 500 16px "Raleway", sans-serif;
+  padding: 1% 3%;
+  margin: 0 auto;
+}
+.whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent .wwoBtnDiv a:hover {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: #ffffff;
+  color: #1b1432;
+  border: 2px solid #553B8C;
+}
+
+.contactBtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.contactBtn button {
+  cursor: pointer;
+  background-color: #553B8C;
+  color: #ffffff;
+  border: 2px solid #553B8C;
+  border-radius: 50px;
+  white-space: nowrap;
+  text-align: center;
+  align-self: center;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  color: #ffffff;
+  font: 500 16px "Raleway", sans-serif;
+  padding: 12px 16px;
+  margin: 0;
+  border-radius: 12px;
+}
+.contactBtn button:hover {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: #ffffff;
+  color: #1b1432;
+  border: 2px solid #553B8C;
+}
+
+.contact_form label {
+  font-family: "Raleway", sans-serif;
+}
+
+.contactForm input,
+.contactForm textarea {
+  box-shadow: none;
+}
+
+.pageContentTemplate {
+  width: 100%;
+  padding-top: 35vh;
+  margin: 0;
+}
+.pageContentTemplate .headerContainer {
+  width: 100%;
+  height: 25vh;
+  padding-top: 15px;
+  text-align: center;
+  display: flex;
+}
+.pageContentTemplate .headerContainer section {
+  width: 75%;
+  height: 50%;
+  margin: auto;
+}
+.pageContentTemplate .headerContainer section h1 {
+  color: #ffffff;
+  font: 600 36px "Raleway", sans-serif;
+}
+.pageContentTemplate .headerContainer section h2 {
+  color: #ffffff;
+  font: 600 24px "Raleway", sans-serif;
+}
+.pageContentTemplate .headerContainer section a {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px #ffffff solid;
+  border-radius: 25px;
+  font-family: "Raleway", sans-serif;
+  white-space: nowrap;
+  text-align: center;
+  align-self: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 18px;
+  margin: 5%;
+  width: auto;
+}
+.pageContentTemplate .headerContainer section a:hover {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  color: #ffffff;
+  border: 2px #ffffff solid;
+  background-color: #553B8C !important;
+}
+.pageContentTemplate .headerContainer section p {
+  color: #ffffff;
+  font: 500 12px "Raleway", sans-serif;
+  padding: 0;
+  margin: 15px 2% 2% 2%;
+  width: auto;
+}
+.pageContentTemplate .indexAbout {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #1b1432;
+}
+.pageContentTemplate .indexAbout h3 {
+  width: 75%;
+  text-align: center;
+  color: #f6f6f6;
+  margin: 0 auto;
+  padding: 20% 5%;
+}
+.pageContentTemplate .priceGuide {
+  background-color: #1b1432;
+  padding: 5% 0 10% 0;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer {
+  width: 90%;
+  margin: 0 5%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: auto;
+  justify-content: center;
+  align-content: stretch;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow {
+  display: grid;
+  grid-template-columns: 33% 1fr 1fr 27%;
+  grid-auto-rows: 1fr;
+  justify-content: start;
+  align-content: stretch;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div {
+  align-self: stretch;
+  border-right: 2px solid #636566;
+  margin: 10% 0;
+  padding: 0;
+  min-height: 75px;
+  display: grid;
+  vertical-align: middle;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div h2 {
+  color: #636566;
+  font: 500 16px "Raleway", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 5% 5% 0 5%;
+  text-align: left;
+  width: auto;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div p {
+  color: #636566;
+  font: 500 11px "Raleway", sans-serif;
+  width: 100%;
+  padding: 0 5% 5% 5%;
+  margin: 0;
+  float: left;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div p a {
+  color: #553B8C;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div h3 {
+  color: #553B8C;
+  font: 500 16px "Raleway", sans-serif;
+  margin: auto;
+  text-align: center;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div h4 {
+  color: #553B8C;
+  font: 600 16px "Raleway", sans-serif;
+  margin: auto;
+  text-align: center;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div:nth-of-type(4) {
+  border: none;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div:nth-of-type(4) a {
+  color: #1b1432;
+  font: 600 12px "Raleway", sans-serif;
+  background-color: transparent;
+  color: #1b1432;
+  border: 2px #1b1432 solid;
+  border-radius: 50px;
+  white-space: nowrap;
+  text-align: center;
+  align-self: center;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  padding: 2% 6%;
+  margin: 0 6% 0 4%;
+  text-align: center;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div:nth-of-type(4) a:hover {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: #1b1432;
+  color: #ffffff;
+  border: 2px #1b1432 solid;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow:nth-of-type(1) div {
+  align-self: center;
+  padding: 7% 0;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow:nth-of-type(2) div {
+  align-self: center;
+  padding: 7% 0;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+.pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow:nth-of-type(even) {
+  background-color: #f6f6f6;
+}
+.pageContentTemplate .contactContainer {
+  background-color: #1b1432;
+  padding: 5% 0;
+}
+.pageContentTemplate .contactContainer section {
+  width: 90%;
+  margin: 0 5%;
+  background-color: #ffffff;
+}
+.pageContentTemplate .contactContainer section div {
+  padding: 3% 5%;
+  margin: 0;
+  overflow: hidden;
+}
+.pageContentTemplate .contactContainer section div .contactIntro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+.pageContentTemplate .contactContainer section div .contactIntro p {
+  color: #636566;
+  font: 500 24px "Raleway", sans-serif;
+  margin: 0 0 5% 0;
+}
+.pageContentTemplate .contactContainer section div .contactIntro div {
+  margin: 0;
+  padding: 0;
+}
+.pageContentTemplate .contactContainer section div .contactIntro div a {
+  color: #553B8C;
+  font: 500 18px "Raleway", sans-serif;
+  width: 100%;
+  float: left;
+  margin: 0;
+}
+.pageContentTemplate .contactContainer section div .contactIntro div ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: 50px;
+  float: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.pageContentTemplate .contactContainer section div .contactIntro div ul li {
+  height: 45px;
+  width: 45px;
+  margin: 0;
+}
+.pageContentTemplate .contactContainer section div .contactIntro div ul li a {
+  width: 100%;
+  height: 100%;
+  padding: 15% 15% 15% 0;
+  color: #553B8C;
+  float: left;
+}
+.pageContentTemplate .contactContainer section div .contactIntro div ul li a svg {
+  height: 90%;
+  width: 90%;
+  color: #553B8C;
+  float: left;
+}
+.pageContentTemplate .contactContainer section div form {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  margin: 0;
+  padding: 3% 5%;
+  align-content: center;
+}
+.pageContentTemplate .contactContainer section div form .olHoneyPot {
+  display: none;
+}
+.pageContentTemplate .contactContainer section div form div div {
+  background-color: #ffffff;
+  display: block;
+}
+.pageContentTemplate .contactContainer section div form div div label {
+  display: none;
+}
+.pageContentTemplate .contactContainer section div form div div input {
+  color: #636566;
+  font: 500 20px "Raleway", sans-serif;
+  background-color: transparent;
+  border: none;
+  float: left;
+  width: 100%;
+}
+.pageContentTemplate .contactContainer section div form div div input::placeholder {
+  color: #636566;
+  font: 500 20px "Raleway", sans-serif;
+  background-color: transparent;
+}
+.pageContentTemplate .contactContainer section div form div div input:focus {
+  outline: 0px;
+  color: #1b1432;
+}
+.pageContentTemplate .contactContainer section div form div div input:focus::placeholder {
+  color: #ffffff;
+}
+.pageContentTemplate .contactContainer section div form div div textarea {
+  color: #636566;
+  font: 500 20px "Raleway", sans-serif;
+  background-color: transparent;
+  border: none;
+  float: left;
+  width: 100%;
+  min-height: 175px;
+  resize: none;
+  overflow-wrap: normal;
+}
+.pageContentTemplate .contactContainer section div form div div textarea::placeholder {
+  color: #636566;
+  font: 500 20px "Raleway", sans-serif;
+  background-color: transparent;
+}
+.pageContentTemplate .contactContainer section div form div div textarea:focus {
+  outline: 0px;
+  color: #1b1432;
+}
+.pageContentTemplate .contactContainer section div form div div textarea:focus::placeholder {
+  color: #ffffff;
+}
+.pageContentTemplate .contactContainer section div form div div input:-webkit-autofill,
+.pageContentTemplate .contactContainer section div form div div input:-webkit-autofill:hover,
+.pageContentTemplate .contactContainer section div form div div input:-webkit-autofill:focus input:-webkit-autofill,
+.pageContentTemplate .contactContainer section div form div div textarea:-webkit-autofill,
+.pageContentTemplate .contactContainer section div form div div textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+.pageContentTemplate .contactContainer section div form div div select:-webkit-autofill,
+.pageContentTemplate .contactContainer section div form div div select:-webkit-autofill:hover,
+.pageContentTemplate .contactContainer section div form div div select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #1b1432;
+  -webkit-box-shadow: 0 0 0px 1000px #f6f6f6 inset;
+  transition: background-color 5000 ease-in-out 0s;
+  padding: 1%;
+}
+.pageContentTemplate .contactContainer section div form .contactFormName,
+.pageContentTemplate .contactContainer section div form .contactFormEmail,
+.pageContentTemplate .contactContainer section div form .contactFormTextArea {
+  margin: 24px 0 8px;
+}
+.pageContentTemplate .contactContainer section div form .contactFormName div,
+.pageContentTemplate .contactContainer section div form .contactFormEmail div,
+.pageContentTemplate .contactContainer section div form .contactFormTextArea div {
+  border: 1px solid #636566;
+}
+.pageContentTemplate .contactContainer section div form .contactFormName {
+  padding: 0;
+}
+.pageContentTemplate .contactContainer section div form .contactFormName div {
+  padding: 3% 15px;
+  margin-right: 0;
+}
+.pageContentTemplate .contactContainer section div form .contactFormEmail {
+  padding: 0;
+}
+.pageContentTemplate .contactContainer section div form .contactFormEmail div {
+  padding: 3% 15px;
+}
+.pageContentTemplate .contactContainer section div form .contactFormTextArea {
+  width: 100%;
+  padding: 0;
+}
+.pageContentTemplate .contactContainer section div form .contactFormTextArea div {
+  padding: 3% 15px;
+}
+.pageContentTemplate .contactContainer section div form .contactFormTextArea div textarea {
+  padding: 0;
+  margin: 0;
+}
+.pageContentTemplate .contactContainer section div form .contactFormSubmit div {
+  border-bottom: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.pageContentTemplate .contactContainer section div form .contactFormSubmit div button {
+  cursor: pointer;
+  margin: 0 auto;
+  background-color: transparent;
+  color: #1b1432;
+  border: 1px #1b1432 solid;
+  border-radius: 50px;
+  white-space: nowrap;
+  text-align: center;
+  align-self: center;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  padding: 2% 4%;
+  min-width: 45%;
+  color: #1b1432;
+  font: 500 20px "Raleway", sans-serif;
+}
+.pageContentTemplate .contactContainer section div form .contactFormSubmit div button:hover {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: #1b1432;
+  color: #ffffff;
+  border: 1px #ffffff solid;
+}
+.pageContentTemplate .submissionPage {
+  height: 100vh;
+}
+.pageContentTemplate .submissionPage div {
+  height: 100vh;
+}
+.pageContentTemplate .submissionPage div h1 {
+  height: 100vh;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin-bottom: 200px;
+  background-color: #1b1432;
+  position: relative;
+}
+.footer .footerMain {
+  width: 90%;
+  margin: 0 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  z-index: 50;
+}
+.footer .footerMain > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  z-index: 50;
+  background-color: #ffffff;
+}
+.footer .footerMain > div .footerNav {
+  padding: 5%;
+  align-self: stretch;
+}
+.footer .footerMain > div .footerNav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer .footerMain > div .footerNav ul li:nth-of-type(1) {
+  width: auto;
+  color: #553B8C;
+  font: 500 18px "Raleway", sans-serif;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #553B8C;
+}
+.footer .footerMain > div .footerNav ul li {
+  margin: 0 0 2% 0;
+}
+.footer .footerMain > div .footerNav ul li a {
+  color: #95989A;
+  font: 500 14px "Raleway", sans-serif;
+}
+.footer .footerMain > div .footerContact {
+  padding: 5%;
+  position: relative;
+  align-self: stretch;
+}
+.footer .footerMain > div .footerContact .footerContactChild {
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20%;
+}
+.footer .footerMain > div .footerContact .footerContactChild > li:nth-of-type(1) {
+  width: auto;
+  color: #553B8C;
+  font: 500 18px "Raleway", sans-serif;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #553B8C;
+}
+.footer .footerMain > div .footerContact .footerContactChild li {
+  height: auto;
+  border: 0;
+  margin: 0 0 2% 0;
+}
+.footer .footerMain > div .footerContact .footerContactChild li a {
+  color: #95989A;
+  font: 500 14px "Raleway", sans-serif;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.footer .footerMain > div .footerContact .footerSocials {
+  width: 50%;
+  height: 40px;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.footer .footerMain > div .footerContact .footerSocials li {
+  width: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0 5% 0 0;
+  float: left;
+  display: block;
+}
+.footer .footerMain > div .footerContact .footerSocials li a {
+  height: 100%;
+  width: 100%;
+}
+.footer .footerMain > div .footerContact .footerSocials li a svg {
+  height: 100%;
+  width: auto;
+  color: #95989A;
+  margin: 0;
+}
+.footer .footerMain > div .img_adta {
+  padding: 5% 25% 1% 10%;
+}
+.footer .footerMain > div .img_k2d {
+  padding: 5% 25% 1% 10%;
+}
+.footer .footerMain .footerInstagram {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 5%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 2;
+}
+.footer .footerMain .footerInstagram div {
+  width: 100%;
+  max-height: 85%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.footer .footerMain .footerInstagram div a {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  align-self: stretch;
+  padding: 0;
+}
+.footer .footerMain .footerInstagram div a img {
+  width: 96%;
+  height: auto;
+  padding: 0%;
+  margin: 2%;
+  border: 1px solid #553B8C;
+}
+.footer .footerMain .footerInstagram > a {
+  color: #1b1432;
+  font: 500 16px "Raleway", sans-serif;
+  width: 70%;
+  padding: 2% 1%;
+  margin: 0 15%;
+  text-align: center;
+  align-self: end;
+  border: 2px #553B8C solid;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+.footer .footerBottom {
+  height: 420px;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  z-index: 0;
+}
+.footer .footerBottom div {
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1% 1%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: 90%;
+  margin: 0 5%;
+}
+.footer .footerBottom div ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: inline-flex;
+}
+.footer .footerBottom div ul li {
+  width: auto;
+  color: #636566;
+  font: 500 14px "Raleway", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  margin: 1% auto;
+}
+.footer .footerBottom div a:nth-of-type(1) {
+  width: 100%;
+  text-align: center;
+  color: #636566;
+  font: 500 14px "Raleway", sans-serif;
+}
+.footer .footerBottom div a:nth-of-type(2) {
+  width: 100%;
+  text-align: center;
+  color: #636566;
+  font: 500 14px "Raleway", sans-serif;
+}
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (min-width: 320px) {
+  /* all content should be mobile first anyways so no real need for this size */
+}
+/* smartphones, Android phones, landscape iPhone */
+@media (min-width: 480px) {
+  .pageContent .whatWeOffer {
+    background: url("../assets/bgwwo.jpg");
+    -webkit-background: url("../assets/bgwwo.jpg");
+    -moz-background: url("../assets/bgwwo.jpg");
+    -o-background: url("../assets/bgwwo.jpg");
+    background-size: 550% auto;
+    -webkit-background-size: 550% auto;
+    -moz-background-size: 550% auto;
+    -o-background-size: 550% auto;
+    background-position: top;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-color: #9c9c9c;
+  }
+  .pageContent .whatWeOffer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1b1432;
+    opacity: 0.5;
+  }
+  .pageContent .whatWeOffer section {
+    width: 85%;
+    margin: 0 7.5%;
+  }
+  .pageContent .googleReviews .sliderContainer {
+    width: 85%;
+    margin: 0 7.5%;
+  }
+
+  .footer .footerMain > div .img_adta {
+    padding: 5% 25% 1% 10%;
+  }
+  .footer .footerMain > div .img_adta img {
+    margin: 0 auto;
+  }
+  .footer .footerMain > div .img_k2d {
+    padding: 5% 25% 1% 10%;
+  }
+  .footer .footerMain > div .img_k2d img {
+    margin: 0 auto;
+  }
+  .footer .footerMain .footerInstagram {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2;
+  }
+  .footer .footerMain .footerInstagram div {
+    width: 100%;
+    max-height: 85%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .footer .footerMain .footerInstagram > a {
+    color: #1b1432;
+    font: 500 16px "Raleway", sans-serif;
+    width: 70%;
+    padding: 2% 1%;
+    margin: 0 15%;
+    border-radius: 50px;
+    white-space: nowrap;
+  }
+  .footer .footerBottom {
+    height: 275px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: #f6f6f6;
+    z-index: 0;
+  }
+  .footer .footerBottom div {
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1% 1%;
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: auto;
+    width: 80%;
+    margin: 0 10%;
+  }
+  .footer .footerBottom div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer .footerBottom div ul li {
+    color: #636566;
+    font: 500 14px "Raleway", sans-serif;
+    text-decoration: none;
+    float: left;
+    margin: 0 5% 0 0;
+  }
+  .footer .footerBottom div a:nth-of-type(1) {
+    text-align: center;
+    color: #636566;
+    font: 500 14px "Raleway", sans-serif;
+  }
+  .footer .footerBottom div a:nth-of-type(2) {
+    text-align: right;
+    color: #636566;
+    font: 500 14px "Raleway", sans-serif;
+  }
+
+  .whatWeOfferTemplate .whatWeOfferOptions div {
+    width: 85%;
+    margin: 0 7.5%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li {
+    padding: 20% 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 55% 45%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li svg {
+    width: 75%;
+    height: auto;
+    margin: 10% auto;
+    padding: 20%;
+    border-radius: 50%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li div {
+    margin: 3% auto;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li div h2 {
+    color: #636566;
+    font: 500 14px "Raleway", sans-serif;
+    padding-top: 10%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    padding-bottom: 5%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent p {
+    color: #636566;
+    font: 500 14px "Raleway", sans-serif;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent .wwoBtnDiv a {
+    color: #ffffff;
+    font: 500 16px "Raleway", sans-serif;
+  }
+}
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width: 600px) {
+  .navbar {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .navbar .bottomNav .bookNowNav {
+    font-family: "Raleway", sans-serif;
+    background-color: #553B8C;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    padding: 2% 0;
+    order: 1;
+  }
+
+  .footer .footerMain > div .footerNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer .footerMain > div .footerNav ul li:nth-of-type(1) {
+    color: #553B8C;
+    font: 500 22px "Raleway", sans-serif;
+    padding-bottom: 5px;
+  }
+  .footer .footerMain > div .footerNav ul li a {
+    color: #95989A;
+    font: 500 20px "Raleway", sans-serif;
+  }
+  .footer .footerMain > div .footerContact .footerContactChild > li:nth-of-type(1) {
+    color: #553B8C;
+    font: 500 22px "Raleway", sans-serif;
+  }
+  .footer .footerMain > div .footerContact .footerContactChild li a {
+    color: #95989A;
+    font: 500 20px "Raleway", sans-serif;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  .footer .footerMain > div .footerContact .footerSocials {
+    width: 100%;
+    height: 45px;
+    bottom: 5%;
+    left: 5%;
+  }
+  .footer .footerMain > div .footerContact .footerSocials li {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0 3% 0 0;
+  }
+  .footer .footerMain > div .footerContact .footerSocials li a {
+    height: 100%;
+    width: auto;
+  }
+  .footer .footerMain > div .footerContact .footerSocials li a svg {
+    height: 100%;
+    width: auto;
+    color: #95989A;
+    margin: 0;
+  }
+  .footer .footerMain > div .img_adta {
+    padding: 5% 25% 1% 10%;
+  }
+  .footer .footerMain > div .img_k2d {
+    padding: 5% 25% 1% 10%;
+  }
+  .footer .footerMain .footerInstagram {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2;
+  }
+  .footer .footerMain .footerInstagram div {
+    width: 100%;
+    max-height: 85%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .footer .footerMain .footerInstagram > a {
+    color: #1b1432;
+    font: 500 16px "Raleway", sans-serif;
+    width: 70%;
+    padding: 2% 1%;
+    margin: 0 15%;
+    border-radius: 50px;
+    white-space: nowrap;
+  }
+  .footer .footerBottom {
+    height: 275px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: #f6f6f6;
+    z-index: 0;
+  }
+  .footer .footerBottom div {
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1% 1%;
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: auto;
+    width: 80%;
+    margin: 0 10%;
+  }
+  .footer .footerBottom div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer .footerBottom div ul li {
+    color: #636566;
+    font: 500 14px "Raleway", sans-serif;
+    text-decoration: none;
+    float: left;
+    margin: 0 5% 0 0;
+  }
+  .footer .footerBottom div a:nth-of-type(1) {
+    text-align: center;
+    color: #636566;
+    font: 500 14px "Raleway", sans-serif;
+  }
+  .footer .footerBottom div a:nth-of-type(2) {
+    text-align: right;
+    color: #636566;
+    font: 500 14px "Raleway", sans-serif;
+  }
+
+  .pageContentTemplate .priceGuide {
+    padding: 5% 0 10% 0;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow {
+    grid-template-columns: 33% 1fr 0.75fr 30%;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div {
+    border-right: 2px solid #636566;
+    margin: 10% 0;
+    padding: 0;
+    min-height: 75px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div h2 {
+    color: #636566;
+    font: 500 18px "Raleway", sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 5% 5% 0 10%;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div p {
+    color: #636566;
+    font: 500 12px "Raleway", sans-serif;
+    width: 100%;
+    padding: 0 5% 5% 10%;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div h3 {
+    color: #553B8C;
+    font: 500 18px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div h4 {
+    color: #553B8C;
+    font: 600 18px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div:nth-of-type(4) {
+    border: none;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div:nth-of-type(4) a {
+    color: #1b1432;
+    font: 600 14px "Raleway", sans-serif;
+    padding: 4% 8%;
+    margin: 0 13% 0 10%;
+  }
+
+  .aboutContainer div {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .aboutContainer div div {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .aboutContainer div div img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+  .aboutContainer div p {
+    color: #636566;
+    font: 500 16px "Raleway", sans-serif;
+    padding: 3% 5%;
+  }
+
+  .meetTheTeamContainer section {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo {
+    padding: 5% 5% 15% 5%;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo h2, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo h2 {
+    color: #636566;
+    font: 600 24px "Raleway", sans-serif;
+    margin: 0 0 2% 0;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo h3, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo h3 {
+    color: #553B8C;
+    font: 500 18px "Raleway", sans-serif;
+    margin: 0 0 3% 0;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo p, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo p {
+    color: #636566;
+    font: 500 12px "Raleway", sans-serif;
+    margin: 0 0 3% 0;
+  }
+
+  .whatWeOfferTemplate .whatWeOfferOptions div {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops |-> clicks over to desktop nav at 801px <-| */
+@media (min-width: 801px) {
+  .navbar {
+    width: 75%;
+    margin: 0 12.5%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  .navbar .navContact {
+    width: 80%;
+    height: 50px;
+    padding: 1%;
+    margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
+    padding: 1% 2%;
+    list-style-type: none;
+  }
+  .navbar .navContact li {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .navbar .navContact li a {
+    margin: auto 10%;
+    text-decoration: none;
+  }
+  .navbar .topNav {
+    width: 30%;
+    height: 150px;
+    position: relative;
+    float: left;
+    display: block;
+    padding: 0;
+    background-color: transparent;
+  }
+  .navbar .topNav a {
+    width: auto;
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+  .navbar .topNav a img {
+    max-width: 100%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar .bottomNav {
+    width: 70%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+  .navbar .bottomNav .navMenuList {
+    width: 75%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    order: 1;
+    height: auto;
+  }
+  .navbar .bottomNav .navMenuList li {
+    padding: 3% 0;
+    margin: 0 2%;
+    height: auto;
+    display: block;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  .navbar .bottomNav .navMenuList li a {
+    color: #ffffff;
+    font: 500 14px "Raleway", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar .bottomNav .navMenuList li a svg {
+    display: none;
+  }
+  .navbar .bottomNav .navMenuList li:hover {
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    border-bottom: 1px solid #ffffff;
+  }
+  .navbar .bottomNav .navMenuList li .activeClassName {
+    background-color: transparent;
+  }
+  .navbar .bottomNav .navMenuList li .activeClassName {
+    font-weight: 600;
+  }
+
+  .navbar .bottomNav .navMenuList li:nth-last-of-type(3) {
+    display: none;
+  }
+  .navbar .bottomNav .navMenuList li:nth-last-of-type(3) a {
+    display: none;
+  }
+  .navbar .bottomNav .bookNowNav {
+    background-color: #553B8C;
+    color: #ffffff;
+    border: 2px transparent solid;
+    border-radius: 25px;
+    font-family: "Raleway", sans-serif;
+    white-space: nowrap;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 18px;
+    margin-left: 25px;
+    width: auto;
+  }
+  .navbar .bottomNav .bookNowNav:hover {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    color: #ffffff;
+    border: 2px #ffffff solid;
+    background-color: transparent;
+  }
+
+  .pageContentTemplate {
+    width: 100%;
+    padding-top: 5vh;
+    margin: 0;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  .pageContentTemplate .contactContainer {
+    padding: 5% 0;
+  }
+  .pageContentTemplate .contactContainer section {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro p {
+    color: #636566;
+    font: 500 26px "Raleway", sans-serif;
+    padding-right: 10%;
+    margin: 0;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div {
+    position: relative;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div a {
+    color: #553B8C;
+    font: 500 18px "Raleway", sans-serif;
+    width: 100%;
+    float: left;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div ul li {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div ul li a {
+    width: 100%;
+    height: 100%;
+    color: #553B8C;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div ul li a svg {
+    color: #553B8C;
+  }
+  .pageContentTemplate .contactContainer section div form {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 40% 20%;
+    grid-template-areas: "a b" "c c" "d d";
+    margin: 0;
+    padding: 5% 5% 0 5%;
+    align-content: center;
+  }
+  .pageContentTemplate .contactContainer section div form div div {
+    background-color: #ffffff;
+    display: block;
+  }
+  .pageContentTemplate .contactContainer section div form div div input {
+    color: #636566;
+    font: 500 20px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .contactContainer section div form div div input::placeholder {
+    color: #636566;
+    font: 500 20px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .contactContainer section div form div div textarea {
+    color: #636566;
+    font: 500 20px "Raleway", sans-serif;
+    min-height: 175px;
+  }
+  .pageContentTemplate .contactContainer section div form div div textarea::placeholder {
+    color: #636566;
+    font: 500 20px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .contactContainer section div form div div textarea:focus {
+    outline: 0px;
+    color: #1b1432;
+  }
+  .pageContentTemplate .contactContainer section div form div div textarea:focus::placeholder {
+    color: #ffffff;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormName {
+    grid-area: a;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormName div {
+    padding: 3% 15px;
+    margin-right: 25px;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormEmail {
+    grid-area: b;
+    padding: 0;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormEmail div {
+    padding: 3% 15px;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormTextArea {
+    grid-area: c;
+    padding: 0;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormTextArea div {
+    border-bottom: 1px solid #636566;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormSubmit {
+    grid-area: d;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormSubmit div button {
+    margin: 0 auto;
+    background-color: transparent;
+    color: #1b1432;
+    border: 1px #1b1432 solid;
+    border-radius: 50px;
+    white-space: nowrap;
+    text-align: center;
+    align-self: center;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    padding: 1% 3%;
+    min-width: 25%;
+    color: #1b1432;
+    font: 500 20px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormSubmit div button:hover {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    background-color: #1b1432;
+    color: #ffffff;
+    border: 1px #ffffff solid;
+  }
+
+  .pageContent .headerContainer {
+    width: 100%;
+    height: 75vh;
+    padding-top: 0vh;
+    text-align: center;
+    display: flex;
+  }
+  .pageContent .headerContainer section {
+    width: 75%;
+    margin: 0 12.5%;
+    height: 50%;
+    margin: auto;
+  }
+  .pageContent .headerContainer section h1 {
+    color: #ffffff;
+    font: 600 42px "Raleway", sans-serif;
+  }
+  .pageContent .headerContainer section h2 {
+    color: #ffffff;
+    font: 600 24px "Raleway", sans-serif;
+  }
+  .pageContent .headerContainer section a {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px #ffffff solid;
+    border-radius: 25px;
+    font-family: "Raleway", sans-serif;
+    white-space: nowrap;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 18px;
+    margin: 5%;
+    width: auto;
+  }
+  .pageContent .headerContainer section a:hover {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    color: #ffffff;
+    border: 2px #ffffff solid;
+    background-color: #553B8C !important;
+  }
+  .pageContent .headerContainer section p {
+    color: #ffffff;
+    font: 500 12px "Raleway", sans-serif;
+    padding: 0;
+    margin: 15px 2% 2% 2%;
+    width: auto;
+  }
+  .pageContent .indexAbout h3 {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  .pageContent .whatWeOffer {
+    background: url("../assets/bgwwo.jpg");
+    -webkit-background: url("../assets/bgwwo.jpg");
+    -moz-background: url("../assets/bgwwo.jpg");
+    -o-background: url("../assets/bgwwo.jpg");
+    background-size: 350% auto;
+    -webkit-background-size: 350% auto;
+    -moz-background-size: 350% auto;
+    -o-background-size: 350% auto;
+    background-position: top;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-color: #9c9c9c;
+  }
+  .pageContent .whatWeOffer section {
+    width: 75%;
+    margin: 0 12.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .pageContent .googleReviews .sliderContainer {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+
+  .aboutContainer div {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  .aboutContainer div p {
+    color: #636566;
+    font: 500 18px "Raleway", sans-serif;
+    padding: 3% 5%;
+  }
+
+  .meetTheTeamContainer section {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo {
+    padding: 5% 5% 15% 5%;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo h2, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo h2 {
+    color: #636566;
+    font: 600 24px "Raleway", sans-serif;
+    margin: 0 0 2% 0;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo h3, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo h3 {
+    color: #553B8C;
+    font: 500 18px "Raleway", sans-serif;
+    margin: 0 0 3% 0;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo p, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo p {
+    color: #636566;
+    font: 500 14px "Raleway", sans-serif;
+    margin: 0 0 3% 0;
+  }
+
+  .whatWeOfferTemplate {
+    background: url("../assets/bgwwo.jpg");
+    -webkit-background: url("../assets/bgwwo.jpg");
+    -moz-background: url("../assets/bgwwo.jpg");
+    -o-background: url("../assets/bgwwo.jpg");
+    background-size: 350% auto;
+    -webkit-background-size: 350% auto;
+    -moz-background-size: 350% auto;
+    -o-background-size: 350% auto;
+    background-position: top;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-color: #9c9c9c;
+  }
+  .whatWeOfferTemplate:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1b1432;
+    opacity: 0.5;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li {
+    padding: 20% 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 55% 45%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li svg {
+    width: 75%;
+    height: auto;
+    margin: 10% auto;
+    padding: 20%;
+    border-radius: 50%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li div {
+    margin: 3% auto;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li div h2 {
+    color: #636566;
+    font: 500 16px "Raleway", sans-serif;
+    padding-top: 10%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    padding-bottom: 5%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent div {
+    max-height: 350px;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent div img {
+    height: 100%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent p {
+    color: #636566;
+    font: 500 14px "Raleway", sans-serif;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent .wwoBtnDiv a {
+    color: #ffffff;
+    font: 500 16px "Raleway", sans-serif;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: #1b1432;
+    position: relative;
+  }
+  .footer .footerMain {
+    width: 75%;
+    margin: 0 12.5%;
+    display: grid;
+    grid-template-rows: auto;
+    z-index: 50;
+  }
+  .footer .footerMain > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    z-index: 50;
+    background-color: #ffffff;
+  }
+  .footer .footerMain > div .footerNav {
+    padding: 5%;
+    align-self: stretch;
+  }
+  .footer .footerMain > div .footerNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer .footerMain > div .footerNav ul li:nth-of-type(1) {
+    color: #553B8C;
+    font: 500 18px "Raleway", sans-serif;
+    padding-bottom: 5px;
+  }
+  .footer .footerMain > div .footerNav ul li:hover a {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    color: #553B8C;
+  }
+  .footer .footerMain > div .footerNav ul li a {
+    color: #95989A;
+    font: 500 16px "Raleway", sans-serif;
+  }
+  .footer .footerMain > div .footerContact .footerContactChild > li:nth-of-type(1) {
+    color: #553B8C;
+    font: 500 18px "Raleway", sans-serif;
+  }
+  .footer .footerMain > div .footerContact .footerContactChild li:hover a {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    color: #553B8C;
+  }
+  .footer .footerMain > div .footerContact .footerContactChild li a {
+    color: #95989A;
+    font: 500 16px "Raleway", sans-serif;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  .footer .footerMain > div .footerContact .footerSocials {
+    width: 100%;
+    height: 35px;
+    bottom: 5%;
+    left: 5%;
+  }
+  .footer .footerMain > div .footerContact .footerSocials li {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0 5% 0 0;
+  }
+  .footer .footerMain > div .footerContact .footerSocials li:hover a svg {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    color: #553B8C;
+  }
+  .footer .footerMain > div .footerContact .footerSocials li a {
+    height: 100%;
+    width: auto;
+  }
+  .footer .footerMain > div .footerContact .footerSocials li a svg {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    height: 100%;
+    width: auto;
+    color: #95989A;
+    margin: 0;
+  }
+  .footer .footerMain > div .img_adta {
+    padding: 5% 25% 1% 10%;
+  }
+  .footer .footerMain > div .img_k2d {
+    padding: 5% 25% 1% 10%;
+  }
+  .footer .footerMain .footerInstagram {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2;
+  }
+  .footer .footerMain .footerInstagram > a {
+    color: #1b1432;
+    font: 500 12px "Raleway", sans-serif;
+    max-width: 100%;
+    padding: 2% 1%;
+    margin: auto;
+    border-radius: 50px;
+    white-space: normal;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  .footer .footerMain .footerInstagram > a:hover {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    color: #ffffff;
+    border: 2px #ffffff solid;
+  }
+  .footer .footerBottom {
+    height: 275px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: #f6f6f6;
+    z-index: 0;
+  }
+  .footer .footerBottom div {
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1% 1%;
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: auto;
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  .footer .footerBottom div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer .footerBottom div ul li {
+    color: #636566;
+    font: 500 12px "Raleway", sans-serif;
+    text-decoration: none;
+    float: left;
+    margin: 0 7% 0 0;
+  }
+  .footer .footerBottom div a:nth-of-type(1) {
+    text-align: center;
+    color: #636566;
+    font: 500 12px "Raleway", sans-serif;
+  }
+  .footer .footerBottom div a:nth-of-type(2) {
+    text-align: right;
+    color: #636566;
+    font: 500 12px "Raleway", sans-serif;
+  }
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1025px) {
+  .navbar {
+    width: 70%;
+    margin: 0 15%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  .navbar .navContact {
+    width: 80%;
+    height: 50px;
+    padding: 1%;
+    margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
+    padding: 1% 2%;
+    list-style-type: none;
+  }
+  .navbar .navContact li {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .navbar .navContact li a {
+    margin: auto 10%;
+    text-decoration: none;
+  }
+  .navbar .topNav {
+    width: 30%;
+    height: 150px;
+    position: relative;
+    float: left;
+    display: block;
+    padding: 0;
+    background-color: transparent;
+  }
+  .navbar .topNav a {
+    width: auto;
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+  .navbar .topNav a img {
+    max-width: 100%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    min-height: 75px;
+  }
+  .navbar .bottomNav {
+    width: 70%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+  .navbar .bottomNav .navMenuList {
+    width: 75%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    order: 1;
+    height: auto;
+  }
+  .navbar .bottomNav .navMenuList li {
+    padding: 3% 0;
+    margin: 0 2%;
+    height: auto;
+    display: block;
+  }
+  .navbar .bottomNav .navMenuList li a {
+    color: #ffffff;
+    font: 500 18px "Raleway", sans-serif;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar .bottomNav .navMenuList li a svg {
+    display: none;
+  }
+  .navbar .bottomNav .bookNowNav {
+    background-color: #553B8C;
+    color: #ffffff;
+    border: 2px transparent solid;
+    border-radius: 25px;
+    font-family: "Raleway", sans-serif;
+    white-space: nowrap;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 18px;
+    margin-left: 25px;
+    width: auto;
+  }
+  .navbar .bottomNav .bookNowNav:hover {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    color: #ffffff;
+    border: 2px #ffffff solid;
+    background-color: transparent;
+  }
+
+  .pageContentTemplate {
+    padding-top: 0;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow {
+    grid-template-columns: 33% 1fr 0.75fr 30%;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div {
+    border-right: 2px solid #636566;
+    margin: 10% 0;
+    padding: 0;
+    min-height: 75px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div h2 {
+    color: #636566;
+    font: 500 22px "Raleway", sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 5% 5% 0 10%;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div p {
+    color: #636566;
+    font: 500 14px "Raleway", sans-serif;
+    width: 100%;
+    padding: 0 5% 5% 10%;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div h3 {
+    color: #553B8C;
+    font: 500 22px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div h4 {
+    color: #553B8C;
+    font: 600 22px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .priceGuide .priceGuideContainer .priceGuideRow div:nth-of-type(4) a {
+    color: #1b1432;
+    font: 600 16px "Raleway", sans-serif;
+    padding: 4% 8%;
+    margin: 0 13% 0 10%;
+  }
+  .pageContentTemplate .contactContainer {
+    padding: 5% 0;
+  }
+  .pageContentTemplate .contactContainer section {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro p {
+    color: #636566;
+    font: 500 26px "Raleway", sans-serif;
+    padding-right: 10%;
+    margin: 0;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div {
+    position: relative;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div a {
+    color: #553B8C;
+    font: 500 18px "Raleway", sans-serif;
+    width: 100%;
+    float: left;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div ul li {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div ul li a {
+    width: 100%;
+    height: 100%;
+    color: #553B8C;
+  }
+  .pageContentTemplate .contactContainer section div .contactIntro div ul li a svg {
+    color: #553B8C;
+  }
+  .pageContentTemplate .contactContainer section div form {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 40% 20%;
+    grid-template-areas: "a b" "c c" "d d";
+    margin: 0;
+    padding: 5% 5% 0 5%;
+    align-content: center;
+  }
+  .pageContentTemplate .contactContainer section div form div div {
+    background-color: #ffffff;
+    display: block;
+  }
+  .pageContentTemplate .contactContainer section div form div div input {
+    color: #636566;
+    font: 500 20px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .contactContainer section div form div div input::placeholder {
+    color: #636566;
+    font: 500 20px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .contactContainer section div form div div textarea {
+    color: #636566;
+    font: 500 20px "Raleway", sans-serif;
+    min-height: 175px;
+  }
+  .pageContentTemplate .contactContainer section div form div div textarea::placeholder {
+    color: #636566;
+    font: 500 20px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .contactContainer section div form div div textarea:focus {
+    outline: 0px;
+    color: #1b1432;
+  }
+  .pageContentTemplate .contactContainer section div form div div textarea:focus::placeholder {
+    color: #ffffff;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormName {
+    grid-area: a;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormName div {
+    padding: 3% 15px;
+    margin-right: 25px;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormEmail {
+    grid-area: b;
+    padding: 0;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormEmail div {
+    padding: 3% 15px;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormTextArea {
+    grid-area: c;
+    padding: 0;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormTextArea div {
+    border: 1px solid #636566;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormSubmit {
+    grid-area: d;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormSubmit div button {
+    margin: 0 auto;
+    background-color: transparent;
+    color: #1b1432;
+    border: 1px #1b1432 solid;
+    border-radius: 50px;
+    white-space: nowrap;
+    text-align: center;
+    align-self: center;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    padding: 1% 3%;
+    min-width: 25%;
+    color: #1b1432;
+    font: 500 20px "Raleway", sans-serif;
+  }
+  .pageContentTemplate .contactContainer section div form .contactFormSubmit div button:hover {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    background-color: #1b1432;
+    color: #ffffff;
+    border: 1px #ffffff solid;
+  }
+
+  .pageContent .indexAbout h3 {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .pageContent .whatWeOffer {
+    background: url("../assets/bgwwo.jpg");
+    -webkit-background: url("../assets/bgwwo.jpg");
+    -moz-background: url("../assets/bgwwo.jpg");
+    -o-background: url("../assets/bgwwo.jpg");
+    background-size: 350% auto;
+    -webkit-background-size: 350% auto;
+    -moz-background-size: 350% auto;
+    -o-background-size: 350% auto;
+    background-position: top;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-color: #9c9c9c;
+  }
+  .pageContent .whatWeOffer section {
+    width: 70%;
+    margin: 0 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .pageContent .googleReviews {
+    background-color: #1b1432;
+    width: 100%;
+    height: auto;
+    padding: 7% 0;
+    display: block;
+  }
+  .pageContent .googleReviews .sliderContainer {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .pageContent .googleReviews .sliderContainer div .slick-list .slick-track .slick-slide h2 {
+    color: #ffffff;
+    font: 500 24px "Raleway", sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .pageContent .googleReviews .sliderContainer div .slick-list .slick-track .slick-slide h3 {
+    color: #ffffff;
+    font: 500 18px "Raleway", sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .pageContent .googleReviews .sliderContainer div .slick-list .slick-track .slick-slide div {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .pageContent .googleReviews .sliderContainer div .slick-list .slick-track .slick-slide div svg {
+    color: #ffffff;
+  }
+  .pageContent .googleReviews .sliderContainer div .slick-list .slick-track .slick-slide p {
+    color: #ffffff;
+    font: 500 14px "Raleway", sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 2%;
+  }
+  .pageContent .googleReviews .sliderContainer div .slick-dots {
+    color: #ffffff;
+  }
+  .pageContent .googleReviews .sliderContainer div .slick-dots li button {
+    width: 5px;
+    height: 5px;
+    border: 2px #ffffff solid;
+    border-radius: 50px;
+    background-color: transparent;
+  }
+  .pageContent .googleReviews .sliderContainer div .slick-dots li button:before {
+    display: none;
+  }
+  .pageContent .googleReviews .sliderContainer div .slick-dots .slick-active button {
+    background-color: #ffffff;
+  }
+  .pageContent .googleReviews a {
+    color: #ffffff;
+    font: 500 14px "Raleway", sans-serif;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px #ffffff solid;
+    border-radius: 50px;
+    white-space: nowrap;
+    text-align: center;
+    align-self: center;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    max-width: 20%;
+    height: auto;
+    margin: 50px auto auto auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .pageContent .googleReviews a:hover {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    background-color: #ffffff;
+    color: #1b1432;
+    border: 2px #ffffff solid;
+  }
+
+  .aboutContainer div {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .aboutContainer div p {
+    color: #636566;
+    font: 500 18px "Raleway", sans-serif;
+    padding: 3% 5%;
+  }
+
+  .meetTheTeamContainer section {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo {
+    padding: 5% 5% 15% 5%;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo h2, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo h2 {
+    color: #636566;
+    font: 600 28px "Raleway", sans-serif;
+    margin: 0 0 2% 0;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo h3, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo h3 {
+    color: #553B8C;
+    font: 500 22px "Raleway", sans-serif;
+    margin: 0 0 3% 0;
+  }
+  .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberOne .teamMemberInfo p, .meetTheTeamContainer section .meetTheTeamGridContainer .teamMemberTwo .teamMemberInfo p {
+    color: #636566;
+    font: 500 18px "Raleway", sans-serif;
+    margin: 0 0 3% 0;
+  }
+
+  .footer .footerMain {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .footer .footerBottom div {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  .whatWeOfferTemplate {
+    background: url("../assets/bgwwo.jpg");
+    -webkit-background: url("../assets/bgwwo.jpg");
+    -moz-background: url("../assets/bgwwo.jpg");
+    -o-background: url("../assets/bgwwo.jpg");
+    background-size: 350% auto;
+    -webkit-background-size: 350% auto;
+    -moz-background-size: 350% auto;
+    -o-background-size: 350% auto;
+    background-position: top;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-color: #9c9c9c;
+  }
+  .whatWeOfferTemplate:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1b1432;
+    opacity: 0.5;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li {
+    width: 100%;
+    padding: 20% 15%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 55% 45%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li svg {
+    width: 75%;
+    height: auto;
+    margin: 10% auto;
+    padding: 20%;
+    border-radius: 50%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li div {
+    margin: 3% auto;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferOptionsList li div h2 {
+    color: #636566;
+    font: 500 22px "Raleway", sans-serif;
+    padding-top: 10%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    padding-bottom: 5%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent div {
+    max-height: 400px;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent div img {
+    height: 100%;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent p {
+    color: #636566;
+    font: 500 18px "Raleway", sans-serif;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div .whatWeOfferContent .wwoBtnDiv a {
+    color: #ffffff;
+    font: 500 20px "Raleway", sans-serif;
+  }
+}
+/* hi-res laptops and desktops */
+@media (min-width: 1281px) {
+  .navbar {
+    width: 70%;
+    margin: 0 15%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  .navbar .navContact {
+    width: 60%;
+    height: 50px;
+    padding: 1%;
+    margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
+    padding: 1% 2%;
+    list-style-type: none;
+  }
+  .navbar .navContact li {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .navbar .navContact li a {
+    margin: auto 10%;
+    text-decoration: none;
+  }
+  .navbar .topNav {
+    width: 35%;
+    height: 175px;
+    position: relative;
+    float: left;
+    display: block;
+    padding: 0;
+    background-color: transparent;
+  }
+  .navbar .topNav a {
+    width: auto;
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+  .navbar .topNav a img {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar .bottomNav {
+    width: 65%;
+    height: 175px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+  .navbar .bottomNav .navMenuList {
+    width: 75%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    order: 1;
+    height: auto;
+  }
+  .navbar .bottomNav .navMenuList li {
+    padding: 3% 0;
+    margin: 0 2%;
+    height: auto;
+    display: block;
+  }
+  .navbar .bottomNav .navMenuList li a {
+    color: #ffffff;
+    font: 500 18px "Raleway", sans-serif;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar .bottomNav .navMenuList li a svg {
+    display: none;
+  }
+  .navbar .bottomNav .navMenuList .navActive {
+    background-color: transparent;
+  }
+  .navbar .bottomNav .bookNowNav {
+    background-color: #553B8C;
+    color: #ffffff;
+    border: 2px transparent solid;
+    border-radius: 25px;
+    font-family: "Raleway", sans-serif;
+    white-space: nowrap;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 18px;
+    margin-left: 25px;
+    width: auto;
+  }
+  .navbar .bottomNav .bookNowNav:hover {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    color: #ffffff;
+    border: 2px #ffffff solid;
+    background-color: transparent;
+  }
+
+  .footer .footerMain {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+  .footer .footerBottom div {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+
+  .pageContentTemplate .priceGuide .priceGuideContainer {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+  .pageContentTemplate .contactContainer {
+    padding: 5% 0;
+  }
+  .pageContentTemplate .contactContainer section {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+
+  .pageContent .indexAbout h3 {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+  .pageContent .whatWeOffer {
+    background: url("../assets/bgwwo.jpg");
+    -webkit-background: url("../assets/bgwwo.jpg");
+    -moz-background: url("../assets/bgwwo.jpg");
+    -o-background: url("../assets/bgwwo.jpg");
+    background-size: 350% auto;
+    -webkit-background-size: 350% auto;
+    -moz-background-size: 350% auto;
+    -o-background-size: 350% auto;
+    background-position: top;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-color: #9c9c9c;
+  }
+  .pageContent .whatWeOffer section {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+  .pageContent .googleReviews .sliderContainer {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+
+  .aboutContainer div {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+
+  .meetTheTeamContainer section {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+
+  .whatWeOfferTemplate {
+    background: url("../assets/bgwwo.jpg");
+    -webkit-background: url("../assets/bgwwo.jpg");
+    -moz-background: url("../assets/bgwwo.jpg");
+    -o-background: url("../assets/bgwwo.jpg");
+    background-size: 350% auto;
+    -webkit-background-size: 350% auto;
+    -moz-background-size: 350% auto;
+    -o-background-size: 350% auto;
+    background-position: top;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-color: #9c9c9c;
+  }
+  .whatWeOfferTemplate:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1b1432;
+    opacity: 0.5;
+  }
+  .whatWeOfferTemplate .whatWeOfferOptions div {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+}
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../assets/bgimg.jpg");
+  -webkit-background: url("../assets/bgimg.jpg");
+  -moz-background: url("../assets/bgimg.jpg");
+  -o-background: url("../assets/bgimg.jpg");
+  background-size: 300% auto;
+  -webkit-background-size: 300% auto;
+  -moz-background-size: 300% auto;
+  -o-background-size: 300% auto;
+  background-position: top;
+  -webkit-background-position: top;
+  -moz-background-position: top;
+  -o-background-position: top;
+  background-repeat: no-repeat;
+  -webkit-background-position: top;
+  -moz-background-position: top;
+  -o-background-position: top;
+  background-color: #1b1432;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+body > div {
+  background-image: radial-gradient(rgba(85, 59, 140, 0.55), rgba(27, 20, 50, 0.65));
+}
+body > div .headerContainer {
+  background-image: linear-gradient(180deg, rgba(85, 59, 140, 0), #1b1432);
+}
+
+@media (min-width: 480px) {
+  body {
+    background: url("../assets/bgimg.jpg");
+    -webkit-background: url("../assets/bgimg.jpg");
+    -moz-background: url("../assets/bgimg.jpg");
+    -o-background: url("../assets/bgimg.jpg");
+    background-size: 250% auto;
+    -webkit-background-size: 250% auto;
+    -moz-background-size: 250% auto;
+    -o-background-size: 250% auto;
+    background-position: top;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-color: #1b1432;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    background: url("../assets/bgimg.jpg");
+    -webkit-background: url("../assets/bgimg.jpg");
+    -moz-background: url("../assets/bgimg.jpg");
+    -o-background: url("../assets/bgimg.jpg");
+    background-size: 175% auto;
+    -webkit-background-size: 175% auto;
+    -moz-background-size: 175% auto;
+    -o-background-size: 175% auto;
+    background-position: top;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-color: #1b1432;
+  }
+}
+@media (min-width: 801px) {
+  body {
+    background: url("../assets/bgimg.jpg");
+    -webkit-background: url("../assets/bgimg.jpg");
+    -moz-background: url("../assets/bgimg.jpg");
+    -o-background: url("../assets/bgimg.jpg");
+    background-size: 155% auto;
+    -webkit-background-size: 155% auto;
+    -moz-background-size: 155% auto;
+    -o-background-size: 155% auto;
+    background-position: top;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-color: #1b1432;
+  }
+}
+@media (min-width: 1025px) {
+  body {
+    background: url("../assets/bgimg.jpg");
+    -webkit-background: url("../assets/bgimg.jpg");
+    -moz-background: url("../assets/bgimg.jpg");
+    -o-background: url("../assets/bgimg.jpg");
+    background-size: 145% auto;
+    -webkit-background-size: 145% auto;
+    -moz-background-size: 145% auto;
+    -o-background-size: 145% auto;
+    background-position: top;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -moz-background-position: top;
+    -o-background-position: top;
+    background-color: #1b1432;
+  }
+}
+a {
+  text-decoration: none;
+  color: #f6f6f6;
+}
+
+/*# sourceMappingURL=style.css.map */
