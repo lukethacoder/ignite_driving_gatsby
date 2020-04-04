@@ -30,7 +30,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "luke": "gatsby build && gulp",
     "sass": "sass src/layouts/style.scss:src/layouts/style.css src/layouts/index.scss:src/layouts/index.css",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
