@@ -60,7 +60,7 @@ const Header = () => (
             <FontAwesomeIcon icon={faDollarSign} />Pricing
           </NavLink>
         </li>
-        <li class="homeNavButton">
+        <li className="homeNavButton">
           <NavLink exact={true} to="/" activeClassName="activeClassName">
             <FontAwesomeIcon icon={faHome} />Home
           </NavLink>
