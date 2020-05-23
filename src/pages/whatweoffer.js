@@ -141,9 +141,7 @@ export default class Content extends React.Component {
                 {select.map((select, index) => {
                   return (
                     <li
-                      className={`${select.className} ${
-                        this.state.content === select.key ? 'active' : ''
-                      }`}
+                      className={`${select.className} ${this.state.content === select.key ? 'active' : ''}`}
                       onClick={() => this.changeContent(select.selectURL)}
                     >
                       <FontAwesomeIcon icon={select.icon} />
@@ -157,20 +155,18 @@ export default class Content extends React.Component {
               <div className="whatWeOfferContent">
                 <div></div>
                 <p>
-                {this.state.content === 'keys2drive' ? (
-                  <span style={{ fontWeight: 700 }}>
-                    Due to the Corona Virus pandemic Ignite Driving is unable to
-                    deliver the free Keys2Drive Lesson until further notice.
-                  <br/>
-                  <br/>
-                  </span>
-                ) : null}
-                  {content[this.state.content].description}</p>
+                  {this.state.content === 'keys2drive' ? (
+                    <span style={{ fontWeight: 700 }}>
+                      Keys2Drive lessons will resume from the 8th of June.
+                      <br />
+                      <br />
+                    </span>
+                  ) : null}
+                  {content[this.state.content].description}
+                </p>
                 <div className="wwoBtnDiv">
                   {/* <img src={content[this.state.content].image} /> */}
-                  <a href={content[this.state.content].link}>
-                    {content[this.state.content].linkName}
-                  </a>
+                  <a href={content[this.state.content].link}>{content[this.state.content].linkName}</a>
                 </div>
               </div>
             </div>
