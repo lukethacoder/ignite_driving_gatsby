@@ -29,7 +29,7 @@ const About = () => (
             <br></br>
             <br></br>
             Ignite Driving can also help prepare Learners for the one off ACT P Test. Having some professional lessons
-            can only be beneficial for Learners about to do undertake the one off test.
+            can only be beneficial for Learners about to undertake the one off test.
             <br></br>
             <br></br>
             Our Instructors meet industry standards by holding a minimum Certificate IV in Driving Instructing, WWVP
