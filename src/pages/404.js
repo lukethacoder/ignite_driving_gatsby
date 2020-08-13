@@ -1,18 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const NotFoundPage = () => (
   <section className="pageContentTemplate">
-
     <header className="headerContainer submissionPage">
       <section className="headerSection ">
-        <h1>error 404</h1>
-        <h2>page not found.</h2>
-        <p>you must be lost, let me take you back home</p>
-        <a href="/">Home</a>
+        <h1>error 418</h1>
       </section>
     </header>
-
   </section>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;
